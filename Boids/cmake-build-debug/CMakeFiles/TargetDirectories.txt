@@ -1,0 +1,6 @@
+/home/s5610456/CFGAA/programming-assignment-5610456/flock/Boids/cmake-build-debug/CMakeFiles/Boids.dir
+/home/s5610456/CFGAA/programming-assignment-5610456/flock/Boids/cmake-build-debug/CMakeFiles/BoidsCopyShaders.dir
+/home/s5610456/CFGAA/programming-assignment-5610456/flock/Boids/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/s5610456/CFGAA/programming-assignment-5610456/flock/Boids/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/s5610456/CFGAA/programming-assignment-5610456/flock/Boids/cmake-build-debug/CMakeFiles/Boids_autogen_timestamp_deps.dir
+/home/s5610456/CFGAA/programming-assignment-5610456/flock/Boids/cmake-build-debug/CMakeFiles/Boids_autogen.dir
