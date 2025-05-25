@@ -5,3 +5,5 @@ Project: Craig Boids Flocking System in 3D
 
 Ref:
 Using John Macey ParticleQt as a reference, replacing 'Particle' with 'Boid' and 'Emitter' with 'Flock'
+
+Taking inspo off: Coding Adventure: Boids (https://youtu.be/bqtqltqcQhw?si=F-BrRPD3BPAI0X3d)
