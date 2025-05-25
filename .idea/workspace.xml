@@ -3,9 +3,9 @@
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
-  <component name="CMakePresetLoader"><![CDATA[{
-  "useNewFormat": true
-}]]></component>
+  <component name="CMakePresetLoader">{
+  &quot;useNewFormat&quot;: true
+}</component>
   <component name="CMakeProjectFlavorService">
     <option name="flavorId" value="CMakePlainProjectFlavor" />
   </component>
@@ -21,7 +21,28 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0871e127-c5c2-4188-b186-cbc5b8df14a9" name="Changes" comment="" />
+    <list default="true" id="0871e127-c5c2-4188-b186-cbc5b8df14a9" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../Boids/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../Boids/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Boids/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../Boids/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Boids/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-2d3ab966e0af18e3974c.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Boids/cmake-build-debug/.cmake/api/v1/reply/index-2025-05-24T17-02-30-0925.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Boids/cmake-build-debug/.cmake/api/v1/reply/target-Boids-Debug-2872ce743054a1012500.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Boids/cmake-build-debug/.cmake/api/v1/reply/target-BoidsCopyShaders-Debug-e25db8f7ea7f86ad4c25.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Boids/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/../Boids/cmake-build-debug/.ninja_deps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Boids/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/../Boids/cmake-build-debug/.ninja_log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Boids/cmake-build-debug/Boids" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Boids/cmake-build-debug/Boids_autogen/6YEA5652QU/moc_MainWindow.cpp.d" beforeDir="false" afterPath="$PROJECT_DIR$/../Boids/cmake-build-debug/Boids_autogen/6YEA5652QU/moc_MainWindow.cpp.d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Boids/cmake-build-debug/Boids_autogen/6YEA5652QU/moc_NGLScene.cpp.d" beforeDir="false" afterPath="$PROJECT_DIR$/../Boids/cmake-build-debug/Boids_autogen/6YEA5652QU/moc_NGLScene.cpp.d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Boids/cmake-build-debug/Boids_autogen/deps" beforeDir="false" afterPath="$PROJECT_DIR$/../Boids/cmake-build-debug/Boids_autogen/deps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Boids/cmake-build-debug/CMakeFiles/Boids_autogen.dir/ParseCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../Boids/cmake-build-debug/CMakeFiles/Boids_autogen.dir/ParseCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Boids/cmake-build-debug/CMakeFiles/clion-Debug-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../Boids/cmake-build-debug/CMakeFiles/clion-Debug-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Boids/cmake-build-debug/NGLDebug.log" beforeDir="false" afterPath="$PROJECT_DIR$/../Boids/cmake-build-debug/NGLDebug.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Boids/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/../Boids/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Boids/include/NGLScene.h" beforeDir="false" afterPath="$PROJECT_DIR$/../Boids/include/NGLScene.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Boids/src/NGLScene.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../Boids/src/NGLScene.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -34,10 +55,10 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 3
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 3
+}</component>
   <component name="ProjectId" id="2xY4hemrhwQp4NrL04poqFJhwAo" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -52,7 +73,7 @@
     "RunOnceActivity.readMode.enableVisualFormatting": "true",
     "cf.first.check.clang-format": "false",
     "cidr.known.project.marker": "true",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "master",
     "last_opened_file_path": "/home/s5610456/CFGAA/programming-assignment-5610456/flock/ParticleQt/CMakeLists.txt",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -63,9 +84,9 @@
   }
 }]]></component>
   <component name="RunManager">
-    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
-        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
   </component>
@@ -78,6 +99,7 @@
       <option name="presentableId" value="Default" />
       <updated>1748101793449</updated>
       <workItem from="1748101794528" duration="1068000" />
+      <workItem from="1748180621604" duration="524000" />
     </task>
     <servers />
   </component>

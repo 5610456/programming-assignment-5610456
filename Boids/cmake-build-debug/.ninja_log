@@ -18,3 +18,15 @@
 353	372	1748115571564045000	clean	d1914f6eb3a5eae7
 532	949	1748115577491053000	CMakeFiles/Boids.dir/src/boid.cpp.o	666855d53d103c0e
 174	567	1748101347960014000	ParticleQt_autogen/mocs_compilation.cpp	748fd75984a0c859
+287	591	1748181397394505000	Boids_autogen/timestamp	24401902ed8cc59e
+287	591	1748181397394505000	Boids_autogen/mocs_compilation.cpp	24401902ed8cc59e
+287	591	1748181397394505000	/home/s5610456/CFGAA/programming-assignment-5610456/flock/programming-assignment-5610456/Boids/cmake-build-debug/Boids_autogen/timestamp	24401902ed8cc59e
+287	591	1748181397394505000	/home/s5610456/CFGAA/programming-assignment-5610456/flock/programming-assignment-5610456/Boids/cmake-build-debug/Boids_autogen/mocs_compilation.cpp	24401902ed8cc59e
+594	999	1748181397420509000	CMakeFiles/Boids.dir/src/boid.cpp.o	29207e518cf968de
+593	1703	1748181397419515000	CMakeFiles/Boids.dir/src/main.cpp.o	416fb247c4af0a7
+592	1739	1748181397418506000	CMakeFiles/Boids.dir/Boids_autogen/mocs_compilation.cpp.o	d646e221459903d7
+595	1741	1748181397421507000	CMakeFiles/Boids.dir/src/Flock.cpp.o	73051ea6386937fa
+598	1846	1748181397424504000	CMakeFiles/Boids.dir/src/NGLSceneMouseControls.cpp.o	c97f9ed8952a32a1
+596	1883	1748181397422505000	CMakeFiles/Boids.dir/src/MainWindow.cpp.o	47769646ff323c0e
+597	2085	1748181397423504000	CMakeFiles/Boids.dir/src/NGLScene.cpp.o	c37428c78cc4a92a
+2086	81670	1748181398911504000	Boids	a6c460e45c7e3ade
