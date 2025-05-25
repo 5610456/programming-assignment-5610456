@@ -28,6 +28,10 @@ void NGLScene::resizeGL(int _w , int _h)
 
 void NGLScene::initializeGL()
 {
+
+  ngl::ShaderLib::loadShader("ParticleShader", "shaders/ParticleVertex.glsl", "shaders/ParticleFragment.glsl");
+  ngl::ShaderLib::use("ParticleShader");
+
   // we must call that first before any other GL commands to load and link the
   // gl commands from the lib, if that is not done program will crash
   ngl::NGLInit::initialize();
@@ -49,6 +53,19 @@ void NGLScene::initializeGL()
   // m_text->setColour(1,1,1);
   startTimer(10);
   emit glInitialized();
+
+  //ADDED
+  std::ifstream vs("shaders/ParticleVertex.glsl");
+  std::ifstream fs("shaders/ParticleFragment.glsl");
+  if (!vs.good() || !fs.good())
+  {
+    std::cerr << "Error: Shader files not found! Check your working directory and paths.\n";
+  }
+  else
+  {
+    std::cout << "Shader files found successfully.\n";
+  }
+
 }
 
 
