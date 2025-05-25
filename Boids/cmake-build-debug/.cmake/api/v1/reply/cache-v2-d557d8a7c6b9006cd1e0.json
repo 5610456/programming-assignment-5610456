@@ -135,7 +135,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/s5610456/CFGAA/programming-assignment-5610456/flock/Boids/cmake-build-debug"
+			"value" : "/home/s5610456/CFGAA/programming-assignment-5610456/flock/programming-assignment-5610456/Boids/cmake-build-debug"
 		},
 		{
 			"name" : "BoidsBuild_IS_TOP_LEVEL",
@@ -159,7 +159,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/s5610456/CFGAA/programming-assignment-5610456/flock/Boids"
+			"value" : "/home/s5610456/CFGAA/programming-assignment-5610456/flock/programming-assignment-5610456/Boids"
 		},
 		{
 			"name" : "Boost_DIR",
@@ -267,7 +267,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/s5610456/CFGAA/programming-assignment-5610456/flock/Boids/cmake-build-debug"
+			"value" : "/home/s5610456/CFGAA/programming-assignment-5610456/flock/programming-assignment-5610456/Boids/cmake-build-debug"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -627,7 +627,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/s5610456/CFGAA/programming-assignment-5610456/flock/Boids/cmake-build-debug/CMakeFiles/pkgRedirects"
+			"value" : "/home/s5610456/CFGAA/programming-assignment-5610456/flock/programming-assignment-5610456/Boids/cmake-build-debug/CMakeFiles/pkgRedirects"
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -747,7 +747,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/s5610456/CFGAA/programming-assignment-5610456/flock/Boids"
+			"value" : "/home/s5610456/CFGAA/programming-assignment-5610456/flock/programming-assignment-5610456/Boids"
 		},
 		{
 			"name" : "CMAKE_INSTALL_BINDIR",
@@ -1028,18 +1028,6 @@
 			],
 			"type" : "PATH",
 			"value" : "etc"
-		},
-		{
-			"name" : "CMAKE_LIB_ICE_HAS_ICECONNECTIONNUMBER",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Have library ICE"
-				}
-			],
-			"type" : "INTERNAL",
-			"value" : "1"
 		},
 		{
 			"name" : "CMAKE_LINKER",
@@ -28563,7 +28551,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "/usr/include"
+			"value" : "X11_ICE_INCLUDE_PATH-NOTFOUND"
 		},
 		{
 			"name" : "X11_ICE_LIB",
@@ -28579,7 +28567,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/usr/lib64/libICE.so"
+			"value" : "X11_ICE_LIB-NOTFOUND"
 		},
 		{
 			"name" : "X11_LIBRARIES",
@@ -28623,7 +28611,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "/usr/include"
+			"value" : "X11_SM_INCLUDE_PATH-NOTFOUND"
 		},
 		{
 			"name" : "X11_SM_LIB",
@@ -28639,7 +28627,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/usr/lib64/libSM.so"
+			"value" : "X11_SM_LIB-NOTFOUND"
 		},
 		{
 			"name" : "X11_X11_INCLUDE_PATH",
@@ -29439,7 +29427,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "/usr/include"
+			"value" : "X11_Xt_INCLUDE_PATH-NOTFOUND"
 		},
 		{
 			"name" : "X11_Xt_LIB",
@@ -29455,7 +29443,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/usr/lib64/libXt.so"
+			"value" : "X11_Xt_LIB-NOTFOUND"
 		},
 		{
 			"name" : "X11_Xtst_INCLUDE_PATH",

@@ -1,4 +1,4 @@
-# Install script for directory: /home/s5610456/CFGAA/programming-assignment-5610456/flock/Boids
+# Install script for directory: /home/s5610456/CFGAA/programming-assignment-5610456/flock/programming-assignment-5610456/Boids
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/s5610456/CFGAA/programming-assignment-5610456/flock/Boids/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/s5610456/CFGAA/programming-assignment-5610456/flock/programming-assignment-5610456/Boids/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

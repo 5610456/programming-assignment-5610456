@@ -1,10 +1,39 @@
-/public/devel/24-25/clion/bin/cmake/linux/x64/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/public/devel/24-25/clion/bin/ninja/linux/x64/ninja -G Ninja -S /home/s5610456/CFGAA/programming-assignment-5610456/flock/Boids -B /home/s5610456/CFGAA/programming-assignment-5610456/flock/Boids/cmake-build-debug
+/public/devel/24-25/clion/bin/cmake/linux/x64/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/public/devel/24-25/clion/bin/ninja/linux/x64/ninja -G Ninja -S /home/s5610456/CFGAA/programming-assignment-5610456/flock/programming-assignment-5610456/Boids -B /home/s5610456/CFGAA/programming-assignment-5610456/flock/programming-assignment-5610456/Boids/cmake-build-debug
+-- The CXX compiler identification is GNU 13.2.1
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /opt/rh/gcc-toolset-13/root/usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+-- Check if compiler accepts -pthread
+-- Check if compiler accepts -pthread - yes
+-- Found Threads: TRUE
+-- Found ZLIB: optimized;/public/devel/24-25/vcpkg/installed/x64-linux/lib/libz.a;debug;/public/devel/24-25/vcpkg/installed/x64-linux/debug/lib/libz.a (found version "1.3.1")
+-- Found WrapSystemZLIB: TRUE
 -- Using system ZLIB.
+-- Found WrapZLIB: TRUE
+-- Performing Test HAVE_STDATOMIC
+-- Performing Test HAVE_STDATOMIC - Success
+-- Found WrapAtomic: TRUE
+-- Found WrapSystemDoubleConversion: /public/devel/24-25/vcpkg/installed/x64-linux/share/double-conversion/double-conversionConfig.cmake (found version "3.3.0")
+-- Checking for module 'libb2'
+--   Found libb2, version 0.98.1
 -- Found the following ICU libraries:
 --   i18n (required): /public/devel/24-25/vcpkg/installed/x64-linux/debug/lib/libicui18n.a
 --   uc (required): /public/devel/24-25/vcpkg/installed/x64-linux/debug/lib/libicuuc.a
 --   data (required): /public/devel/24-25/vcpkg/installed/x64-linux/debug/lib/libicudata.a
+-- Found ICU: /public/devel/24-25/vcpkg/installed/x64-linux/include (found suitable version "74.2", minimum required is "50.1")
+-- Found WrapSystemPCRE2: TRUE (found version "10.43.0")
 -- Using system PCRE2.
+-- Found WrapPCRE2: TRUE
+-- Found WrapZSTD: 1.5.6 (found suitable version "1.5.6", minimum required is "1.3")
+-- Performing Test HAVE_GETTIME
+-- Performing Test HAVE_GETTIME - Success
+-- Performing Test HAVE_SHM_OPEN_SHM_UNLINK
+-- Performing Test HAVE_SHM_OPEN_SHM_UNLINK - Success
+-- Found WrapRt: TRUE
 CMake Warning (dev) at /public/devel/24-25/clion/bin/cmake/linux/x64/share/cmake-3.29/Modules/FindOpenGL.cmake:415 (message):
   Policy CMP0072 is not set: FindOpenGL prefers GLVND by default when
   available.  Run "cmake --help-policy CMP0072" for policy details.  Use the
@@ -41,14 +70,86 @@ Call Stack (most recent call first):
 This warning is for project developers.  Use -Wno-dev to suppress it.
 
 -- Found OpenGL: /usr/lib64/libOpenGL.so
+-- Found WrapOpenGL: TRUE
 -- Found OpenGL: /usr/lib64/libOpenGL.so  found components: EGL
+-- Performing Test HAVE_EGL
+-- Performing Test HAVE_EGL - Success
+-- Found EGL: /public/devel/24-25/vcpkg/installed/x64-linux/include (found version "1.5")
+-- Found WrapSystemPNG: optimized;/public/devel/24-25/vcpkg/installed/x64-linux/lib/libpng16.a;debug;/public/devel/24-25/vcpkg/installed/x64-linux/debug/lib/libpng16d.a;optimized;/public/devel/24-25/vcpkg/installed/x64-linux/lib/libz.a;debug;/public/devel/24-25/vcpkg/installed/x64-linux/debug/lib/libz.a;m (found version "1.6.43")
 -- Using system PNG.
+-- Found WrapPNG: TRUE
+-- Found BZip2: optimized;/public/devel/24-25/vcpkg/installed/x64-linux/lib/libbz2.a;debug;/public/devel/24-25/vcpkg/installed/x64-linux/debug/lib/libbz2d.a (found version "1.0.8")
+-- Looking for BZ2_bzCompressInit
+-- Looking for BZ2_bzCompressInit - found
+-- Found PNG: optimized;/public/devel/24-25/vcpkg/installed/x64-linux/lib/libpng16.a;debug;/public/devel/24-25/vcpkg/installed/x64-linux/debug/lib/libpng16d.a (found version "1.6.43")
+-- Found WrapSystemHarfbuzz: TRUE
 -- Using system Harfbuzz.
+-- Found WrapHarfbuzz: TRUE
+-- Found WrapSystemFreetype: optimized;/public/devel/24-25/vcpkg/installed/x64-linux/lib/libfreetype.a;debug;/public/devel/24-25/vcpkg/installed/x64-linux/debug/lib/libfreetyped.a;optimized;/public/devel/24-25/vcpkg/installed/x64-linux/lib/libz.a;debug;/public/devel/24-25/vcpkg/installed/x64-linux/debug/lib/libz.a;optimized;/public/devel/24-25/vcpkg/installed/x64-linux/lib/libbz2.a;debug;/public/devel/24-25/vcpkg/installed/x64-linux/debug/lib/libbz2d.a;optimized;/public/devel/24-25/vcpkg/installed/x64-linux/lib/libpng16.a;debug;/public/devel/24-25/vcpkg/installed/x64-linux/debug/lib/libpng16d.a;optimized;/public/devel/24-25/vcpkg/installed/x64-linux/lib/libz.a;debug;/public/devel/24-25/vcpkg/installed/x64-linux/debug/lib/libz.a;m;optimized;/public/devel/24-25/vcpkg/installed/x64-linux/lib/libbrotlidec.a;debug;/public/devel/24-25/vcpkg/installed/x64-linux/debug/lib/libbrotlidec.a;optimized;/public/devel/24-25/vcpkg/installed/x64-linux/lib/libbrotlicommon.a;debug;/public/devel/24-25/vcpkg/installed/x64-linux/debug/lib/libbrotlicommon.a (found version "2.13.2")
 -- Using system Freetype.
+-- Found WrapFreetype: TRUE
+-- Found Fontconfig: /public/devel/24-25/vcpkg/installed/x64-linux/debug/lib/libfontconfig.a (found version "2.14.2")
+-- Found EXPAT: optimized;/public/devel/24-25/vcpkg/installed/x64-linux/lib/libexpat.a;debug;/public/devel/24-25/vcpkg/installed/x64-linux/debug/lib/libexpat.a (found version "2.6.2")
+-- Found X11: /usr/include
+-- Looking for XOpenDisplay in /usr/lib64/libX11.so;/usr/lib64/libXext.so
+-- Looking for XOpenDisplay in /usr/lib64/libX11.so;/usr/lib64/libXext.so - found
+-- Looking for gethostbyname
+-- Looking for gethostbyname - found
+-- Looking for connect
+-- Looking for connect - found
+-- Looking for remove
+-- Looking for remove - found
+-- Looking for shmat
+-- Looking for shmat - found
+-- Found XKB: /usr/lib64/libxkbcommon.so (found suitable version "0.9.1", minimum required is "0.5.0")
+-- Found PkgConfig: /public/devel/24-25/vcpkg/installed/x64-linux/tools/pkgconf/pkgconf (found version "2.2.0")
+-- Found WrapDBus1: /public/devel/24-25/vcpkg/installed/x64-linux/debug/lib/libdbus-1.so (found suitable version "1.15.8", minimum required is "1.2")
+-- Found X11_XCB: /usr/lib64/libX11-xcb.so (found version "1.6.8")
+-- Found XCB_XCB: /usr/lib64/libxcb.so (found version "1.13.1")
+-- Found XCB_RENDER: /usr/lib64/libxcb-render.so (found version "1.13.1")
+-- Found XCB_SHAPE: /usr/lib64/libxcb-shape.so (found version "1.13.1")
+-- Found XCB_XFIXES: /usr/lib64/libxcb-xfixes.so (found version "1.13.1")
+-- Found XCB_SHM: /usr/lib64/libxcb-shm.so (found version "1.13.1")
+-- Found XCB_ATOM: /usr/lib64/libxcb-util.so (found version "0.4.0")
+-- Found XCB_AUX: /usr/lib64/libxcb-util.so (found version "0.4.0")
+-- Found XCB_COMPOSITE: /usr/lib64/libxcb-composite.so (found version "1.13.1")
+-- Found XCB_CURSOR: /usr/lib64/libxcb-cursor.so (found version "0.1.3")
+-- Found XCB_DAMAGE: /usr/lib64/libxcb-damage.so (found version "1.13.1")
+-- Found XCB_DPMS: /usr/lib64/libxcb-dpms.so (found version "1.13.1")
+-- Found XCB_DRI2: /usr/lib64/libxcb-dri2.so (found version "1.13.1")
+-- Found XCB_DRI3: /usr/lib64/libxcb-dri3.so (found version "1.13.1")
+-- Found XCB_EVENT: /usr/lib64/libxcb-util.so (found version "0.4.0")
+-- Found XCB_EWMH: /usr/lib64/libxcb-ewmh.so (found version "0.4.1")
+-- Found XCB_GLX: /usr/lib64/libxcb-glx.so (found version "1.13.1")
+-- Found XCB_ICCCM: /usr/lib64/libxcb-icccm.so (found version "0.4.1")
+-- Found XCB_IMAGE: /usr/lib64/libxcb-image.so (found version "0.4.0")
+-- Found XCB_KEYSYMS: /usr/lib64/libxcb-keysyms.so (found version "0.4.0")
+-- Found XCB_PRESENT: /usr/lib64/libxcb-present.so (found version "1.13.1")
+-- Found XCB_RANDR: /usr/lib64/libxcb-randr.so (found version "1.13.1")
+-- Found XCB_RECORD: /usr/lib64/libxcb-record.so (found version "1.13.1")
+-- Found XCB_RENDERUTIL: /usr/lib64/libxcb-render-util.so (found version "0.3.9")
+-- Found XCB_RES: /usr/lib64/libxcb-res.so (found version "1.13.1")
+-- Found XCB_SCREENSAVER: /usr/lib64/libxcb-screensaver.so (found version "1.13.1")
+-- Found XCB_SYNC: /usr/lib64/libxcb-sync.so (found version "1.13.1")
+-- Found XCB_UTIL: /usr/lib64/libxcb-util.so (found version "0.4.0")
 -- Could NOT find XCB_XEVIE (missing: XCB_XEVIE_LIBRARY) (found version "")
+-- Found XCB_XF86DRI: /usr/lib64/libxcb-xf86dri.so (found version "1.13.1")
+-- Found XCB_XINERAMA: /usr/lib64/libxcb-xinerama.so (found version "1.13.1")
+-- Found XCB_XINPUT: /usr/lib64/libxcb-xinput.so (found version "1.13.1")
+-- Found XCB_XKB: /usr/lib64/libxcb-xkb.so (found version "1.13.1")
 -- Could NOT find XCB_XPRINT (missing: XCB_XPRINT_LIBRARY) (found version "")
+-- Found XCB_XTEST: /usr/lib64/libxcb-xtest.so (found version "1.13.1")
+-- Found XCB_XV: /usr/lib64/libxcb-xv.so (found version "1.13.1")
+-- Found XCB_XVMC: /usr/lib64/libxcb-xvmc.so (found version "1.13.1")
 -- Found XCB: /usr/lib64/libxcb.so;/usr/lib64/libxcb-render.so;/usr/lib64/libxcb-shape.so;/usr/lib64/libxcb-xfixes.so;/usr/lib64/libxcb-shm.so;/usr/lib64/libxcb-util.so;/usr/lib64/libxcb-composite.so;/usr/lib64/libxcb-cursor.so;/usr/lib64/libxcb-damage.so;/usr/lib64/libxcb-dpms.so;/usr/lib64/libxcb-dri2.so;/usr/lib64/libxcb-dri3.so;/usr/lib64/libxcb-ewmh.so;/usr/lib64/libxcb-glx.so;/usr/lib64/libxcb-icccm.so;/usr/lib64/libxcb-image.so;/usr/lib64/libxcb-keysyms.so;/usr/lib64/libxcb-present.so;/usr/lib64/libxcb-randr.so;/usr/lib64/libxcb-record.so;/usr/lib64/libxcb-render-util.so;/usr/lib64/libxcb-res.so;/usr/lib64/libxcb-screensaver.so;/usr/lib64/libxcb-sync.so;/usr/lib64/libxcb-xf86dri.so;/usr/lib64/libxcb-xinerama.so;/usr/lib64/libxcb-xinput.so;/usr/lib64/libxcb-xkb.so;/usr/lib64/libxcb-xtest.so;/usr/lib64/libxcb-xv.so;/usr/lib64/libxcb-xvmc.so (found suitable version "1.13.1", minimum required is "1.11")
+-- Found WrapSystemJpeg: optimized;/public/devel/24-25/vcpkg/installed/x64-linux/lib/libjpeg.a;debug;/public/devel/24-25/vcpkg/installed/x64-linux/debug/lib/libjpeg.a (found version "62")
 -- Using system Jpeg.
+-- Found WrapJpeg: TRUE
+-- Found OpenSSL: /public/devel/24-25/vcpkg/installed/x64-linux/debug/lib/libcrypto.a (found version "3.3.1")
+-- Found WrapOpenSSLHeaders: /public/devel/24-25/vcpkg/installed/x64-linux/include (found version "3.3.1")
+-- Found WrapOpenSSL: /public/devel/24-25/vcpkg/installed/x64-linux/debug/lib/libcrypto.a (found version "3.3.1")
+-- Checking for module 'xkbcommon-x11>=0.4.1'
+--   Found xkbcommon-x11, version 0.9.1
 -- XCB: CURSOR requires XCB
 -- Found XCB: /usr/lib64/libxcb.so;/usr/lib64/libxcb-render.so;/usr/lib64/libxcb-shape.so;/usr/lib64/libxcb-xfixes.so;/usr/lib64/libxcb-shm.so;/usr/lib64/libxcb-util.so;/usr/lib64/libxcb-composite.so;/usr/lib64/libxcb-cursor.so;/usr/lib64/libxcb-damage.so;/usr/lib64/libxcb-dpms.so;/usr/lib64/libxcb-dri2.so;/usr/lib64/libxcb-dri3.so;/usr/lib64/libxcb-ewmh.so;/usr/lib64/libxcb-glx.so;/usr/lib64/libxcb-icccm.so;/usr/lib64/libxcb-image.so;/usr/lib64/libxcb-keysyms.so;/usr/lib64/libxcb-present.so;/usr/lib64/libxcb-randr.so;/usr/lib64/libxcb-record.so;/usr/lib64/libxcb-render-util.so;/usr/lib64/libxcb-res.so;/usr/lib64/libxcb-screensaver.so;/usr/lib64/libxcb-sync.so;/usr/lib64/libxcb-xf86dri.so;/usr/lib64/libxcb-xinerama.so;/usr/lib64/libxcb-xinput.so;/usr/lib64/libxcb-xkb.so;/usr/lib64/libxcb-xtest.so;/usr/lib64/libxcb-xv.so;/usr/lib64/libxcb-xvmc.so (found suitable version "1.13.1", minimum required is "0.1.1") found components: CURSOR
 -- XCB: ICCCM requires XCB
@@ -77,16 +178,34 @@ This warning is for project developers.  Use -Wno-dev to suppress it.
 -- Found XCB: /usr/lib64/libxcb.so;/usr/lib64/libxcb-render.so;/usr/lib64/libxcb-shape.so;/usr/lib64/libxcb-xfixes.so;/usr/lib64/libxcb-shm.so;/usr/lib64/libxcb-util.so;/usr/lib64/libxcb-composite.so;/usr/lib64/libxcb-cursor.so;/usr/lib64/libxcb-damage.so;/usr/lib64/libxcb-dpms.so;/usr/lib64/libxcb-dri2.so;/usr/lib64/libxcb-dri3.so;/usr/lib64/libxcb-ewmh.so;/usr/lib64/libxcb-glx.so;/usr/lib64/libxcb-icccm.so;/usr/lib64/libxcb-image.so;/usr/lib64/libxcb-keysyms.so;/usr/lib64/libxcb-present.so;/usr/lib64/libxcb-randr.so;/usr/lib64/libxcb-record.so;/usr/lib64/libxcb-render-util.so;/usr/lib64/libxcb-res.so;/usr/lib64/libxcb-screensaver.so;/usr/lib64/libxcb-sync.so;/usr/lib64/libxcb-xf86dri.so;/usr/lib64/libxcb-xinerama.so;/usr/lib64/libxcb-xinput.so;/usr/lib64/libxcb-xkb.so;/usr/lib64/libxcb-xtest.so;/usr/lib64/libxcb-xv.so;/usr/lib64/libxcb-xvmc.so (found version "1.13.1") found components: XFIXES
 -- XCB: XKB requires XCB
 -- Found XCB: /usr/lib64/libxcb.so;/usr/lib64/libxcb-render.so;/usr/lib64/libxcb-shape.so;/usr/lib64/libxcb-xfixes.so;/usr/lib64/libxcb-shm.so;/usr/lib64/libxcb-util.so;/usr/lib64/libxcb-composite.so;/usr/lib64/libxcb-cursor.so;/usr/lib64/libxcb-damage.so;/usr/lib64/libxcb-dpms.so;/usr/lib64/libxcb-dri2.so;/usr/lib64/libxcb-dri3.so;/usr/lib64/libxcb-ewmh.so;/usr/lib64/libxcb-glx.so;/usr/lib64/libxcb-icccm.so;/usr/lib64/libxcb-image.so;/usr/lib64/libxcb-keysyms.so;/usr/lib64/libxcb-present.so;/usr/lib64/libxcb-randr.so;/usr/lib64/libxcb-record.so;/usr/lib64/libxcb-render-util.so;/usr/lib64/libxcb-res.so;/usr/lib64/libxcb-screensaver.so;/usr/lib64/libxcb-sync.so;/usr/lib64/libxcb-xf86dri.so;/usr/lib64/libxcb-xinerama.so;/usr/lib64/libxcb-xinput.so;/usr/lib64/libxcb-xkb.so;/usr/lib64/libxcb-xtest.so;/usr/lib64/libxcb-xv.so;/usr/lib64/libxcb-xvmc.so (found version "1.13.1") found components: XKB
+-- Checking for module 'xrender'
+--   Found xrender, version 0.9.10
 -- XCB: XINPUT requires XCB
 -- Found XCB: /usr/lib64/libxcb.so;/usr/lib64/libxcb-render.so;/usr/lib64/libxcb-shape.so;/usr/lib64/libxcb-xfixes.so;/usr/lib64/libxcb-shm.so;/usr/lib64/libxcb-util.so;/usr/lib64/libxcb-composite.so;/usr/lib64/libxcb-cursor.so;/usr/lib64/libxcb-damage.so;/usr/lib64/libxcb-dpms.so;/usr/lib64/libxcb-dri2.so;/usr/lib64/libxcb-dri3.so;/usr/lib64/libxcb-ewmh.so;/usr/lib64/libxcb-glx.so;/usr/lib64/libxcb-icccm.so;/usr/lib64/libxcb-image.so;/usr/lib64/libxcb-keysyms.so;/usr/lib64/libxcb-present.so;/usr/lib64/libxcb-randr.so;/usr/lib64/libxcb-record.so;/usr/lib64/libxcb-render-util.so;/usr/lib64/libxcb-res.so;/usr/lib64/libxcb-screensaver.so;/usr/lib64/libxcb-sync.so;/usr/lib64/libxcb-xf86dri.so;/usr/lib64/libxcb-xinerama.so;/usr/lib64/libxcb-xinput.so;/usr/lib64/libxcb-xkb.so;/usr/lib64/libxcb-xtest.so;/usr/lib64/libxcb-xv.so;/usr/lib64/libxcb-xvmc.so (found suitable version "1.13.1", minimum required is "1.12") found components: XINPUT
 -- XCB: GLX requires XCB
 -- Found XCB: /usr/lib64/libxcb.so;/usr/lib64/libxcb-render.so;/usr/lib64/libxcb-shape.so;/usr/lib64/libxcb-xfixes.so;/usr/lib64/libxcb-shm.so;/usr/lib64/libxcb-util.so;/usr/lib64/libxcb-composite.so;/usr/lib64/libxcb-cursor.so;/usr/lib64/libxcb-damage.so;/usr/lib64/libxcb-dpms.so;/usr/lib64/libxcb-dri2.so;/usr/lib64/libxcb-dri3.so;/usr/lib64/libxcb-ewmh.so;/usr/lib64/libxcb-glx.so;/usr/lib64/libxcb-icccm.so;/usr/lib64/libxcb-image.so;/usr/lib64/libxcb-keysyms.so;/usr/lib64/libxcb-present.so;/usr/lib64/libxcb-randr.so;/usr/lib64/libxcb-record.so;/usr/lib64/libxcb-render-util.so;/usr/lib64/libxcb-res.so;/usr/lib64/libxcb-screensaver.so;/usr/lib64/libxcb-sync.so;/usr/lib64/libxcb-xf86dri.so;/usr/lib64/libxcb-xinerama.so;/usr/lib64/libxcb-xinput.so;/usr/lib64/libxcb-xkb.so;/usr/lib64/libxcb-xtest.so;/usr/lib64/libxcb-xv.so;/usr/lib64/libxcb-xvmc.so (found version "1.13.1") found components: GLX
+-- Found GIF: optimized;/public/devel/24-25/vcpkg/installed/x64-linux/lib/libgif.a;debug;/public/devel/24-25/vcpkg/installed/x64-linux/debug/lib/libgif.a (found version "5.2.2")
+-- Found Protobuf: /public/devel/24-25/vcpkg/installed/x64-linux/tools/protobuf/protoc (found version "3.21.12.0")
+-- Found TIFF: optimized;/public/devel/24-25/vcpkg/installed/x64-linux/lib/libtiff.a;debug;/public/devel/24-25/vcpkg/installed/x64-linux/debug/lib/libtiffd.a (found version "4.6.0")
+-- Found LibLZMA: optimized;/public/devel/24-25/vcpkg/installed/x64-linux/lib/liblzma.a;debug;/public/devel/24-25/vcpkg/installed/x64-linux/debug/lib/liblzma.a (found version "5.6.2")
+-- Found JPEG: optimized;/public/devel/24-25/vcpkg/installed/x64-linux/lib/libjpeg.a;debug;/public/devel/24-25/vcpkg/installed/x64-linux/debug/lib/libjpeg.a (found version "62")
+-- Found OpenCV: /public/devel/24-25/vcpkg/installed/x64-linux (found version "4.8.0")
 -- Found ZLIB: optimized;/public/devel/24-25/vcpkg/installed/x64-linux/lib/libz.a;debug;/public/devel/24-25/vcpkg/installed/x64-linux/debug/lib/libz.a (found suitable version "1.3.1", minimum required is "1.3.1")
+-- Found OpenColorIO: /public/devel/24-25/vcpkg/installed/x64-linux/share/opencolorio/OpenColorIOConfig.cmake (found version "2.2.1")
+-- Checking for module 'libraw'
+--   Found libraw, version 0.21.2
+-- Checking for module 'libraw_r'
+--   Found libraw_r, version 0.21.2
+-- Found LibRaw: optimized;/public/devel/24-25/vcpkg/installed/x64-linux/lib/manual-link/libraw.a;debug;/public/devel/24-25/vcpkg/installed/x64-linux/debug/lib/manual-link/libraw.a (found version "0.21.2")
+-- Found Jasper: optimized;/public/devel/24-25/vcpkg/installed/x64-linux/lib/libjasper.a;debug;/public/devel/24-25/vcpkg/installed/x64-linux/debug/lib/libjasperd.a (found version "4.2.1")
 -- Found ZLIB: optimized;/public/devel/24-25/vcpkg/installed/x64-linux/lib/libz.a;debug;/public/devel/24-25/vcpkg/installed/x64-linux/debug/lib/libz.a (found version "1.3.1")
+-- Found Boost: /public/devel/24-25/vcpkg/installed/x64-linux/share/boost/BoostConfig.cmake (found version "1.85.0") found components: filesystem
+-- Found OpenMP_CXX: -fopenmp (found version "4.5")
+-- Found OpenMP: TRUE (found version "4.5")
 -- RapidJSON found. Headers: /public/devel/24-25/vcpkg/installed/x64-linux/share/rapidjson/../../include
 Using default home dir
 /home/s5610456/NGL
--- Configuring done (2.5s)
+-- Configuring done (14.3s)
 CMake Warning (dev) at /public/devel/24-25/vcpkg/installed/x64-linux/share/opencolorio/OpenColorIOTargets.cmake:60 (set_target_properties):
   The library that is being linked to, yaml-cpp, is marked as being
   deprecated by the owner.  The message provided by the developer is:
@@ -105,5 +224,5 @@ Call Stack (most recent call first):
   CMakeLists.txt:13 (find_package)
 This warning is for project developers.  Use -Wno-dev to suppress it.
 
--- Generating done (0.0s)
--- Build files have been written to: /home/s5610456/CFGAA/programming-assignment-5610456/flock/Boids/cmake-build-debug
+-- Generating done (0.3s)
+-- Build files have been written to: /home/s5610456/CFGAA/programming-assignment-5610456/flock/programming-assignment-5610456/Boids/cmake-build-debug
