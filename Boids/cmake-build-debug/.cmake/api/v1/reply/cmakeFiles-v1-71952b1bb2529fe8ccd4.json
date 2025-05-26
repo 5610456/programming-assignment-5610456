@@ -39,6 +39,11 @@
 		{
 			"isCMake" : true,
 			"isExternal" : true,
+			"path" : "/public/devel/24-25/clion/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeUnixFindMake.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
 			"path" : "/public/devel/24-25/clion/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeSystemSpecificInitialize.cmake"
 		},
 		{

@@ -39,8 +39,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "/home/s5610456/CFGAA/programming-assignment-5610456/flock/programming-assignment-5610456/Boids/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-u12tGc"
-      binary: "/home/s5610456/CFGAA/programming-assignment-5610456/flock/programming-assignment-5610456/Boids/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-u12tGc"
+      source: "/home/s5610456/CFGAA/programming-assignment-5610456/flock/programming-assignment-5610456/Boids/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-LxUxBj"
+      binary: "/home/s5610456/CFGAA/programming-assignment-5610456/flock/programming-assignment-5610456/Boids/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-LxUxBj"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
       CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
@@ -53,10 +53,13 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: '/home/s5610456/CFGAA/programming-assignment-5610456/flock/programming-assignment-5610456/Boids/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-u12tGc'
+        Change Dir: '/home/s5610456/CFGAA/programming-assignment-5610456/flock/programming-assignment-5610456/Boids/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-LxUxBj'
         
-        Run Build Command(s): /public/devel/24-25/clion/bin/ninja/linux/x64/ninja -v cmTC_ed9f8
-        [1/2] /opt/rh/gcc-toolset-13/root/usr/bin/c++   -fdiagnostics-color=always   -v -o CMakeFiles/cmTC_ed9f8.dir/CMakeCXXCompilerABI.cpp.o -c /public/devel/24-25/clion/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeCXXCompilerABI.cpp
+        Run Build Command(s): /public/devel/24-25/clion/bin/cmake/linux/x64/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_ce3af/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_ce3af.dir/build.make CMakeFiles/cmTC_ce3af.dir/build
+        gmake[1]: Entering directory '/home/s5610456/CFGAA/programming-assignment-5610456/flock/programming-assignment-5610456/Boids/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-LxUxBj'
+        Building CXX object CMakeFiles/cmTC_ce3af.dir/CMakeCXXCompilerABI.cpp.o
+        /opt/rh/gcc-toolset-13/root/usr/bin/c++   -fdiagnostics-color=always   -v -o CMakeFiles/cmTC_ce3af.dir/CMakeCXXCompilerABI.cpp.o -c /public/devel/24-25/clion/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeCXXCompilerABI.cpp
         Using built-in specs.
         COLLECT_GCC=/opt/rh/gcc-toolset-13/root/usr/bin/c++
         OFFLOAD_TARGET_NAMES=nvptx-none
@@ -66,8 +69,8 @@ events:
         Thread model: posix
         Supported LTO compression algorithms: zlib zstd
         gcc version 13.2.1 20231205 (Red Hat 13.2.1-6) (GCC) 
-        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_ed9f8.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_ed9f8.dir/'
-         /opt/rh/gcc-toolset-13/root/usr/libexec/gcc/x86_64-redhat-linux/13/cc1plus -quiet -v -D_GNU_SOURCE /public/devel/24-25/clion/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_ed9f8.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -fdiagnostics-color=always -o /tmp/ccTkYadB.s
+        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_ce3af.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_ce3af.dir/'
+         /opt/rh/gcc-toolset-13/root/usr/libexec/gcc/x86_64-redhat-linux/13/cc1plus -quiet -v -D_GNU_SOURCE /public/devel/24-25/clion/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_ce3af.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -fdiagnostics-color=always -o /tmp/ccc5JuMp.s
         GNU C++17 (GCC) version 13.2.1 20231205 (Red Hat 13.2.1-6) (x86_64-redhat-linux)
         	compiled by GNU C version 13.2.1 20231205 (Red Hat 13.2.1-6), GMP version 6.1.2, MPFR version 3.1.6-p2, MPC version 1.1.0, isl version isl-0.24-GMP
         
@@ -88,13 +91,15 @@ events:
          /usr/include
         End of search list.
         Compiler executable checksum: 0bdaee3f889f4e6732c74cd588e9a710
-        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_ed9f8.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_ed9f8.dir/'
-         /opt/rh/gcc-toolset-13/root/usr/libexec/gcc/x86_64-redhat-linux/13/as -v --64 -o CMakeFiles/cmTC_ed9f8.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccTkYadB.s
+        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_ce3af.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_ce3af.dir/'
+         /opt/rh/gcc-toolset-13/root/usr/libexec/gcc/x86_64-redhat-linux/13/as -v --64 -o CMakeFiles/cmTC_ce3af.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccc5JuMp.s
         GNU assembler version 2.40 (x86_64-redhat-linux) using BFD version version 2.40-21.el8
         COMPILER_PATH=/opt/rh/gcc-toolset-13/root/usr/libexec/gcc/x86_64-redhat-linux/13/:/opt/rh/gcc-toolset-13/root/usr/libexec/gcc/x86_64-redhat-linux/13/:/opt/rh/gcc-toolset-13/root/usr/libexec/gcc/x86_64-redhat-linux/:/opt/rh/gcc-toolset-13/root/usr/lib/gcc/x86_64-redhat-linux/13/:/opt/rh/gcc-toolset-13/root/usr/lib/gcc/x86_64-redhat-linux/
         LIBRARY_PATH=/opt/rh/gcc-toolset-13/root/usr/lib/gcc/x86_64-redhat-linux/13/:/opt/rh/gcc-toolset-13/root/usr/lib/gcc/x86_64-redhat-linux/13/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/opt/rh/gcc-toolset-13/root/usr/lib/gcc/x86_64-redhat-linux/13/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_ed9f8.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_ed9f8.dir/CMakeCXXCompilerABI.cpp.'
-        [2/2] : && /opt/rh/gcc-toolset-13/root/usr/bin/c++  -v -Wl,-v CMakeFiles/cmTC_ed9f8.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_ed9f8   && :
+        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_ce3af.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_ce3af.dir/CMakeCXXCompilerABI.cpp.'
+        Linking CXX executable cmTC_ce3af
+        /public/devel/24-25/clion/bin/cmake/linux/x64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ce3af.dir/link.txt --verbose=1
+        /opt/rh/gcc-toolset-13/root/usr/bin/c++  -v -Wl,-v CMakeFiles/cmTC_ce3af.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_ce3af
         Using built-in specs.
         COLLECT_GCC=/opt/rh/gcc-toolset-13/root/usr/bin/c++
         COLLECT_LTO_WRAPPER=/opt/rh/gcc-toolset-13/root/usr/libexec/gcc/x86_64-redhat-linux/13/lto-wrapper
@@ -107,12 +112,13 @@ events:
         gcc version 13.2.1 20231205 (Red Hat 13.2.1-6) (GCC) 
         COMPILER_PATH=/opt/rh/gcc-toolset-13/root/usr/libexec/gcc/x86_64-redhat-linux/13/:/opt/rh/gcc-toolset-13/root/usr/libexec/gcc/x86_64-redhat-linux/13/:/opt/rh/gcc-toolset-13/root/usr/libexec/gcc/x86_64-redhat-linux/:/opt/rh/gcc-toolset-13/root/usr/lib/gcc/x86_64-redhat-linux/13/:/opt/rh/gcc-toolset-13/root/usr/lib/gcc/x86_64-redhat-linux/
         LIBRARY_PATH=/opt/rh/gcc-toolset-13/root/usr/lib/gcc/x86_64-redhat-linux/13/:/opt/rh/gcc-toolset-13/root/usr/lib/gcc/x86_64-redhat-linux/13/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/opt/rh/gcc-toolset-13/root/usr/lib/gcc/x86_64-redhat-linux/13/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_ed9f8' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_ed9f8.'
-         /opt/rh/gcc-toolset-13/root/usr/libexec/gcc/x86_64-redhat-linux/13/collect2 -plugin /opt/rh/gcc-toolset-13/root/usr/libexec/gcc/x86_64-redhat-linux/13/liblto_plugin.so -plugin-opt=/opt/rh/gcc-toolset-13/root/usr/libexec/gcc/x86_64-redhat-linux/13/lto-wrapper -plugin-opt=-fresolution=/tmp/cc8ypgfk.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_ed9f8 /lib/../lib64/crt1.o /lib/../lib64/crti.o /opt/rh/gcc-toolset-13/root/usr/lib/gcc/x86_64-redhat-linux/13/crtbegin.o -L/opt/rh/gcc-toolset-13/root/usr/lib/gcc/x86_64-redhat-linux/13 -L/opt/rh/gcc-toolset-13/root/usr/lib/gcc/x86_64-redhat-linux/13/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/opt/rh/gcc-toolset-13/root/usr/lib/gcc/x86_64-redhat-linux/13/../../.. -v CMakeFiles/cmTC_ed9f8.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /opt/rh/gcc-toolset-13/root/usr/lib/gcc/x86_64-redhat-linux/13/crtend.o /lib/../lib64/crtn.o
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_ce3af' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_ce3af.'
+         /opt/rh/gcc-toolset-13/root/usr/libexec/gcc/x86_64-redhat-linux/13/collect2 -plugin /opt/rh/gcc-toolset-13/root/usr/libexec/gcc/x86_64-redhat-linux/13/liblto_plugin.so -plugin-opt=/opt/rh/gcc-toolset-13/root/usr/libexec/gcc/x86_64-redhat-linux/13/lto-wrapper -plugin-opt=-fresolution=/tmp/ccMsby9w.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_ce3af /lib/../lib64/crt1.o /lib/../lib64/crti.o /opt/rh/gcc-toolset-13/root/usr/lib/gcc/x86_64-redhat-linux/13/crtbegin.o -L/opt/rh/gcc-toolset-13/root/usr/lib/gcc/x86_64-redhat-linux/13 -L/opt/rh/gcc-toolset-13/root/usr/lib/gcc/x86_64-redhat-linux/13/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/opt/rh/gcc-toolset-13/root/usr/lib/gcc/x86_64-redhat-linux/13/../../.. -v CMakeFiles/cmTC_ce3af.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /opt/rh/gcc-toolset-13/root/usr/lib/gcc/x86_64-redhat-linux/13/crtend.o /lib/../lib64/crtn.o
         collect2 version 13.2.1 20231205 (Red Hat 13.2.1-6)
-        /opt/rh/gcc-toolset-13/root/usr/libexec/gcc/x86_64-redhat-linux/13/ld -plugin /opt/rh/gcc-toolset-13/root/usr/libexec/gcc/x86_64-redhat-linux/13/liblto_plugin.so -plugin-opt=/opt/rh/gcc-toolset-13/root/usr/libexec/gcc/x86_64-redhat-linux/13/lto-wrapper -plugin-opt=-fresolution=/tmp/cc8ypgfk.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_ed9f8 /lib/../lib64/crt1.o /lib/../lib64/crti.o /opt/rh/gcc-toolset-13/root/usr/lib/gcc/x86_64-redhat-linux/13/crtbegin.o -L/opt/rh/gcc-toolset-13/root/usr/lib/gcc/x86_64-redhat-linux/13 -L/opt/rh/gcc-toolset-13/root/usr/lib/gcc/x86_64-redhat-linux/13/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/opt/rh/gcc-toolset-13/root/usr/lib/gcc/x86_64-redhat-linux/13/../../.. -v CMakeFiles/cmTC_ed9f8.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /opt/rh/gcc-toolset-13/root/usr/lib/gcc/x86_64-redhat-linux/13/crtend.o /lib/../lib64/crtn.o
+        /opt/rh/gcc-toolset-13/root/usr/libexec/gcc/x86_64-redhat-linux/13/ld -plugin /opt/rh/gcc-toolset-13/root/usr/libexec/gcc/x86_64-redhat-linux/13/liblto_plugin.so -plugin-opt=/opt/rh/gcc-toolset-13/root/usr/libexec/gcc/x86_64-redhat-linux/13/lto-wrapper -plugin-opt=-fresolution=/tmp/ccMsby9w.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_ce3af /lib/../lib64/crt1.o /lib/../lib64/crti.o /opt/rh/gcc-toolset-13/root/usr/lib/gcc/x86_64-redhat-linux/13/crtbegin.o -L/opt/rh/gcc-toolset-13/root/usr/lib/gcc/x86_64-redhat-linux/13 -L/opt/rh/gcc-toolset-13/root/usr/lib/gcc/x86_64-redhat-linux/13/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/opt/rh/gcc-toolset-13/root/usr/lib/gcc/x86_64-redhat-linux/13/../../.. -v CMakeFiles/cmTC_ce3af.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /opt/rh/gcc-toolset-13/root/usr/lib/gcc/x86_64-redhat-linux/13/crtend.o /lib/../lib64/crtn.o
         GNU ld version 2.40-21.el8
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_ed9f8' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_ed9f8.'
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_ce3af' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_ce3af.'
+        gmake[1]: Leaving directory '/home/s5610456/CFGAA/programming-assignment-5610456/flock/programming-assignment-5610456/Boids/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-LxUxBj'
         
       exitCode: 0
   -
@@ -157,10 +163,13 @@ events:
       Parsed CXX implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?))("|,| |$)]
-        ignore line: [Change Dir: '/home/s5610456/CFGAA/programming-assignment-5610456/flock/programming-assignment-5610456/Boids/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-u12tGc']
+        ignore line: [Change Dir: '/home/s5610456/CFGAA/programming-assignment-5610456/flock/programming-assignment-5610456/Boids/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-LxUxBj']
         ignore line: []
-        ignore line: [Run Build Command(s): /public/devel/24-25/clion/bin/ninja/linux/x64/ninja -v cmTC_ed9f8]
-        ignore line: [[1/2] /opt/rh/gcc-toolset-13/root/usr/bin/c++   -fdiagnostics-color=always   -v -o CMakeFiles/cmTC_ed9f8.dir/CMakeCXXCompilerABI.cpp.o -c /public/devel/24-25/clion/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Run Build Command(s): /public/devel/24-25/clion/bin/cmake/linux/x64/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_ce3af/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_ce3af.dir/build.make CMakeFiles/cmTC_ce3af.dir/build]
+        ignore line: [gmake[1]: Entering directory '/home/s5610456/CFGAA/programming-assignment-5610456/flock/programming-assignment-5610456/Boids/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-LxUxBj']
+        ignore line: [Building CXX object CMakeFiles/cmTC_ce3af.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [/opt/rh/gcc-toolset-13/root/usr/bin/c++   -fdiagnostics-color=always   -v -o CMakeFiles/cmTC_ce3af.dir/CMakeCXXCompilerABI.cpp.o -c /public/devel/24-25/clion/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeCXXCompilerABI.cpp]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/opt/rh/gcc-toolset-13/root/usr/bin/c++]
         ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none]
@@ -170,8 +179,8 @@ events:
         ignore line: [Thread model: posix]
         ignore line: [Supported LTO compression algorithms: zlib zstd]
         ignore line: [gcc version 13.2.1 20231205 (Red Hat 13.2.1-6) (GCC) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_ed9f8.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_ed9f8.dir/']
-        ignore line: [ /opt/rh/gcc-toolset-13/root/usr/libexec/gcc/x86_64-redhat-linux/13/cc1plus -quiet -v -D_GNU_SOURCE /public/devel/24-25/clion/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_ed9f8.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -fdiagnostics-color=always -o /tmp/ccTkYadB.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_ce3af.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_ce3af.dir/']
+        ignore line: [ /opt/rh/gcc-toolset-13/root/usr/libexec/gcc/x86_64-redhat-linux/13/cc1plus -quiet -v -D_GNU_SOURCE /public/devel/24-25/clion/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_ce3af.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -fdiagnostics-color=always -o /tmp/ccc5JuMp.s]
         ignore line: [GNU C++17 (GCC) version 13.2.1 20231205 (Red Hat 13.2.1-6) (x86_64-redhat-linux)]
         ignore line: [	compiled by GNU C version 13.2.1 20231205 (Red Hat 13.2.1-6)  GMP version 6.1.2  MPFR version 3.1.6-p2  MPC version 1.1.0  isl version isl-0.24-GMP]
         ignore line: []
@@ -192,13 +201,15 @@ events:
         ignore line: [ /usr/include]
         ignore line: [End of search list.]
         ignore line: [Compiler executable checksum: 0bdaee3f889f4e6732c74cd588e9a710]
-        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_ed9f8.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_ed9f8.dir/']
-        ignore line: [ /opt/rh/gcc-toolset-13/root/usr/libexec/gcc/x86_64-redhat-linux/13/as -v --64 -o CMakeFiles/cmTC_ed9f8.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccTkYadB.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_ce3af.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_ce3af.dir/']
+        ignore line: [ /opt/rh/gcc-toolset-13/root/usr/libexec/gcc/x86_64-redhat-linux/13/as -v --64 -o CMakeFiles/cmTC_ce3af.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccc5JuMp.s]
         ignore line: [GNU assembler version 2.40 (x86_64-redhat-linux) using BFD version version 2.40-21.el8]
         ignore line: [COMPILER_PATH=/opt/rh/gcc-toolset-13/root/usr/libexec/gcc/x86_64-redhat-linux/13/:/opt/rh/gcc-toolset-13/root/usr/libexec/gcc/x86_64-redhat-linux/13/:/opt/rh/gcc-toolset-13/root/usr/libexec/gcc/x86_64-redhat-linux/:/opt/rh/gcc-toolset-13/root/usr/lib/gcc/x86_64-redhat-linux/13/:/opt/rh/gcc-toolset-13/root/usr/lib/gcc/x86_64-redhat-linux/]
         ignore line: [LIBRARY_PATH=/opt/rh/gcc-toolset-13/root/usr/lib/gcc/x86_64-redhat-linux/13/:/opt/rh/gcc-toolset-13/root/usr/lib/gcc/x86_64-redhat-linux/13/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/opt/rh/gcc-toolset-13/root/usr/lib/gcc/x86_64-redhat-linux/13/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_ed9f8.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_ed9f8.dir/CMakeCXXCompilerABI.cpp.']
-        ignore line: [[2/2] : && /opt/rh/gcc-toolset-13/root/usr/bin/c++  -v -Wl -v CMakeFiles/cmTC_ed9f8.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_ed9f8   && :]
+        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_ce3af.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_ce3af.dir/CMakeCXXCompilerABI.cpp.']
+        ignore line: [Linking CXX executable cmTC_ce3af]
+        ignore line: [/public/devel/24-25/clion/bin/cmake/linux/x64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ce3af.dir/link.txt --verbose=1]
+        ignore line: [/opt/rh/gcc-toolset-13/root/usr/bin/c++  -v -Wl -v CMakeFiles/cmTC_ce3af.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_ce3af]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/opt/rh/gcc-toolset-13/root/usr/bin/c++]
         ignore line: [COLLECT_LTO_WRAPPER=/opt/rh/gcc-toolset-13/root/usr/libexec/gcc/x86_64-redhat-linux/13/lto-wrapper]
@@ -211,13 +222,13 @@ events:
         ignore line: [gcc version 13.2.1 20231205 (Red Hat 13.2.1-6) (GCC) ]
         ignore line: [COMPILER_PATH=/opt/rh/gcc-toolset-13/root/usr/libexec/gcc/x86_64-redhat-linux/13/:/opt/rh/gcc-toolset-13/root/usr/libexec/gcc/x86_64-redhat-linux/13/:/opt/rh/gcc-toolset-13/root/usr/libexec/gcc/x86_64-redhat-linux/:/opt/rh/gcc-toolset-13/root/usr/lib/gcc/x86_64-redhat-linux/13/:/opt/rh/gcc-toolset-13/root/usr/lib/gcc/x86_64-redhat-linux/]
         ignore line: [LIBRARY_PATH=/opt/rh/gcc-toolset-13/root/usr/lib/gcc/x86_64-redhat-linux/13/:/opt/rh/gcc-toolset-13/root/usr/lib/gcc/x86_64-redhat-linux/13/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/opt/rh/gcc-toolset-13/root/usr/lib/gcc/x86_64-redhat-linux/13/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_ed9f8' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_ed9f8.']
-        link line: [ /opt/rh/gcc-toolset-13/root/usr/libexec/gcc/x86_64-redhat-linux/13/collect2 -plugin /opt/rh/gcc-toolset-13/root/usr/libexec/gcc/x86_64-redhat-linux/13/liblto_plugin.so -plugin-opt=/opt/rh/gcc-toolset-13/root/usr/libexec/gcc/x86_64-redhat-linux/13/lto-wrapper -plugin-opt=-fresolution=/tmp/cc8ypgfk.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_ed9f8 /lib/../lib64/crt1.o /lib/../lib64/crti.o /opt/rh/gcc-toolset-13/root/usr/lib/gcc/x86_64-redhat-linux/13/crtbegin.o -L/opt/rh/gcc-toolset-13/root/usr/lib/gcc/x86_64-redhat-linux/13 -L/opt/rh/gcc-toolset-13/root/usr/lib/gcc/x86_64-redhat-linux/13/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/opt/rh/gcc-toolset-13/root/usr/lib/gcc/x86_64-redhat-linux/13/../../.. -v CMakeFiles/cmTC_ed9f8.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /opt/rh/gcc-toolset-13/root/usr/lib/gcc/x86_64-redhat-linux/13/crtend.o /lib/../lib64/crtn.o]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_ce3af' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_ce3af.']
+        link line: [ /opt/rh/gcc-toolset-13/root/usr/libexec/gcc/x86_64-redhat-linux/13/collect2 -plugin /opt/rh/gcc-toolset-13/root/usr/libexec/gcc/x86_64-redhat-linux/13/liblto_plugin.so -plugin-opt=/opt/rh/gcc-toolset-13/root/usr/libexec/gcc/x86_64-redhat-linux/13/lto-wrapper -plugin-opt=-fresolution=/tmp/ccMsby9w.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_ce3af /lib/../lib64/crt1.o /lib/../lib64/crti.o /opt/rh/gcc-toolset-13/root/usr/lib/gcc/x86_64-redhat-linux/13/crtbegin.o -L/opt/rh/gcc-toolset-13/root/usr/lib/gcc/x86_64-redhat-linux/13 -L/opt/rh/gcc-toolset-13/root/usr/lib/gcc/x86_64-redhat-linux/13/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/opt/rh/gcc-toolset-13/root/usr/lib/gcc/x86_64-redhat-linux/13/../../.. -v CMakeFiles/cmTC_ce3af.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /opt/rh/gcc-toolset-13/root/usr/lib/gcc/x86_64-redhat-linux/13/crtend.o /lib/../lib64/crtn.o]
           arg [/opt/rh/gcc-toolset-13/root/usr/libexec/gcc/x86_64-redhat-linux/13/collect2] ==> ignore
           arg [-plugin] ==> ignore
           arg [/opt/rh/gcc-toolset-13/root/usr/libexec/gcc/x86_64-redhat-linux/13/liblto_plugin.so] ==> ignore
           arg [-plugin-opt=/opt/rh/gcc-toolset-13/root/usr/libexec/gcc/x86_64-redhat-linux/13/lto-wrapper] ==> ignore
-          arg [-plugin-opt=-fresolution=/tmp/cc8ypgfk.res] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccMsby9w.res] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
           arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -232,7 +243,7 @@ events:
           arg [-dynamic-linker] ==> ignore
           arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
           arg [-o] ==> ignore
-          arg [cmTC_ed9f8] ==> ignore
+          arg [cmTC_ce3af] ==> ignore
           arg [/lib/../lib64/crt1.o] ==> obj [/lib/../lib64/crt1.o]
           arg [/lib/../lib64/crti.o] ==> obj [/lib/../lib64/crti.o]
           arg [/opt/rh/gcc-toolset-13/root/usr/lib/gcc/x86_64-redhat-linux/13/crtbegin.o] ==> obj [/opt/rh/gcc-toolset-13/root/usr/lib/gcc/x86_64-redhat-linux/13/crtbegin.o]
@@ -242,7 +253,7 @@ events:
           arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
           arg [-L/opt/rh/gcc-toolset-13/root/usr/lib/gcc/x86_64-redhat-linux/13/../../..] ==> dir [/opt/rh/gcc-toolset-13/root/usr/lib/gcc/x86_64-redhat-linux/13/../../..]
           arg [-v] ==> ignore
-          arg [CMakeFiles/cmTC_ed9f8.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [CMakeFiles/cmTC_ce3af.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
           arg [-lstdc++] ==> lib [stdc++]
           arg [-lm] ==> lib [m]
           arg [-lgcc_s] ==> lib [gcc_s]
@@ -253,7 +264,7 @@ events:
           arg [/opt/rh/gcc-toolset-13/root/usr/lib/gcc/x86_64-redhat-linux/13/crtend.o] ==> obj [/opt/rh/gcc-toolset-13/root/usr/lib/gcc/x86_64-redhat-linux/13/crtend.o]
           arg [/lib/../lib64/crtn.o] ==> obj [/lib/../lib64/crtn.o]
         ignore line: [collect2 version 13.2.1 20231205 (Red Hat 13.2.1-6)]
-        ignore line: [/opt/rh/gcc-toolset-13/root/usr/libexec/gcc/x86_64-redhat-linux/13/ld -plugin /opt/rh/gcc-toolset-13/root/usr/libexec/gcc/x86_64-redhat-linux/13/liblto_plugin.so -plugin-opt=/opt/rh/gcc-toolset-13/root/usr/libexec/gcc/x86_64-redhat-linux/13/lto-wrapper -plugin-opt=-fresolution=/tmp/cc8ypgfk.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_ed9f8 /lib/../lib64/crt1.o /lib/../lib64/crti.o /opt/rh/gcc-toolset-13/root/usr/lib/gcc/x86_64-redhat-linux/13/crtbegin.o -L/opt/rh/gcc-toolset-13/root/usr/lib/gcc/x86_64-redhat-linux/13 -L/opt/rh/gcc-toolset-13/root/usr/lib/gcc/x86_64-redhat-linux/13/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/opt/rh/gcc-toolset-13/root/usr/lib/gcc/x86_64-redhat-linux/13/../../.. -v CMakeFiles/cmTC_ed9f8.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /opt/rh/gcc-toolset-13/root/usr/lib/gcc/x86_64-redhat-linux/13/crtend.o /lib/../lib64/crtn.o]
+        ignore line: [/opt/rh/gcc-toolset-13/root/usr/libexec/gcc/x86_64-redhat-linux/13/ld -plugin /opt/rh/gcc-toolset-13/root/usr/libexec/gcc/x86_64-redhat-linux/13/liblto_plugin.so -plugin-opt=/opt/rh/gcc-toolset-13/root/usr/libexec/gcc/x86_64-redhat-linux/13/lto-wrapper -plugin-opt=-fresolution=/tmp/ccMsby9w.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_ce3af /lib/../lib64/crt1.o /lib/../lib64/crti.o /opt/rh/gcc-toolset-13/root/usr/lib/gcc/x86_64-redhat-linux/13/crtbegin.o -L/opt/rh/gcc-toolset-13/root/usr/lib/gcc/x86_64-redhat-linux/13 -L/opt/rh/gcc-toolset-13/root/usr/lib/gcc/x86_64-redhat-linux/13/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/opt/rh/gcc-toolset-13/root/usr/lib/gcc/x86_64-redhat-linux/13/../../.. -v CMakeFiles/cmTC_ce3af.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /opt/rh/gcc-toolset-13/root/usr/lib/gcc/x86_64-redhat-linux/13/crtend.o /lib/../lib64/crtn.o]
         linker tool for 'CXX': /opt/rh/gcc-toolset-13/root/usr/libexec/gcc/x86_64-redhat-linux/13/ld
         collapse obj [/lib/../lib64/crt1.o] ==> [/lib64/crt1.o]
         collapse obj [/lib/../lib64/crti.o] ==> [/lib64/crti.o]
@@ -296,8 +307,8 @@ events:
     checks:
       - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
     directories:
-      source: "/home/s5610456/CFGAA/programming-assignment-5610456/flock/programming-assignment-5610456/Boids/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-5MWhX6"
-      binary: "/home/s5610456/CFGAA/programming-assignment-5610456/flock/programming-assignment-5610456/Boids/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-5MWhX6"
+      source: "/home/s5610456/CFGAA/programming-assignment-5610456/flock/programming-assignment-5610456/Boids/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-GHaVSv"
+      binary: "/home/s5610456/CFGAA/programming-assignment-5610456/flock/programming-assignment-5610456/Boids/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-GHaVSv"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -311,22 +322,27 @@ events:
       variable: "CMAKE_HAVE_LIBC_PTHREAD"
       cached: true
       stdout: |
-        Change Dir: '/home/s5610456/CFGAA/programming-assignment-5610456/flock/programming-assignment-5610456/Boids/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-5MWhX6'
+        Change Dir: '/home/s5610456/CFGAA/programming-assignment-5610456/flock/programming-assignment-5610456/Boids/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-GHaVSv'
         
-        Run Build Command(s): /public/devel/24-25/clion/bin/ninja/linux/x64/ninja -v cmTC_2c59c
-        [1/2] /opt/rh/gcc-toolset-13/root/usr/bin/c++ -DCMAKE_HAVE_LIBC_PTHREAD  -std=gnu++17 -fdiagnostics-color=always -o CMakeFiles/cmTC_2c59c.dir/src.cxx.o -c /home/s5610456/CFGAA/programming-assignment-5610456/flock/programming-assignment-5610456/Boids/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-5MWhX6/src.cxx
-        [2/2] : && /opt/rh/gcc-toolset-13/root/usr/bin/c++   CMakeFiles/cmTC_2c59c.dir/src.cxx.o -o cmTC_2c59c   && :
-        FAILED: cmTC_2c59c 
-        : && /opt/rh/gcc-toolset-13/root/usr/bin/c++   CMakeFiles/cmTC_2c59c.dir/src.cxx.o -o cmTC_2c59c   && :
-        /opt/rh/gcc-toolset-13/root/usr/libexec/gcc/x86_64-redhat-linux/13/ld: CMakeFiles/cmTC_2c59c.dir/src.cxx.o: in function `main':
+        Run Build Command(s): /public/devel/24-25/clion/bin/cmake/linux/x64/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_2723b/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_2723b.dir/build.make CMakeFiles/cmTC_2723b.dir/build
+        gmake[1]: Entering directory '/home/s5610456/CFGAA/programming-assignment-5610456/flock/programming-assignment-5610456/Boids/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-GHaVSv'
+        Building CXX object CMakeFiles/cmTC_2723b.dir/src.cxx.o
+        /opt/rh/gcc-toolset-13/root/usr/bin/c++ -DCMAKE_HAVE_LIBC_PTHREAD  -std=gnu++17 -fdiagnostics-color=always -o CMakeFiles/cmTC_2723b.dir/src.cxx.o -c /home/s5610456/CFGAA/programming-assignment-5610456/flock/programming-assignment-5610456/Boids/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-GHaVSv/src.cxx
+        Linking CXX executable cmTC_2723b
+        /public/devel/24-25/clion/bin/cmake/linux/x64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2723b.dir/link.txt --verbose=1
+        /opt/rh/gcc-toolset-13/root/usr/bin/c++ CMakeFiles/cmTC_2723b.dir/src.cxx.o -o cmTC_2723b
+        /opt/rh/gcc-toolset-13/root/usr/libexec/gcc/x86_64-redhat-linux/13/ld: CMakeFiles/cmTC_2723b.dir/src.cxx.o: in function `main':
         src.cxx:(.text+0x2d): undefined reference to `pthread_create'
         /opt/rh/gcc-toolset-13/root/usr/libexec/gcc/x86_64-redhat-linux/13/ld: src.cxx:(.text+0x39): undefined reference to `pthread_detach'
         /opt/rh/gcc-toolset-13/root/usr/libexec/gcc/x86_64-redhat-linux/13/ld: src.cxx:(.text+0x45): undefined reference to `pthread_cancel'
         /opt/rh/gcc-toolset-13/root/usr/libexec/gcc/x86_64-redhat-linux/13/ld: src.cxx:(.text+0x56): undefined reference to `pthread_join'
         collect2: error: ld returned 1 exit status
-        ninja: build stopped: subcommand failed.
+        gmake[1]: *** [CMakeFiles/cmTC_2723b.dir/build.make:99: cmTC_2723b] Error 1
+        gmake[1]: Leaving directory '/home/s5610456/CFGAA/programming-assignment-5610456/flock/programming-assignment-5610456/Boids/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-GHaVSv'
+        gmake: *** [Makefile:127: cmTC_2723b/fast] Error 2
         
-      exitCode: 1
+      exitCode: 2
   -
     kind: "try_compile-v1"
     backtrace:
@@ -342,8 +358,8 @@ events:
     checks:
       - "Check if compiler accepts -pthread"
     directories:
-      source: "/home/s5610456/CFGAA/programming-assignment-5610456/flock/programming-assignment-5610456/Boids/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-kPxjjz"
-      binary: "/home/s5610456/CFGAA/programming-assignment-5610456/flock/programming-assignment-5610456/Boids/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-kPxjjz"
+      source: "/home/s5610456/CFGAA/programming-assignment-5610456/flock/programming-assignment-5610456/Boids/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-6joD48"
+      binary: "/home/s5610456/CFGAA/programming-assignment-5610456/flock/programming-assignment-5610456/Boids/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-6joD48"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
       CMAKE_EXE_LINKER_FLAGS: ""
@@ -356,11 +372,17 @@ events:
       variable: "THREADS_HAVE_PTHREAD_ARG"
       cached: true
       stdout: |
-        Change Dir: '/home/s5610456/CFGAA/programming-assignment-5610456/flock/programming-assignment-5610456/Boids/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-kPxjjz'
+        Change Dir: '/home/s5610456/CFGAA/programming-assignment-5610456/flock/programming-assignment-5610456/Boids/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-6joD48'
         
-        Run Build Command(s): /public/devel/24-25/clion/bin/ninja/linux/x64/ninja -v cmTC_2e9cc
-        [1/2] /opt/rh/gcc-toolset-13/root/usr/bin/c++   -fdiagnostics-color=always -o CMakeFiles/cmTC_2e9cc.dir/CheckForPthreads.cxx.o -c /home/s5610456/CFGAA/programming-assignment-5610456/flock/programming-assignment-5610456/Boids/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-kPxjjz/CheckForPthreads.cxx
-        [2/2] : && /opt/rh/gcc-toolset-13/root/usr/bin/c++   CMakeFiles/cmTC_2e9cc.dir/CheckForPthreads.cxx.o -o cmTC_2e9cc  -pthread && :
+        Run Build Command(s): /public/devel/24-25/clion/bin/cmake/linux/x64/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_bfc0f/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_bfc0f.dir/build.make CMakeFiles/cmTC_bfc0f.dir/build
+        gmake[1]: Entering directory '/home/s5610456/CFGAA/programming-assignment-5610456/flock/programming-assignment-5610456/Boids/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-6joD48'
+        Building CXX object CMakeFiles/cmTC_bfc0f.dir/CheckForPthreads.cxx.o
+        /opt/rh/gcc-toolset-13/root/usr/bin/c++   -fdiagnostics-color=always -o CMakeFiles/cmTC_bfc0f.dir/CheckForPthreads.cxx.o -c /home/s5610456/CFGAA/programming-assignment-5610456/flock/programming-assignment-5610456/Boids/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-6joD48/CheckForPthreads.cxx
+        Linking CXX executable cmTC_bfc0f
+        /public/devel/24-25/clion/bin/cmake/linux/x64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bfc0f.dir/link.txt --verbose=1
+        /opt/rh/gcc-toolset-13/root/usr/bin/c++ CMakeFiles/cmTC_bfc0f.dir/CheckForPthreads.cxx.o -o cmTC_bfc0f  -pthread
+        gmake[1]: Leaving directory '/home/s5610456/CFGAA/programming-assignment-5610456/flock/programming-assignment-5610456/Boids/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-6joD48'
         
       exitCode: 0
   -
@@ -386,8 +408,8 @@ events:
     checks:
       - "Performing Test HAVE_STDATOMIC"
     directories:
-      source: "/home/s5610456/CFGAA/programming-assignment-5610456/flock/programming-assignment-5610456/Boids/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-gpsL9Y"
-      binary: "/home/s5610456/CFGAA/programming-assignment-5610456/flock/programming-assignment-5610456/Boids/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-gpsL9Y"
+      source: "/home/s5610456/CFGAA/programming-assignment-5610456/flock/programming-assignment-5610456/Boids/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-LUlf8Y"
+      binary: "/home/s5610456/CFGAA/programming-assignment-5610456/flock/programming-assignment-5610456/Boids/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-LUlf8Y"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -401,11 +423,17 @@ events:
       variable: "HAVE_STDATOMIC"
       cached: true
       stdout: |
-        Change Dir: '/home/s5610456/CFGAA/programming-assignment-5610456/flock/programming-assignment-5610456/Boids/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-gpsL9Y'
+        Change Dir: '/home/s5610456/CFGAA/programming-assignment-5610456/flock/programming-assignment-5610456/Boids/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-LUlf8Y'
         
-        Run Build Command(s): /public/devel/24-25/clion/bin/ninja/linux/x64/ninja -v cmTC_7ccac
-        [1/2] /opt/rh/gcc-toolset-13/root/usr/bin/c++ -DHAVE_STDATOMIC  -std=gnu++17 -fdiagnostics-color=always -o CMakeFiles/cmTC_7ccac.dir/src.cxx.o -c /home/s5610456/CFGAA/programming-assignment-5610456/flock/programming-assignment-5610456/Boids/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-gpsL9Y/src.cxx
-        [2/2] : && /opt/rh/gcc-toolset-13/root/usr/bin/c++   CMakeFiles/cmTC_7ccac.dir/src.cxx.o -o cmTC_7ccac   && :
+        Run Build Command(s): /public/devel/24-25/clion/bin/cmake/linux/x64/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_eb7f0/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_eb7f0.dir/build.make CMakeFiles/cmTC_eb7f0.dir/build
+        gmake[1]: Entering directory '/home/s5610456/CFGAA/programming-assignment-5610456/flock/programming-assignment-5610456/Boids/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-LUlf8Y'
+        Building CXX object CMakeFiles/cmTC_eb7f0.dir/src.cxx.o
+        /opt/rh/gcc-toolset-13/root/usr/bin/c++ -DHAVE_STDATOMIC  -std=gnu++17 -fdiagnostics-color=always -o CMakeFiles/cmTC_eb7f0.dir/src.cxx.o -c /home/s5610456/CFGAA/programming-assignment-5610456/flock/programming-assignment-5610456/Boids/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-LUlf8Y/src.cxx
+        Linking CXX executable cmTC_eb7f0
+        /public/devel/24-25/clion/bin/cmake/linux/x64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_eb7f0.dir/link.txt --verbose=1
+        /opt/rh/gcc-toolset-13/root/usr/bin/c++ CMakeFiles/cmTC_eb7f0.dir/src.cxx.o -o cmTC_eb7f0
+        gmake[1]: Leaving directory '/home/s5610456/CFGAA/programming-assignment-5610456/flock/programming-assignment-5610456/Boids/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-LUlf8Y'
         
       exitCode: 0
   -
@@ -431,8 +459,8 @@ events:
     checks:
       - "Performing Test HAVE_GETTIME"
     directories:
-      source: "/home/s5610456/CFGAA/programming-assignment-5610456/flock/programming-assignment-5610456/Boids/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-Fasr32"
-      binary: "/home/s5610456/CFGAA/programming-assignment-5610456/flock/programming-assignment-5610456/Boids/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-Fasr32"
+      source: "/home/s5610456/CFGAA/programming-assignment-5610456/flock/programming-assignment-5610456/Boids/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-jfRZya"
+      binary: "/home/s5610456/CFGAA/programming-assignment-5610456/flock/programming-assignment-5610456/Boids/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-jfRZya"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -446,11 +474,17 @@ events:
       variable: "HAVE_GETTIME"
       cached: true
       stdout: |
-        Change Dir: '/home/s5610456/CFGAA/programming-assignment-5610456/flock/programming-assignment-5610456/Boids/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-Fasr32'
+        Change Dir: '/home/s5610456/CFGAA/programming-assignment-5610456/flock/programming-assignment-5610456/Boids/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-jfRZya'
         
-        Run Build Command(s): /public/devel/24-25/clion/bin/ninja/linux/x64/ninja -v cmTC_aac0d
-        [1/2] /opt/rh/gcc-toolset-13/root/usr/bin/c++ -DHAVE_GETTIME  -std=gnu++17 -fdiagnostics-color=always -o CMakeFiles/cmTC_aac0d.dir/src.cxx.o -c /home/s5610456/CFGAA/programming-assignment-5610456/flock/programming-assignment-5610456/Boids/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-Fasr32/src.cxx
-        [2/2] : && /opt/rh/gcc-toolset-13/root/usr/bin/c++   CMakeFiles/cmTC_aac0d.dir/src.cxx.o -o cmTC_aac0d  /usr/lib64/librt.so && :
+        Run Build Command(s): /public/devel/24-25/clion/bin/cmake/linux/x64/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_14a16/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_14a16.dir/build.make CMakeFiles/cmTC_14a16.dir/build
+        gmake[1]: Entering directory '/home/s5610456/CFGAA/programming-assignment-5610456/flock/programming-assignment-5610456/Boids/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-jfRZya'
+        Building CXX object CMakeFiles/cmTC_14a16.dir/src.cxx.o
+        /opt/rh/gcc-toolset-13/root/usr/bin/c++ -DHAVE_GETTIME  -std=gnu++17 -fdiagnostics-color=always -o CMakeFiles/cmTC_14a16.dir/src.cxx.o -c /home/s5610456/CFGAA/programming-assignment-5610456/flock/programming-assignment-5610456/Boids/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-jfRZya/src.cxx
+        Linking CXX executable cmTC_14a16
+        /public/devel/24-25/clion/bin/cmake/linux/x64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_14a16.dir/link.txt --verbose=1
+        /opt/rh/gcc-toolset-13/root/usr/bin/c++ CMakeFiles/cmTC_14a16.dir/src.cxx.o -o cmTC_14a16  /usr/lib64/librt.so
+        gmake[1]: Leaving directory '/home/s5610456/CFGAA/programming-assignment-5610456/flock/programming-assignment-5610456/Boids/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-jfRZya'
         
       exitCode: 0
   -
@@ -476,8 +510,8 @@ events:
     checks:
       - "Performing Test HAVE_SHM_OPEN_SHM_UNLINK"
     directories:
-      source: "/home/s5610456/CFGAA/programming-assignment-5610456/flock/programming-assignment-5610456/Boids/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-xslBen"
-      binary: "/home/s5610456/CFGAA/programming-assignment-5610456/flock/programming-assignment-5610456/Boids/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-xslBen"
+      source: "/home/s5610456/CFGAA/programming-assignment-5610456/flock/programming-assignment-5610456/Boids/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-L2871S"
+      binary: "/home/s5610456/CFGAA/programming-assignment-5610456/flock/programming-assignment-5610456/Boids/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-L2871S"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -491,11 +525,17 @@ events:
       variable: "HAVE_SHM_OPEN_SHM_UNLINK"
       cached: true
       stdout: |
-        Change Dir: '/home/s5610456/CFGAA/programming-assignment-5610456/flock/programming-assignment-5610456/Boids/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-xslBen'
+        Change Dir: '/home/s5610456/CFGAA/programming-assignment-5610456/flock/programming-assignment-5610456/Boids/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-L2871S'
         
-        Run Build Command(s): /public/devel/24-25/clion/bin/ninja/linux/x64/ninja -v cmTC_6108f
-        [1/2] /opt/rh/gcc-toolset-13/root/usr/bin/c++ -DHAVE_SHM_OPEN_SHM_UNLINK  -std=gnu++17 -fdiagnostics-color=always -o CMakeFiles/cmTC_6108f.dir/src.cxx.o -c /home/s5610456/CFGAA/programming-assignment-5610456/flock/programming-assignment-5610456/Boids/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-xslBen/src.cxx
-        [2/2] : && /opt/rh/gcc-toolset-13/root/usr/bin/c++   CMakeFiles/cmTC_6108f.dir/src.cxx.o -o cmTC_6108f  /usr/lib64/librt.so && :
+        Run Build Command(s): /public/devel/24-25/clion/bin/cmake/linux/x64/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_ebdf5/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_ebdf5.dir/build.make CMakeFiles/cmTC_ebdf5.dir/build
+        gmake[1]: Entering directory '/home/s5610456/CFGAA/programming-assignment-5610456/flock/programming-assignment-5610456/Boids/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-L2871S'
+        Building CXX object CMakeFiles/cmTC_ebdf5.dir/src.cxx.o
+        /opt/rh/gcc-toolset-13/root/usr/bin/c++ -DHAVE_SHM_OPEN_SHM_UNLINK  -std=gnu++17 -fdiagnostics-color=always -o CMakeFiles/cmTC_ebdf5.dir/src.cxx.o -c /home/s5610456/CFGAA/programming-assignment-5610456/flock/programming-assignment-5610456/Boids/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-L2871S/src.cxx
+        Linking CXX executable cmTC_ebdf5
+        /public/devel/24-25/clion/bin/cmake/linux/x64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ebdf5.dir/link.txt --verbose=1
+        /opt/rh/gcc-toolset-13/root/usr/bin/c++ CMakeFiles/cmTC_ebdf5.dir/src.cxx.o -o cmTC_ebdf5  /usr/lib64/librt.so
+        gmake[1]: Leaving directory '/home/s5610456/CFGAA/programming-assignment-5610456/flock/programming-assignment-5610456/Boids/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-L2871S'
         
       exitCode: 0
   -
@@ -522,8 +562,8 @@ events:
     checks:
       - "Performing Test HAVE_EGL"
     directories:
-      source: "/home/s5610456/CFGAA/programming-assignment-5610456/flock/programming-assignment-5610456/Boids/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-IHW087"
-      binary: "/home/s5610456/CFGAA/programming-assignment-5610456/flock/programming-assignment-5610456/Boids/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-IHW087"
+      source: "/home/s5610456/CFGAA/programming-assignment-5610456/flock/programming-assignment-5610456/Boids/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-QyvAIB"
+      binary: "/home/s5610456/CFGAA/programming-assignment-5610456/flock/programming-assignment-5610456/Boids/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-QyvAIB"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -537,11 +577,17 @@ events:
       variable: "HAVE_EGL"
       cached: true
       stdout: |
-        Change Dir: '/home/s5610456/CFGAA/programming-assignment-5610456/flock/programming-assignment-5610456/Boids/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-IHW087'
+        Change Dir: '/home/s5610456/CFGAA/programming-assignment-5610456/flock/programming-assignment-5610456/Boids/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-QyvAIB'
         
-        Run Build Command(s): /public/devel/24-25/clion/bin/ninja/linux/x64/ninja -v cmTC_904ec
-        [1/2] /opt/rh/gcc-toolset-13/root/usr/bin/c++ -DHAVE_EGL -I/public/devel/24-25/vcpkg/installed/x64-linux/include -std=gnu++17 -fdiagnostics-color=always -o CMakeFiles/cmTC_904ec.dir/src.cxx.o -c /home/s5610456/CFGAA/programming-assignment-5610456/flock/programming-assignment-5610456/Boids/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-IHW087/src.cxx
-        [2/2] : && /opt/rh/gcc-toolset-13/root/usr/bin/c++   CMakeFiles/cmTC_904ec.dir/src.cxx.o -o cmTC_904ec  /usr/lib64/libEGL.so && :
+        Run Build Command(s): /public/devel/24-25/clion/bin/cmake/linux/x64/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_085dc/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_085dc.dir/build.make CMakeFiles/cmTC_085dc.dir/build
+        gmake[1]: Entering directory '/home/s5610456/CFGAA/programming-assignment-5610456/flock/programming-assignment-5610456/Boids/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-QyvAIB'
+        Building CXX object CMakeFiles/cmTC_085dc.dir/src.cxx.o
+        /opt/rh/gcc-toolset-13/root/usr/bin/c++ -DHAVE_EGL -I/public/devel/24-25/vcpkg/installed/x64-linux/include -std=gnu++17 -fdiagnostics-color=always -o CMakeFiles/cmTC_085dc.dir/src.cxx.o -c /home/s5610456/CFGAA/programming-assignment-5610456/flock/programming-assignment-5610456/Boids/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-QyvAIB/src.cxx
+        Linking CXX executable cmTC_085dc
+        /public/devel/24-25/clion/bin/cmake/linux/x64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_085dc.dir/link.txt --verbose=1
+        /opt/rh/gcc-toolset-13/root/usr/bin/c++ CMakeFiles/cmTC_085dc.dir/src.cxx.o -o cmTC_085dc  /usr/lib64/libEGL.so
+        gmake[1]: Leaving directory '/home/s5610456/CFGAA/programming-assignment-5610456/flock/programming-assignment-5610456/Boids/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-QyvAIB'
         
       exitCode: 0
   -
@@ -577,8 +623,8 @@ events:
     checks:
       - "Looking for BZ2_bzCompressInit"
     directories:
-      source: "/home/s5610456/CFGAA/programming-assignment-5610456/flock/programming-assignment-5610456/Boids/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-pW40yh"
-      binary: "/home/s5610456/CFGAA/programming-assignment-5610456/flock/programming-assignment-5610456/Boids/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-pW40yh"
+      source: "/home/s5610456/CFGAA/programming-assignment-5610456/flock/programming-assignment-5610456/Boids/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-sJNdzI"
+      binary: "/home/s5610456/CFGAA/programming-assignment-5610456/flock/programming-assignment-5610456/Boids/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-sJNdzI"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
       CMAKE_EXE_LINKER_FLAGS: ""
@@ -591,11 +637,17 @@ events:
       variable: "BZIP2_NEED_PREFIX"
       cached: true
       stdout: |
-        Change Dir: '/home/s5610456/CFGAA/programming-assignment-5610456/flock/programming-assignment-5610456/Boids/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-pW40yh'
+        Change Dir: '/home/s5610456/CFGAA/programming-assignment-5610456/flock/programming-assignment-5610456/Boids/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-sJNdzI'
         
-        Run Build Command(s): /public/devel/24-25/clion/bin/ninja/linux/x64/ninja -v cmTC_7e59b
-        [1/2] /opt/rh/gcc-toolset-13/root/usr/bin/c++  -I/public/devel/24-25/vcpkg/installed/x64-linux/include -fdiagnostics-color=always -o CMakeFiles/cmTC_7e59b.dir/CheckSymbolExists.cxx.o -c /home/s5610456/CFGAA/programming-assignment-5610456/flock/programming-assignment-5610456/Boids/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-pW40yh/CheckSymbolExists.cxx
-        [2/2] : && /opt/rh/gcc-toolset-13/root/usr/bin/c++   CMakeFiles/cmTC_7e59b.dir/CheckSymbolExists.cxx.o -o cmTC_7e59b  /public/devel/24-25/vcpkg/installed/x64-linux/lib/libbz2.a && :
+        Run Build Command(s): /public/devel/24-25/clion/bin/cmake/linux/x64/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_3f528/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_3f528.dir/build.make CMakeFiles/cmTC_3f528.dir/build
+        gmake[1]: Entering directory '/home/s5610456/CFGAA/programming-assignment-5610456/flock/programming-assignment-5610456/Boids/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-sJNdzI'
+        Building CXX object CMakeFiles/cmTC_3f528.dir/CheckSymbolExists.cxx.o
+        /opt/rh/gcc-toolset-13/root/usr/bin/c++  -I/public/devel/24-25/vcpkg/installed/x64-linux/include -fdiagnostics-color=always -o CMakeFiles/cmTC_3f528.dir/CheckSymbolExists.cxx.o -c /home/s5610456/CFGAA/programming-assignment-5610456/flock/programming-assignment-5610456/Boids/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-sJNdzI/CheckSymbolExists.cxx
+        Linking CXX executable cmTC_3f528
+        /public/devel/24-25/clion/bin/cmake/linux/x64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3f528.dir/link.txt --verbose=1
+        /opt/rh/gcc-toolset-13/root/usr/bin/c++ CMakeFiles/cmTC_3f528.dir/CheckSymbolExists.cxx.o -o cmTC_3f528  /public/devel/24-25/vcpkg/installed/x64-linux/lib/libbz2.a
+        gmake[1]: Leaving directory '/home/s5610456/CFGAA/programming-assignment-5610456/flock/programming-assignment-5610456/Boids/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-sJNdzI'
         
       exitCode: 0
   -
@@ -620,8 +672,8 @@ events:
     checks:
       - "Looking for XOpenDisplay in /usr/lib64/libX11.so;/usr/lib64/libXext.so"
     directories:
-      source: "/home/s5610456/CFGAA/programming-assignment-5610456/flock/programming-assignment-5610456/Boids/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-QAqDUm"
-      binary: "/home/s5610456/CFGAA/programming-assignment-5610456/flock/programming-assignment-5610456/Boids/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-QAqDUm"
+      source: "/home/s5610456/CFGAA/programming-assignment-5610456/flock/programming-assignment-5610456/Boids/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-9XWSLi"
+      binary: "/home/s5610456/CFGAA/programming-assignment-5610456/flock/programming-assignment-5610456/Boids/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-9XWSLi"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
       CMAKE_EXE_LINKER_FLAGS: ""
@@ -634,11 +686,17 @@ events:
       variable: "X11_LIB_X11_SOLO"
       cached: true
       stdout: |
-        Change Dir: '/home/s5610456/CFGAA/programming-assignment-5610456/flock/programming-assignment-5610456/Boids/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-QAqDUm'
+        Change Dir: '/home/s5610456/CFGAA/programming-assignment-5610456/flock/programming-assignment-5610456/Boids/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-9XWSLi'
         
-        Run Build Command(s): /public/devel/24-25/clion/bin/ninja/linux/x64/ninja -v cmTC_ee2a1
-        [1/2] /opt/rh/gcc-toolset-13/root/usr/bin/c++   -DCHECK_FUNCTION_EXISTS=XOpenDisplay -fdiagnostics-color=always -o CMakeFiles/cmTC_ee2a1.dir/CheckFunctionExists.cxx.o -c /home/s5610456/CFGAA/programming-assignment-5610456/flock/programming-assignment-5610456/Boids/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-QAqDUm/CheckFunctionExists.cxx
-        [2/2] : && /opt/rh/gcc-toolset-13/root/usr/bin/c++ -DCHECK_FUNCTION_EXISTS=XOpenDisplay  CMakeFiles/cmTC_ee2a1.dir/CheckFunctionExists.cxx.o -o cmTC_ee2a1  /usr/lib64/libX11.so  /usr/lib64/libXext.so && :
+        Run Build Command(s): /public/devel/24-25/clion/bin/cmake/linux/x64/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_ccd48/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_ccd48.dir/build.make CMakeFiles/cmTC_ccd48.dir/build
+        gmake[1]: Entering directory '/home/s5610456/CFGAA/programming-assignment-5610456/flock/programming-assignment-5610456/Boids/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-9XWSLi'
+        Building CXX object CMakeFiles/cmTC_ccd48.dir/CheckFunctionExists.cxx.o
+        /opt/rh/gcc-toolset-13/root/usr/bin/c++   -DCHECK_FUNCTION_EXISTS=XOpenDisplay -fdiagnostics-color=always -o CMakeFiles/cmTC_ccd48.dir/CheckFunctionExists.cxx.o -c /home/s5610456/CFGAA/programming-assignment-5610456/flock/programming-assignment-5610456/Boids/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-9XWSLi/CheckFunctionExists.cxx
+        Linking CXX executable cmTC_ccd48
+        /public/devel/24-25/clion/bin/cmake/linux/x64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ccd48.dir/link.txt --verbose=1
+        /opt/rh/gcc-toolset-13/root/usr/bin/c++  -DCHECK_FUNCTION_EXISTS=XOpenDisplay CMakeFiles/cmTC_ccd48.dir/CheckFunctionExists.cxx.o -o cmTC_ccd48  /usr/lib64/libX11.so /usr/lib64/libXext.so
+        gmake[1]: Leaving directory '/home/s5610456/CFGAA/programming-assignment-5610456/flock/programming-assignment-5610456/Boids/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-9XWSLi'
         
       exitCode: 0
   -
@@ -663,8 +721,8 @@ events:
     checks:
       - "Looking for gethostbyname"
     directories:
-      source: "/home/s5610456/CFGAA/programming-assignment-5610456/flock/programming-assignment-5610456/Boids/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-Lu4eOj"
-      binary: "/home/s5610456/CFGAA/programming-assignment-5610456/flock/programming-assignment-5610456/Boids/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-Lu4eOj"
+      source: "/home/s5610456/CFGAA/programming-assignment-5610456/flock/programming-assignment-5610456/Boids/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-ZBO8z4"
+      binary: "/home/s5610456/CFGAA/programming-assignment-5610456/flock/programming-assignment-5610456/Boids/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-ZBO8z4"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
       CMAKE_EXE_LINKER_FLAGS: ""
@@ -677,11 +735,17 @@ events:
       variable: "CMAKE_HAVE_GETHOSTBYNAME"
       cached: true
       stdout: |
-        Change Dir: '/home/s5610456/CFGAA/programming-assignment-5610456/flock/programming-assignment-5610456/Boids/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-Lu4eOj'
+        Change Dir: '/home/s5610456/CFGAA/programming-assignment-5610456/flock/programming-assignment-5610456/Boids/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-ZBO8z4'
         
-        Run Build Command(s): /public/devel/24-25/clion/bin/ninja/linux/x64/ninja -v cmTC_804f2
-        [1/2] /opt/rh/gcc-toolset-13/root/usr/bin/c++   -DCHECK_FUNCTION_EXISTS=gethostbyname -fdiagnostics-color=always -o CMakeFiles/cmTC_804f2.dir/CheckFunctionExists.cxx.o -c /home/s5610456/CFGAA/programming-assignment-5610456/flock/programming-assignment-5610456/Boids/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-Lu4eOj/CheckFunctionExists.cxx
-        [2/2] : && /opt/rh/gcc-toolset-13/root/usr/bin/c++ -DCHECK_FUNCTION_EXISTS=gethostbyname  CMakeFiles/cmTC_804f2.dir/CheckFunctionExists.cxx.o -o cmTC_804f2   && :
+        Run Build Command(s): /public/devel/24-25/clion/bin/cmake/linux/x64/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_d58f2/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_d58f2.dir/build.make CMakeFiles/cmTC_d58f2.dir/build
+        gmake[1]: Entering directory '/home/s5610456/CFGAA/programming-assignment-5610456/flock/programming-assignment-5610456/Boids/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-ZBO8z4'
+        Building CXX object CMakeFiles/cmTC_d58f2.dir/CheckFunctionExists.cxx.o
+        /opt/rh/gcc-toolset-13/root/usr/bin/c++   -DCHECK_FUNCTION_EXISTS=gethostbyname -fdiagnostics-color=always -o CMakeFiles/cmTC_d58f2.dir/CheckFunctionExists.cxx.o -c /home/s5610456/CFGAA/programming-assignment-5610456/flock/programming-assignment-5610456/Boids/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-ZBO8z4/CheckFunctionExists.cxx
+        Linking CXX executable cmTC_d58f2
+        /public/devel/24-25/clion/bin/cmake/linux/x64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d58f2.dir/link.txt --verbose=1
+        /opt/rh/gcc-toolset-13/root/usr/bin/c++  -DCHECK_FUNCTION_EXISTS=gethostbyname CMakeFiles/cmTC_d58f2.dir/CheckFunctionExists.cxx.o -o cmTC_d58f2
+        gmake[1]: Leaving directory '/home/s5610456/CFGAA/programming-assignment-5610456/flock/programming-assignment-5610456/Boids/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-ZBO8z4'
         
       exitCode: 0
   -
@@ -706,8 +770,8 @@ events:
     checks:
       - "Looking for connect"
     directories:
-      source: "/home/s5610456/CFGAA/programming-assignment-5610456/flock/programming-assignment-5610456/Boids/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-91Btcl"
-      binary: "/home/s5610456/CFGAA/programming-assignment-5610456/flock/programming-assignment-5610456/Boids/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-91Btcl"
+      source: "/home/s5610456/CFGAA/programming-assignment-5610456/flock/programming-assignment-5610456/Boids/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-FNESb4"
+      binary: "/home/s5610456/CFGAA/programming-assignment-5610456/flock/programming-assignment-5610456/Boids/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-FNESb4"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
       CMAKE_EXE_LINKER_FLAGS: ""
@@ -720,11 +784,17 @@ events:
       variable: "CMAKE_HAVE_CONNECT"
       cached: true
       stdout: |
-        Change Dir: '/home/s5610456/CFGAA/programming-assignment-5610456/flock/programming-assignment-5610456/Boids/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-91Btcl'
+        Change Dir: '/home/s5610456/CFGAA/programming-assignment-5610456/flock/programming-assignment-5610456/Boids/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-FNESb4'
         
-        Run Build Command(s): /public/devel/24-25/clion/bin/ninja/linux/x64/ninja -v cmTC_6fad7
-        [1/2] /opt/rh/gcc-toolset-13/root/usr/bin/c++   -DCHECK_FUNCTION_EXISTS=connect -fdiagnostics-color=always -o CMakeFiles/cmTC_6fad7.dir/CheckFunctionExists.cxx.o -c /home/s5610456/CFGAA/programming-assignment-5610456/flock/programming-assignment-5610456/Boids/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-91Btcl/CheckFunctionExists.cxx
-        [2/2] : && /opt/rh/gcc-toolset-13/root/usr/bin/c++ -DCHECK_FUNCTION_EXISTS=connect  CMakeFiles/cmTC_6fad7.dir/CheckFunctionExists.cxx.o -o cmTC_6fad7   && :
+        Run Build Command(s): /public/devel/24-25/clion/bin/cmake/linux/x64/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_ca4a9/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_ca4a9.dir/build.make CMakeFiles/cmTC_ca4a9.dir/build
+        gmake[1]: Entering directory '/home/s5610456/CFGAA/programming-assignment-5610456/flock/programming-assignment-5610456/Boids/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-FNESb4'
+        Building CXX object CMakeFiles/cmTC_ca4a9.dir/CheckFunctionExists.cxx.o
+        /opt/rh/gcc-toolset-13/root/usr/bin/c++   -DCHECK_FUNCTION_EXISTS=connect -fdiagnostics-color=always -o CMakeFiles/cmTC_ca4a9.dir/CheckFunctionExists.cxx.o -c /home/s5610456/CFGAA/programming-assignment-5610456/flock/programming-assignment-5610456/Boids/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-FNESb4/CheckFunctionExists.cxx
+        Linking CXX executable cmTC_ca4a9
+        /public/devel/24-25/clion/bin/cmake/linux/x64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ca4a9.dir/link.txt --verbose=1
+        /opt/rh/gcc-toolset-13/root/usr/bin/c++  -DCHECK_FUNCTION_EXISTS=connect CMakeFiles/cmTC_ca4a9.dir/CheckFunctionExists.cxx.o -o cmTC_ca4a9
+        gmake[1]: Leaving directory '/home/s5610456/CFGAA/programming-assignment-5610456/flock/programming-assignment-5610456/Boids/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-FNESb4'
         
       exitCode: 0
   -
@@ -749,8 +819,8 @@ events:
     checks:
       - "Looking for remove"
     directories:
-      source: "/home/s5610456/CFGAA/programming-assignment-5610456/flock/programming-assignment-5610456/Boids/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-Nv4Zlk"
-      binary: "/home/s5610456/CFGAA/programming-assignment-5610456/flock/programming-assignment-5610456/Boids/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-Nv4Zlk"
+      source: "/home/s5610456/CFGAA/programming-assignment-5610456/flock/programming-assignment-5610456/Boids/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-1R1rza"
+      binary: "/home/s5610456/CFGAA/programming-assignment-5610456/flock/programming-assignment-5610456/Boids/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-1R1rza"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
       CMAKE_EXE_LINKER_FLAGS: ""
@@ -763,11 +833,17 @@ events:
       variable: "CMAKE_HAVE_REMOVE"
       cached: true
       stdout: |
-        Change Dir: '/home/s5610456/CFGAA/programming-assignment-5610456/flock/programming-assignment-5610456/Boids/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-Nv4Zlk'
+        Change Dir: '/home/s5610456/CFGAA/programming-assignment-5610456/flock/programming-assignment-5610456/Boids/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-1R1rza'
         
-        Run Build Command(s): /public/devel/24-25/clion/bin/ninja/linux/x64/ninja -v cmTC_43520
-        [1/2] /opt/rh/gcc-toolset-13/root/usr/bin/c++   -DCHECK_FUNCTION_EXISTS=remove -fdiagnostics-color=always -o CMakeFiles/cmTC_43520.dir/CheckFunctionExists.cxx.o -c /home/s5610456/CFGAA/programming-assignment-5610456/flock/programming-assignment-5610456/Boids/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-Nv4Zlk/CheckFunctionExists.cxx
-        [2/2] : && /opt/rh/gcc-toolset-13/root/usr/bin/c++ -DCHECK_FUNCTION_EXISTS=remove  CMakeFiles/cmTC_43520.dir/CheckFunctionExists.cxx.o -o cmTC_43520   && :
+        Run Build Command(s): /public/devel/24-25/clion/bin/cmake/linux/x64/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_2dd54/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_2dd54.dir/build.make CMakeFiles/cmTC_2dd54.dir/build
+        gmake[1]: Entering directory '/home/s5610456/CFGAA/programming-assignment-5610456/flock/programming-assignment-5610456/Boids/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-1R1rza'
+        Building CXX object CMakeFiles/cmTC_2dd54.dir/CheckFunctionExists.cxx.o
+        /opt/rh/gcc-toolset-13/root/usr/bin/c++   -DCHECK_FUNCTION_EXISTS=remove -fdiagnostics-color=always -o CMakeFiles/cmTC_2dd54.dir/CheckFunctionExists.cxx.o -c /home/s5610456/CFGAA/programming-assignment-5610456/flock/programming-assignment-5610456/Boids/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-1R1rza/CheckFunctionExists.cxx
+        Linking CXX executable cmTC_2dd54
+        /public/devel/24-25/clion/bin/cmake/linux/x64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2dd54.dir/link.txt --verbose=1
+        /opt/rh/gcc-toolset-13/root/usr/bin/c++  -DCHECK_FUNCTION_EXISTS=remove CMakeFiles/cmTC_2dd54.dir/CheckFunctionExists.cxx.o -o cmTC_2dd54
+        gmake[1]: Leaving directory '/home/s5610456/CFGAA/programming-assignment-5610456/flock/programming-assignment-5610456/Boids/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-1R1rza'
         
       exitCode: 0
   -
@@ -792,8 +868,8 @@ events:
     checks:
       - "Looking for shmat"
     directories:
-      source: "/home/s5610456/CFGAA/programming-assignment-5610456/flock/programming-assignment-5610456/Boids/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-cfbc0b"
-      binary: "/home/s5610456/CFGAA/programming-assignment-5610456/flock/programming-assignment-5610456/Boids/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-cfbc0b"
+      source: "/home/s5610456/CFGAA/programming-assignment-5610456/flock/programming-assignment-5610456/Boids/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-FCDWKD"
+      binary: "/home/s5610456/CFGAA/programming-assignment-5610456/flock/programming-assignment-5610456/Boids/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-FCDWKD"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
       CMAKE_EXE_LINKER_FLAGS: ""
@@ -806,11 +882,17 @@ events:
       variable: "CMAKE_HAVE_SHMAT"
       cached: true
       stdout: |
-        Change Dir: '/home/s5610456/CFGAA/programming-assignment-5610456/flock/programming-assignment-5610456/Boids/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-cfbc0b'
+        Change Dir: '/home/s5610456/CFGAA/programming-assignment-5610456/flock/programming-assignment-5610456/Boids/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-FCDWKD'
         
-        Run Build Command(s): /public/devel/24-25/clion/bin/ninja/linux/x64/ninja -v cmTC_da5db
-        [1/2] /opt/rh/gcc-toolset-13/root/usr/bin/c++   -DCHECK_FUNCTION_EXISTS=shmat -fdiagnostics-color=always -o CMakeFiles/cmTC_da5db.dir/CheckFunctionExists.cxx.o -c /home/s5610456/CFGAA/programming-assignment-5610456/flock/programming-assignment-5610456/Boids/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-cfbc0b/CheckFunctionExists.cxx
-        [2/2] : && /opt/rh/gcc-toolset-13/root/usr/bin/c++ -DCHECK_FUNCTION_EXISTS=shmat  CMakeFiles/cmTC_da5db.dir/CheckFunctionExists.cxx.o -o cmTC_da5db   && :
+        Run Build Command(s): /public/devel/24-25/clion/bin/cmake/linux/x64/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_22067/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_22067.dir/build.make CMakeFiles/cmTC_22067.dir/build
+        gmake[1]: Entering directory '/home/s5610456/CFGAA/programming-assignment-5610456/flock/programming-assignment-5610456/Boids/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-FCDWKD'
+        Building CXX object CMakeFiles/cmTC_22067.dir/CheckFunctionExists.cxx.o
+        /opt/rh/gcc-toolset-13/root/usr/bin/c++   -DCHECK_FUNCTION_EXISTS=shmat -fdiagnostics-color=always -o CMakeFiles/cmTC_22067.dir/CheckFunctionExists.cxx.o -c /home/s5610456/CFGAA/programming-assignment-5610456/flock/programming-assignment-5610456/Boids/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-FCDWKD/CheckFunctionExists.cxx
+        Linking CXX executable cmTC_22067
+        /public/devel/24-25/clion/bin/cmake/linux/x64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_22067.dir/link.txt --verbose=1
+        /opt/rh/gcc-toolset-13/root/usr/bin/c++  -DCHECK_FUNCTION_EXISTS=shmat CMakeFiles/cmTC_22067.dir/CheckFunctionExists.cxx.o -o cmTC_22067
+        gmake[1]: Leaving directory '/home/s5610456/CFGAA/programming-assignment-5610456/flock/programming-assignment-5610456/Boids/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-FCDWKD'
         
       exitCode: 0
   -
@@ -824,8 +906,8 @@ events:
       - "CMakeLists.txt:13 (find_package)"
     description: "Detecting CXX OpenMP compiler info"
     directories:
-      source: "/home/s5610456/CFGAA/programming-assignment-5610456/flock/programming-assignment-5610456/Boids/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-NfG0L4"
-      binary: "/home/s5610456/CFGAA/programming-assignment-5610456/flock/programming-assignment-5610456/Boids/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-NfG0L4"
+      source: "/home/s5610456/CFGAA/programming-assignment-5610456/flock/programming-assignment-5610456/Boids/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-S6ngKc"
+      binary: "/home/s5610456/CFGAA/programming-assignment-5610456/flock/programming-assignment-5610456/Boids/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-S6ngKc"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
       CMAKE_EXE_LINKER_FLAGS: ""
@@ -838,10 +920,13 @@ events:
       variable: "OpenMP_COMPILE_RESULT_CXX_fopenmp"
       cached: true
       stdout: |
-        Change Dir: '/home/s5610456/CFGAA/programming-assignment-5610456/flock/programming-assignment-5610456/Boids/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-NfG0L4'
+        Change Dir: '/home/s5610456/CFGAA/programming-assignment-5610456/flock/programming-assignment-5610456/Boids/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-S6ngKc'
         
-        Run Build Command(s): /public/devel/24-25/clion/bin/ninja/linux/x64/ninja -v cmTC_1a778
-        [1/2] /opt/rh/gcc-toolset-13/root/usr/bin/c++   -fopenmp -v -fdiagnostics-color=always -o CMakeFiles/cmTC_1a778.dir/OpenMPTryFlag.cpp.o -c /home/s5610456/CFGAA/programming-assignment-5610456/flock/programming-assignment-5610456/Boids/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-NfG0L4/OpenMPTryFlag.cpp
+        Run Build Command(s): /public/devel/24-25/clion/bin/cmake/linux/x64/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_35dd5/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_35dd5.dir/build.make CMakeFiles/cmTC_35dd5.dir/build
+        gmake[1]: Entering directory '/home/s5610456/CFGAA/programming-assignment-5610456/flock/programming-assignment-5610456/Boids/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-S6ngKc'
+        Building CXX object CMakeFiles/cmTC_35dd5.dir/OpenMPTryFlag.cpp.o
+        /opt/rh/gcc-toolset-13/root/usr/bin/c++   -fopenmp -v -fdiagnostics-color=always -o CMakeFiles/cmTC_35dd5.dir/OpenMPTryFlag.cpp.o -c /home/s5610456/CFGAA/programming-assignment-5610456/flock/programming-assignment-5610456/Boids/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-S6ngKc/OpenMPTryFlag.cpp
         Using built-in specs.
         COLLECT_GCC=/opt/rh/gcc-toolset-13/root/usr/bin/c++
         OFFLOAD_TARGET_NAMES=nvptx-none
@@ -851,8 +936,8 @@ events:
         Thread model: posix
         Supported LTO compression algorithms: zlib zstd
         gcc version 13.2.1 20231205 (Red Hat 13.2.1-6) (GCC) 
-        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_1a778.dir/OpenMPTryFlag.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_1a778.dir/'
-         /opt/rh/gcc-toolset-13/root/usr/libexec/gcc/x86_64-redhat-linux/13/cc1plus -quiet -v -D_GNU_SOURCE -D_REENTRANT /home/s5610456/CFGAA/programming-assignment-5610456/flock/programming-assignment-5610456/Boids/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-NfG0L4/OpenMPTryFlag.cpp -quiet -dumpdir CMakeFiles/cmTC_1a778.dir/ -dumpbase OpenMPTryFlag.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -fdiagnostics-color=always -fopenmp -o /tmp/cccvQJqW.s
+        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_35dd5.dir/OpenMPTryFlag.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_35dd5.dir/'
+         /opt/rh/gcc-toolset-13/root/usr/libexec/gcc/x86_64-redhat-linux/13/cc1plus -quiet -v -D_GNU_SOURCE -D_REENTRANT /home/s5610456/CFGAA/programming-assignment-5610456/flock/programming-assignment-5610456/Boids/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-S6ngKc/OpenMPTryFlag.cpp -quiet -dumpdir CMakeFiles/cmTC_35dd5.dir/ -dumpbase OpenMPTryFlag.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -fdiagnostics-color=always -fopenmp -o /tmp/ccsbqj3v.s
         GNU C++17 (GCC) version 13.2.1 20231205 (Red Hat 13.2.1-6) (x86_64-redhat-linux)
         	compiled by GNU C version 13.2.1 20231205 (Red Hat 13.2.1-6), GMP version 6.1.2, MPFR version 3.1.6-p2, MPC version 1.1.0, isl version isl-0.24-GMP
         
@@ -873,13 +958,15 @@ events:
          /usr/include
         End of search list.
         Compiler executable checksum: 0bdaee3f889f4e6732c74cd588e9a710
-        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_1a778.dir/OpenMPTryFlag.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_1a778.dir/'
-         /opt/rh/gcc-toolset-13/root/usr/libexec/gcc/x86_64-redhat-linux/13/as -v --64 -o CMakeFiles/cmTC_1a778.dir/OpenMPTryFlag.cpp.o /tmp/cccvQJqW.s
+        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_35dd5.dir/OpenMPTryFlag.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_35dd5.dir/'
+         /opt/rh/gcc-toolset-13/root/usr/libexec/gcc/x86_64-redhat-linux/13/as -v --64 -o CMakeFiles/cmTC_35dd5.dir/OpenMPTryFlag.cpp.o /tmp/ccsbqj3v.s
         GNU assembler version 2.40 (x86_64-redhat-linux) using BFD version version 2.40-21.el8
         COMPILER_PATH=/opt/rh/gcc-toolset-13/root/usr/libexec/gcc/x86_64-redhat-linux/13/:/opt/rh/gcc-toolset-13/root/usr/libexec/gcc/x86_64-redhat-linux/13/:/opt/rh/gcc-toolset-13/root/usr/libexec/gcc/x86_64-redhat-linux/:/opt/rh/gcc-toolset-13/root/usr/lib/gcc/x86_64-redhat-linux/13/:/opt/rh/gcc-toolset-13/root/usr/lib/gcc/x86_64-redhat-linux/
         LIBRARY_PATH=/opt/rh/gcc-toolset-13/root/usr/lib/gcc/x86_64-redhat-linux/13/:/opt/rh/gcc-toolset-13/root/usr/lib/gcc/x86_64-redhat-linux/13/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/opt/rh/gcc-toolset-13/root/usr/lib/gcc/x86_64-redhat-linux/13/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_1a778.dir/OpenMPTryFlag.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_1a778.dir/OpenMPTryFlag.cpp.'
-        [2/2] : && /opt/rh/gcc-toolset-13/root/usr/bin/c++ -fopenmp -v  CMakeFiles/cmTC_1a778.dir/OpenMPTryFlag.cpp.o -o cmTC_1a778  -v && :
+        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_35dd5.dir/OpenMPTryFlag.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_35dd5.dir/OpenMPTryFlag.cpp.'
+        Linking CXX executable cmTC_35dd5
+        /public/devel/24-25/clion/bin/cmake/linux/x64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_35dd5.dir/link.txt --verbose=1
+        /opt/rh/gcc-toolset-13/root/usr/bin/c++  -fopenmp -v CMakeFiles/cmTC_35dd5.dir/OpenMPTryFlag.cpp.o -o cmTC_35dd5  -v
         Using built-in specs.
         COLLECT_GCC=/opt/rh/gcc-toolset-13/root/usr/bin/c++
         COLLECT_LTO_WRAPPER=/opt/rh/gcc-toolset-13/root/usr/libexec/gcc/x86_64-redhat-linux/13/lto-wrapper
@@ -893,9 +980,10 @@ events:
         COMPILER_PATH=/opt/rh/gcc-toolset-13/root/usr/libexec/gcc/x86_64-redhat-linux/13/:/opt/rh/gcc-toolset-13/root/usr/libexec/gcc/x86_64-redhat-linux/13/:/opt/rh/gcc-toolset-13/root/usr/libexec/gcc/x86_64-redhat-linux/:/opt/rh/gcc-toolset-13/root/usr/lib/gcc/x86_64-redhat-linux/13/:/opt/rh/gcc-toolset-13/root/usr/lib/gcc/x86_64-redhat-linux/
         LIBRARY_PATH=/opt/rh/gcc-toolset-13/root/usr/lib/gcc/x86_64-redhat-linux/13/:/opt/rh/gcc-toolset-13/root/usr/lib/gcc/x86_64-redhat-linux/13/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/opt/rh/gcc-toolset-13/root/usr/lib/gcc/x86_64-redhat-linux/13/../../../:/lib/:/usr/lib/
         Reading specs from /opt/rh/gcc-toolset-13/root/usr/lib/gcc/x86_64-redhat-linux/13/libgomp.spec
-        COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'cmTC_1a778' '-v' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'cmTC_1a778.'
-         /opt/rh/gcc-toolset-13/root/usr/libexec/gcc/x86_64-redhat-linux/13/collect2 -plugin /opt/rh/gcc-toolset-13/root/usr/libexec/gcc/x86_64-redhat-linux/13/liblto_plugin.so -plugin-opt=/opt/rh/gcc-toolset-13/root/usr/libexec/gcc/x86_64-redhat-linux/13/lto-wrapper -plugin-opt=-fresolution=/tmp/ccSDZWEJ.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_1a778 /lib/../lib64/crt1.o /lib/../lib64/crti.o /opt/rh/gcc-toolset-13/root/usr/lib/gcc/x86_64-redhat-linux/13/crtbegin.o /opt/rh/gcc-toolset-13/root/usr/lib/gcc/x86_64-redhat-linux/13/crtoffloadbegin.o -L/opt/rh/gcc-toolset-13/root/usr/lib/gcc/x86_64-redhat-linux/13 -L/opt/rh/gcc-toolset-13/root/usr/lib/gcc/x86_64-redhat-linux/13/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/opt/rh/gcc-toolset-13/root/usr/lib/gcc/x86_64-redhat-linux/13/../../.. CMakeFiles/cmTC_1a778.dir/OpenMPTryFlag.cpp.o -lstdc++ -lm -lgomp -lgcc_s -lgcc -lpthread -lc -lgcc_s -lgcc /opt/rh/gcc-toolset-13/root/usr/lib/gcc/x86_64-redhat-linux/13/crtend.o /lib/../lib64/crtn.o /opt/rh/gcc-toolset-13/root/usr/lib/gcc/x86_64-redhat-linux/13/crtoffloadend.o
-        COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'cmTC_1a778' '-v' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'cmTC_1a778.'
+        COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'cmTC_35dd5' '-v' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'cmTC_35dd5.'
+         /opt/rh/gcc-toolset-13/root/usr/libexec/gcc/x86_64-redhat-linux/13/collect2 -plugin /opt/rh/gcc-toolset-13/root/usr/libexec/gcc/x86_64-redhat-linux/13/liblto_plugin.so -plugin-opt=/opt/rh/gcc-toolset-13/root/usr/libexec/gcc/x86_64-redhat-linux/13/lto-wrapper -plugin-opt=-fresolution=/tmp/cc9M02qb.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_35dd5 /lib/../lib64/crt1.o /lib/../lib64/crti.o /opt/rh/gcc-toolset-13/root/usr/lib/gcc/x86_64-redhat-linux/13/crtbegin.o /opt/rh/gcc-toolset-13/root/usr/lib/gcc/x86_64-redhat-linux/13/crtoffloadbegin.o -L/opt/rh/gcc-toolset-13/root/usr/lib/gcc/x86_64-redhat-linux/13 -L/opt/rh/gcc-toolset-13/root/usr/lib/gcc/x86_64-redhat-linux/13/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/opt/rh/gcc-toolset-13/root/usr/lib/gcc/x86_64-redhat-linux/13/../../.. CMakeFiles/cmTC_35dd5.dir/OpenMPTryFlag.cpp.o -lstdc++ -lm -lgomp -lgcc_s -lgcc -lpthread -lc -lgcc_s -lgcc /opt/rh/gcc-toolset-13/root/usr/lib/gcc/x86_64-redhat-linux/13/crtend.o /lib/../lib64/crtn.o /opt/rh/gcc-toolset-13/root/usr/lib/gcc/x86_64-redhat-linux/13/crtoffloadend.o
+        COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'cmTC_35dd5' '-v' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'cmTC_35dd5.'
+        gmake[1]: Leaving directory '/home/s5610456/CFGAA/programming-assignment-5610456/flock/programming-assignment-5610456/Boids/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-S6ngKc'
         
       exitCode: 0
   -
@@ -910,10 +998,13 @@ events:
     message: |
       Parsed CXX OpenMP implicit link information from above output:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
-        ignore line: [Change Dir: '/home/s5610456/CFGAA/programming-assignment-5610456/flock/programming-assignment-5610456/Boids/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-NfG0L4']
+        ignore line: [Change Dir: '/home/s5610456/CFGAA/programming-assignment-5610456/flock/programming-assignment-5610456/Boids/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-S6ngKc']
         ignore line: []
-        ignore line: [Run Build Command(s): /public/devel/24-25/clion/bin/ninja/linux/x64/ninja -v cmTC_1a778]
-        ignore line: [[1/2] /opt/rh/gcc-toolset-13/root/usr/bin/c++   -fopenmp -v -fdiagnostics-color=always -o CMakeFiles/cmTC_1a778.dir/OpenMPTryFlag.cpp.o -c /home/s5610456/CFGAA/programming-assignment-5610456/flock/programming-assignment-5610456/Boids/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-NfG0L4/OpenMPTryFlag.cpp]
+        ignore line: [Run Build Command(s): /public/devel/24-25/clion/bin/cmake/linux/x64/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_35dd5/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_35dd5.dir/build.make CMakeFiles/cmTC_35dd5.dir/build]
+        ignore line: [gmake[1]: Entering directory '/home/s5610456/CFGAA/programming-assignment-5610456/flock/programming-assignment-5610456/Boids/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-S6ngKc']
+        ignore line: [Building CXX object CMakeFiles/cmTC_35dd5.dir/OpenMPTryFlag.cpp.o]
+        ignore line: [/opt/rh/gcc-toolset-13/root/usr/bin/c++   -fopenmp -v -fdiagnostics-color=always -o CMakeFiles/cmTC_35dd5.dir/OpenMPTryFlag.cpp.o -c /home/s5610456/CFGAA/programming-assignment-5610456/flock/programming-assignment-5610456/Boids/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-S6ngKc/OpenMPTryFlag.cpp]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/opt/rh/gcc-toolset-13/root/usr/bin/c++]
         ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none]
@@ -923,8 +1014,8 @@ events:
         ignore line: [Thread model: posix]
         ignore line: [Supported LTO compression algorithms: zlib zstd]
         ignore line: [gcc version 13.2.1 20231205 (Red Hat 13.2.1-6) (GCC) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_1a778.dir/OpenMPTryFlag.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_1a778.dir/']
-        ignore line: [ /opt/rh/gcc-toolset-13/root/usr/libexec/gcc/x86_64-redhat-linux/13/cc1plus -quiet -v -D_GNU_SOURCE -D_REENTRANT /home/s5610456/CFGAA/programming-assignment-5610456/flock/programming-assignment-5610456/Boids/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-NfG0L4/OpenMPTryFlag.cpp -quiet -dumpdir CMakeFiles/cmTC_1a778.dir/ -dumpbase OpenMPTryFlag.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -fdiagnostics-color=always -fopenmp -o /tmp/cccvQJqW.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_35dd5.dir/OpenMPTryFlag.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_35dd5.dir/']
+        ignore line: [ /opt/rh/gcc-toolset-13/root/usr/libexec/gcc/x86_64-redhat-linux/13/cc1plus -quiet -v -D_GNU_SOURCE -D_REENTRANT /home/s5610456/CFGAA/programming-assignment-5610456/flock/programming-assignment-5610456/Boids/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-S6ngKc/OpenMPTryFlag.cpp -quiet -dumpdir CMakeFiles/cmTC_35dd5.dir/ -dumpbase OpenMPTryFlag.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -fdiagnostics-color=always -fopenmp -o /tmp/ccsbqj3v.s]
         ignore line: [GNU C++17 (GCC) version 13.2.1 20231205 (Red Hat 13.2.1-6) (x86_64-redhat-linux)]
         ignore line: [	compiled by GNU C version 13.2.1 20231205 (Red Hat 13.2.1-6)  GMP version 6.1.2  MPFR version 3.1.6-p2  MPC version 1.1.0  isl version isl-0.24-GMP]
         ignore line: []
@@ -945,13 +1036,15 @@ events:
         ignore line: [ /usr/include]
         ignore line: [End of search list.]
         ignore line: [Compiler executable checksum: 0bdaee3f889f4e6732c74cd588e9a710]
-        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_1a778.dir/OpenMPTryFlag.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_1a778.dir/']
-        ignore line: [ /opt/rh/gcc-toolset-13/root/usr/libexec/gcc/x86_64-redhat-linux/13/as -v --64 -o CMakeFiles/cmTC_1a778.dir/OpenMPTryFlag.cpp.o /tmp/cccvQJqW.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_35dd5.dir/OpenMPTryFlag.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_35dd5.dir/']
+        ignore line: [ /opt/rh/gcc-toolset-13/root/usr/libexec/gcc/x86_64-redhat-linux/13/as -v --64 -o CMakeFiles/cmTC_35dd5.dir/OpenMPTryFlag.cpp.o /tmp/ccsbqj3v.s]
         ignore line: [GNU assembler version 2.40 (x86_64-redhat-linux) using BFD version version 2.40-21.el8]
         ignore line: [COMPILER_PATH=/opt/rh/gcc-toolset-13/root/usr/libexec/gcc/x86_64-redhat-linux/13/:/opt/rh/gcc-toolset-13/root/usr/libexec/gcc/x86_64-redhat-linux/13/:/opt/rh/gcc-toolset-13/root/usr/libexec/gcc/x86_64-redhat-linux/:/opt/rh/gcc-toolset-13/root/usr/lib/gcc/x86_64-redhat-linux/13/:/opt/rh/gcc-toolset-13/root/usr/lib/gcc/x86_64-redhat-linux/]
         ignore line: [LIBRARY_PATH=/opt/rh/gcc-toolset-13/root/usr/lib/gcc/x86_64-redhat-linux/13/:/opt/rh/gcc-toolset-13/root/usr/lib/gcc/x86_64-redhat-linux/13/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/opt/rh/gcc-toolset-13/root/usr/lib/gcc/x86_64-redhat-linux/13/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_1a778.dir/OpenMPTryFlag.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_1a778.dir/OpenMPTryFlag.cpp.']
-        ignore line: [[2/2] : && /opt/rh/gcc-toolset-13/root/usr/bin/c++ -fopenmp -v  CMakeFiles/cmTC_1a778.dir/OpenMPTryFlag.cpp.o -o cmTC_1a778  -v && :]
+        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_35dd5.dir/OpenMPTryFlag.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_35dd5.dir/OpenMPTryFlag.cpp.']
+        ignore line: [Linking CXX executable cmTC_35dd5]
+        ignore line: [/public/devel/24-25/clion/bin/cmake/linux/x64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_35dd5.dir/link.txt --verbose=1]
+        ignore line: [/opt/rh/gcc-toolset-13/root/usr/bin/c++  -fopenmp -v CMakeFiles/cmTC_35dd5.dir/OpenMPTryFlag.cpp.o -o cmTC_35dd5  -v]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/opt/rh/gcc-toolset-13/root/usr/bin/c++]
         ignore line: [COLLECT_LTO_WRAPPER=/opt/rh/gcc-toolset-13/root/usr/libexec/gcc/x86_64-redhat-linux/13/lto-wrapper]
@@ -965,13 +1058,13 @@ events:
         ignore line: [COMPILER_PATH=/opt/rh/gcc-toolset-13/root/usr/libexec/gcc/x86_64-redhat-linux/13/:/opt/rh/gcc-toolset-13/root/usr/libexec/gcc/x86_64-redhat-linux/13/:/opt/rh/gcc-toolset-13/root/usr/libexec/gcc/x86_64-redhat-linux/:/opt/rh/gcc-toolset-13/root/usr/lib/gcc/x86_64-redhat-linux/13/:/opt/rh/gcc-toolset-13/root/usr/lib/gcc/x86_64-redhat-linux/]
         ignore line: [LIBRARY_PATH=/opt/rh/gcc-toolset-13/root/usr/lib/gcc/x86_64-redhat-linux/13/:/opt/rh/gcc-toolset-13/root/usr/lib/gcc/x86_64-redhat-linux/13/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/opt/rh/gcc-toolset-13/root/usr/lib/gcc/x86_64-redhat-linux/13/../../../:/lib/:/usr/lib/]
         ignore line: [Reading specs from /opt/rh/gcc-toolset-13/root/usr/lib/gcc/x86_64-redhat-linux/13/libgomp.spec]
-        ignore line: [COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'cmTC_1a778' '-v' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'cmTC_1a778.']
-        link line: [ /opt/rh/gcc-toolset-13/root/usr/libexec/gcc/x86_64-redhat-linux/13/collect2 -plugin /opt/rh/gcc-toolset-13/root/usr/libexec/gcc/x86_64-redhat-linux/13/liblto_plugin.so -plugin-opt=/opt/rh/gcc-toolset-13/root/usr/libexec/gcc/x86_64-redhat-linux/13/lto-wrapper -plugin-opt=-fresolution=/tmp/ccSDZWEJ.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_1a778 /lib/../lib64/crt1.o /lib/../lib64/crti.o /opt/rh/gcc-toolset-13/root/usr/lib/gcc/x86_64-redhat-linux/13/crtbegin.o /opt/rh/gcc-toolset-13/root/usr/lib/gcc/x86_64-redhat-linux/13/crtoffloadbegin.o -L/opt/rh/gcc-toolset-13/root/usr/lib/gcc/x86_64-redhat-linux/13 -L/opt/rh/gcc-toolset-13/root/usr/lib/gcc/x86_64-redhat-linux/13/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/opt/rh/gcc-toolset-13/root/usr/lib/gcc/x86_64-redhat-linux/13/../../.. CMakeFiles/cmTC_1a778.dir/OpenMPTryFlag.cpp.o -lstdc++ -lm -lgomp -lgcc_s -lgcc -lpthread -lc -lgcc_s -lgcc /opt/rh/gcc-toolset-13/root/usr/lib/gcc/x86_64-redhat-linux/13/crtend.o /lib/../lib64/crtn.o /opt/rh/gcc-toolset-13/root/usr/lib/gcc/x86_64-redhat-linux/13/crtoffloadend.o]
+        ignore line: [COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'cmTC_35dd5' '-v' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'cmTC_35dd5.']
+        link line: [ /opt/rh/gcc-toolset-13/root/usr/libexec/gcc/x86_64-redhat-linux/13/collect2 -plugin /opt/rh/gcc-toolset-13/root/usr/libexec/gcc/x86_64-redhat-linux/13/liblto_plugin.so -plugin-opt=/opt/rh/gcc-toolset-13/root/usr/libexec/gcc/x86_64-redhat-linux/13/lto-wrapper -plugin-opt=-fresolution=/tmp/cc9M02qb.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_35dd5 /lib/../lib64/crt1.o /lib/../lib64/crti.o /opt/rh/gcc-toolset-13/root/usr/lib/gcc/x86_64-redhat-linux/13/crtbegin.o /opt/rh/gcc-toolset-13/root/usr/lib/gcc/x86_64-redhat-linux/13/crtoffloadbegin.o -L/opt/rh/gcc-toolset-13/root/usr/lib/gcc/x86_64-redhat-linux/13 -L/opt/rh/gcc-toolset-13/root/usr/lib/gcc/x86_64-redhat-linux/13/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/opt/rh/gcc-toolset-13/root/usr/lib/gcc/x86_64-redhat-linux/13/../../.. CMakeFiles/cmTC_35dd5.dir/OpenMPTryFlag.cpp.o -lstdc++ -lm -lgomp -lgcc_s -lgcc -lpthread -lc -lgcc_s -lgcc /opt/rh/gcc-toolset-13/root/usr/lib/gcc/x86_64-redhat-linux/13/crtend.o /lib/../lib64/crtn.o /opt/rh/gcc-toolset-13/root/usr/lib/gcc/x86_64-redhat-linux/13/crtoffloadend.o]
           arg [/opt/rh/gcc-toolset-13/root/usr/libexec/gcc/x86_64-redhat-linux/13/collect2] ==> ignore
           arg [-plugin] ==> ignore
           arg [/opt/rh/gcc-toolset-13/root/usr/libexec/gcc/x86_64-redhat-linux/13/liblto_plugin.so] ==> ignore
           arg [-plugin-opt=/opt/rh/gcc-toolset-13/root/usr/libexec/gcc/x86_64-redhat-linux/13/lto-wrapper] ==> ignore
-          arg [-plugin-opt=-fresolution=/tmp/ccSDZWEJ.res] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/cc9M02qb.res] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
           arg [-plugin-opt=-pass-through=-lpthread] ==> ignore
@@ -987,13 +1080,13 @@ events:
           arg [-dynamic-linker] ==> ignore
           arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
           arg [-o] ==> ignore
-          arg [cmTC_1a778] ==> ignore
+          arg [cmTC_35dd5] ==> ignore
           arg [-L/opt/rh/gcc-toolset-13/root/usr/lib/gcc/x86_64-redhat-linux/13] ==> dir [/opt/rh/gcc-toolset-13/root/usr/lib/gcc/x86_64-redhat-linux/13]
           arg [-L/opt/rh/gcc-toolset-13/root/usr/lib/gcc/x86_64-redhat-linux/13/../../../../lib64] ==> dir [/opt/rh/gcc-toolset-13/root/usr/lib/gcc/x86_64-redhat-linux/13/../../../../lib64]
           arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
           arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
           arg [-L/opt/rh/gcc-toolset-13/root/usr/lib/gcc/x86_64-redhat-linux/13/../../..] ==> dir [/opt/rh/gcc-toolset-13/root/usr/lib/gcc/x86_64-redhat-linux/13/../../..]
-          arg [CMakeFiles/cmTC_1a778.dir/OpenMPTryFlag.cpp.o] ==> ignore
+          arg [CMakeFiles/cmTC_35dd5.dir/OpenMPTryFlag.cpp.o] ==> ignore
           arg [-lstdc++] ==> lib [stdc++]
           arg [-lm] ==> lib [m]
           arg [-lgomp] ==> lib [gomp]
@@ -1025,8 +1118,8 @@ events:
       - "CMakeLists.txt:13 (find_package)"
     description: "Detecting CXX OpenMP version"
     directories:
-      source: "/home/s5610456/CFGAA/programming-assignment-5610456/flock/programming-assignment-5610456/Boids/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-4eyDIj"
-      binary: "/home/s5610456/CFGAA/programming-assignment-5610456/flock/programming-assignment-5610456/Boids/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-4eyDIj"
+      source: "/home/s5610456/CFGAA/programming-assignment-5610456/flock/programming-assignment-5610456/Boids/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-LA6bl9"
+      binary: "/home/s5610456/CFGAA/programming-assignment-5610456/flock/programming-assignment-5610456/Boids/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-LA6bl9"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
       CMAKE_EXE_LINKER_FLAGS: ""
@@ -1039,11 +1132,17 @@ events:
       variable: "OpenMP_SPECTEST_CXX_"
       cached: true
       stdout: |
-        Change Dir: '/home/s5610456/CFGAA/programming-assignment-5610456/flock/programming-assignment-5610456/Boids/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-4eyDIj'
+        Change Dir: '/home/s5610456/CFGAA/programming-assignment-5610456/flock/programming-assignment-5610456/Boids/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-LA6bl9'
         
-        Run Build Command(s): /public/devel/24-25/clion/bin/ninja/linux/x64/ninja -v cmTC_0fd51
-        [1/2] /opt/rh/gcc-toolset-13/root/usr/bin/c++   -fopenmp -fdiagnostics-color=always -o CMakeFiles/cmTC_0fd51.dir/OpenMPCheckVersion.cpp.o -c /home/s5610456/CFGAA/programming-assignment-5610456/flock/programming-assignment-5610456/Boids/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-4eyDIj/OpenMPCheckVersion.cpp
-        [2/2] : && /opt/rh/gcc-toolset-13/root/usr/bin/c++ -fopenmp  CMakeFiles/cmTC_0fd51.dir/OpenMPCheckVersion.cpp.o -o cmTC_0fd51   && :
+        Run Build Command(s): /public/devel/24-25/clion/bin/cmake/linux/x64/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_bac7c/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_bac7c.dir/build.make CMakeFiles/cmTC_bac7c.dir/build
+        gmake[1]: Entering directory '/home/s5610456/CFGAA/programming-assignment-5610456/flock/programming-assignment-5610456/Boids/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-LA6bl9'
+        Building CXX object CMakeFiles/cmTC_bac7c.dir/OpenMPCheckVersion.cpp.o
+        /opt/rh/gcc-toolset-13/root/usr/bin/c++   -fopenmp -fdiagnostics-color=always -o CMakeFiles/cmTC_bac7c.dir/OpenMPCheckVersion.cpp.o -c /home/s5610456/CFGAA/programming-assignment-5610456/flock/programming-assignment-5610456/Boids/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-LA6bl9/OpenMPCheckVersion.cpp
+        Linking CXX executable cmTC_bac7c
+        /public/devel/24-25/clion/bin/cmake/linux/x64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bac7c.dir/link.txt --verbose=1
+        /opt/rh/gcc-toolset-13/root/usr/bin/c++  -fopenmp CMakeFiles/cmTC_bac7c.dir/OpenMPCheckVersion.cpp.o -o cmTC_bac7c
+        gmake[1]: Leaving directory '/home/s5610456/CFGAA/programming-assignment-5610456/flock/programming-assignment-5610456/Boids/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-LA6bl9'
         
       exitCode: 0
 ...
