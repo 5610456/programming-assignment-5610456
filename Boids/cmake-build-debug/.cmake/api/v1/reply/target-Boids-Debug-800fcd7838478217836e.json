@@ -31,7 +31,6 @@
 			"qt_find_package_system_or_bundled",
 			"_pkg_create_imp_target",
 			"_pkg_recalculate",
-			"_pkg_check_modules_internal",
 			"pkg_check_modules",
 			"add_compile_definitions",
 			"include_directories",
@@ -124,7 +123,7 @@
 			{
 				"command" : 1,
 				"file" : 1,
-				"line" : 16,
+				"line" : 18,
 				"parent" : 0
 			},
 			{
@@ -136,13 +135,13 @@
 			{
 				"command" : 2,
 				"file" : 1,
-				"line" : 36,
+				"line" : 38,
 				"parent" : 0
 			},
 			{
 				"command" : 5,
 				"file" : 1,
-				"line" : 13,
+				"line" : 15,
 				"parent" : 0
 			},
 			{
@@ -164,7 +163,7 @@
 			{
 				"command" : 5,
 				"file" : 1,
-				"line" : 12,
+				"line" : 14,
 				"parent" : 0
 			},
 			{
@@ -1530,34 +1529,28 @@
 				"parent" : 253
 			},
 			{
-				"command" : 22,
+				"command" : 21,
 				"file" : 61,
 				"line" : 6,
 				"parent" : 254
 			},
 			{
-				"command" : 21,
-				"file" : 60,
-				"line" : 862,
-				"parent" : 255
-			},
-			{
 				"command" : 20,
 				"file" : 60,
-				"line" : 690,
-				"parent" : 256
+				"line" : 870,
+				"parent" : 255
 			},
 			{
 				"command" : 19,
 				"file" : 60,
 				"line" : 354,
-				"parent" : 257
+				"parent" : 256
 			},
 			{
 				"command" : 15,
 				"file" : 60,
 				"line" : 335,
-				"parent" : 258
+				"parent" : 257
 			},
 			{
 				"command" : 7,
@@ -1567,13 +1560,13 @@
 			},
 			{
 				"file" : 65,
-				"parent" : 260
+				"parent" : 259
 			},
 			{
 				"command" : 6,
 				"file" : 65,
 				"line" : 60,
-				"parent" : 261
+				"parent" : 260
 			},
 			{
 				"command" : 8,
@@ -1585,290 +1578,284 @@
 				"command" : 5,
 				"file" : 8,
 				"line" : 76,
-				"parent" : 263
+				"parent" : 262
 			},
 			{
 				"command" : 4,
 				"file" : 0,
 				"line" : 859,
-				"parent" : 264
+				"parent" : 263
 			},
 			{
 				"file" : 68,
-				"parent" : 265
+				"parent" : 264
 			},
 			{
 				"command" : 7,
 				"file" : 68,
 				"line" : 45,
-				"parent" : 266
+				"parent" : 265
 			},
 			{
 				"file" : 67,
-				"parent" : 267
+				"parent" : 266
 			},
 			{
 				"command" : 17,
 				"file" : 67,
 				"line" : 33,
-				"parent" : 268
+				"parent" : 267
 			},
 			{
 				"command" : 8,
 				"file" : 9,
 				"line" : 36,
-				"parent" : 269
+				"parent" : 268
 			},
 			{
 				"command" : 5,
 				"file" : 8,
 				"line" : 76,
-				"parent" : 270
+				"parent" : 269
 			},
 			{
 				"command" : 4,
 				"file" : 0,
 				"line" : 859,
-				"parent" : 271
+				"parent" : 270
 			},
 			{
 				"file" : 66,
-				"parent" : 272
+				"parent" : 271
 			},
 			{
 				"command" : 2,
 				"file" : 66,
 				"line" : 68,
-				"parent" : 273
+				"parent" : 272
 			},
 			{
 				"command" : 8,
 				"file" : 9,
 				"line" : 36,
-				"parent" : 269
+				"parent" : 268
 			},
 			{
 				"command" : 5,
 				"file" : 8,
 				"line" : 76,
-				"parent" : 275
+				"parent" : 274
 			},
 			{
 				"command" : 4,
 				"file" : 0,
 				"line" : 859,
+				"parent" : 275
+			},
+			{
+				"file" : 69,
 				"parent" : 276
 			},
 			{
-				"file" : 69,
-				"parent" : 277
-			},
-			{
-				"command" : 22,
+				"command" : 21,
 				"file" : 69,
 				"line" : 16,
-				"parent" : 278
-			},
-			{
-				"command" : 21,
-				"file" : 60,
-				"line" : 862,
-				"parent" : 279
+				"parent" : 277
 			},
 			{
 				"command" : 20,
 				"file" : 60,
-				"line" : 690,
-				"parent" : 280
+				"line" : 870,
+				"parent" : 278
 			},
 			{
 				"command" : 19,
 				"file" : 60,
 				"line" : 354,
-				"parent" : 281
+				"parent" : 279
 			},
 			{
 				"command" : 15,
 				"file" : 60,
 				"line" : 335,
-				"parent" : 282
+				"parent" : 280
 			},
 			{
 				"command" : 7,
 				"file" : 68,
 				"line" : 57,
-				"parent" : 266
+				"parent" : 265
 			},
 			{
 				"file" : 70,
-				"parent" : 284
+				"parent" : 282
 			},
 			{
 				"command" : 6,
 				"file" : 70,
 				"line" : 60,
-				"parent" : 285
+				"parent" : 283
 			},
 			{
 				"command" : 8,
 				"file" : 9,
 				"line" : 36,
-				"parent" : 269
+				"parent" : 268
 			},
 			{
 				"command" : 5,
 				"file" : 8,
 				"line" : 76,
-				"parent" : 287
+				"parent" : 285
 			},
 			{
 				"command" : 4,
 				"file" : 0,
 				"line" : 859,
-				"parent" : 288
+				"parent" : 286
 			},
 			{
 				"file" : 72,
-				"parent" : 289
+				"parent" : 287
 			},
 			{
 				"command" : 18,
 				"file" : 72,
 				"line" : 6,
-				"parent" : 290
+				"parent" : 288
 			},
 			{
 				"command" : 5,
 				"file" : 47,
 				"line" : 69,
-				"parent" : 291
+				"parent" : 289
 			},
 			{
 				"command" : 4,
 				"file" : 0,
 				"line" : 859,
-				"parent" : 292
+				"parent" : 290
 			},
 			{
 				"file" : 71,
-				"parent" : 293
+				"parent" : 291
 			},
 			{
 				"command" : 2,
 				"file" : 71,
 				"line" : 55,
-				"parent" : 294
+				"parent" : 292
 			},
 			{
 				"command" : 8,
 				"file" : 9,
 				"line" : 36,
-				"parent" : 269
+				"parent" : 268
 			},
 			{
 				"command" : 5,
 				"file" : 8,
 				"line" : 76,
-				"parent" : 296
+				"parent" : 294
 			},
 			{
 				"command" : 4,
 				"file" : 0,
 				"line" : 859,
-				"parent" : 297
+				"parent" : 295
 			},
 			{
 				"file" : 73,
-				"parent" : 298
+				"parent" : 296
 			},
 			{
 				"command" : 2,
 				"file" : 73,
 				"line" : 52,
-				"parent" : 299
+				"parent" : 297
 			},
 			{
 				"command" : 5,
 				"file" : 1,
-				"line" : 11,
+				"line" : 13,
 				"parent" : 0
 			},
 			{
 				"command" : 4,
 				"file" : 0,
 				"line" : 859,
-				"parent" : 301
+				"parent" : 299
 			},
 			{
 				"file" : 5,
-				"parent" : 302
+				"parent" : 300
 			},
 			{
 				"command" : 7,
 				"file" : 5,
 				"line" : 124,
-				"parent" : 303
+				"parent" : 301
 			},
 			{
 				"file" : 75,
-				"parent" : 304
+				"parent" : 302
 			},
 			{
 				"command" : 17,
 				"file" : 75,
 				"line" : 27,
-				"parent" : 305
+				"parent" : 303
 			},
 			{
 				"command" : 8,
 				"file" : 9,
 				"line" : 36,
-				"parent" : 306
+				"parent" : 304
 			},
 			{
 				"command" : 5,
 				"file" : 8,
 				"line" : 76,
-				"parent" : 307
+				"parent" : 305
 			},
 			{
 				"command" : 4,
 				"file" : 0,
 				"line" : 859,
-				"parent" : 308
+				"parent" : 306
 			},
 			{
 				"file" : 74,
-				"parent" : 309
+				"parent" : 307
 			},
 			{
 				"command" : 15,
 				"file" : 74,
 				"line" : 238,
-				"parent" : 310
+				"parent" : 308
 			},
 			{
-				"command" : 23,
+				"command" : 22,
 				"file" : 2,
 				"line" : 17,
 				"parent" : 6
 			},
 			{
-				"command" : 23,
+				"command" : 22,
 				"file" : 2,
 				"line" : 18,
 				"parent" : 6
 			},
 			{
-				"command" : 24,
+				"command" : 23,
 				"file" : 2,
 				"line" : 44,
 				"parent" : 6
 			},
 			{
-				"command" : 25,
+				"command" : 24,
 				"file" : 1,
-				"line" : 21,
+				"line" : 23,
 				"parent" : 0
 			}
 		]
@@ -1901,7 +1888,7 @@
 			"defines" : 
 			[
 				{
-					"backtrace" : 312,
+					"backtrace" : 310,
 					"define" : "ADDLARGEMODELS"
 				},
 				{
@@ -1913,7 +1900,7 @@
 					"define" : "BOOST_FILESYSTEM_STATIC_LINK=1"
 				},
 				{
-					"backtrace" : 313,
+					"backtrace" : 311,
 					"define" : "GLM_ENABLE_EXPERIMENTAL"
 				},
 				{
@@ -1948,11 +1935,11 @@
 					"path" : "/home/s5610456/CFGAA/programming-assignment-5610456/flock/programming-assignment-5610456/Boids/cmake-build-debug/Boids_autogen/include"
 				},
 				{
-					"backtrace" : 314,
+					"backtrace" : 312,
 					"path" : "/home/s5610456/CFGAA/programming-assignment-5610456/flock/programming-assignment-5610456/Boids/include"
 				},
 				{
-					"backtrace" : 314,
+					"backtrace" : 312,
 					"path" : "/home/s5610456/NGL/include"
 				},
 				{
@@ -3003,72 +2990,72 @@
 				"role" : "libraries"
 			},
 			{
-				"backtrace" : 259,
+				"backtrace" : 258,
 				"fragment" : "/usr/lib64/libxkbcommon-x11.so",
 				"role" : "libraries"
 			},
 			{
-				"backtrace" : 259,
+				"backtrace" : 258,
 				"fragment" : "/usr/lib64/libxkbcommon.so",
 				"role" : "libraries"
 			},
 			{
-				"backtrace" : 262,
+				"backtrace" : 261,
 				"fragment" : "/usr/lib64/libxcb-cursor.so",
 				"role" : "libraries"
 			},
 			{
-				"backtrace" : 262,
+				"backtrace" : 261,
 				"fragment" : "/usr/lib64/libxcb-icccm.so",
 				"role" : "libraries"
 			},
 			{
-				"backtrace" : 262,
+				"backtrace" : 261,
 				"fragment" : "/usr/lib64/libxcb-image.so",
 				"role" : "libraries"
 			},
 			{
-				"backtrace" : 262,
+				"backtrace" : 261,
 				"fragment" : "/usr/lib64/libxcb-keysyms.so",
 				"role" : "libraries"
 			},
 			{
-				"backtrace" : 262,
+				"backtrace" : 261,
 				"fragment" : "/usr/lib64/libxcb-randr.so",
 				"role" : "libraries"
 			},
 			{
-				"backtrace" : 262,
+				"backtrace" : 261,
 				"fragment" : "/usr/lib64/libxcb-render-util.so",
 				"role" : "libraries"
 			},
 			{
-				"backtrace" : 262,
+				"backtrace" : 261,
 				"fragment" : "/usr/lib64/libxcb-shm.so",
 				"role" : "libraries"
 			},
 			{
-				"backtrace" : 262,
+				"backtrace" : 261,
 				"fragment" : "/usr/lib64/libxcb-sync.so",
 				"role" : "libraries"
 			},
 			{
-				"backtrace" : 262,
+				"backtrace" : 261,
 				"fragment" : "/usr/lib64/libxcb-xfixes.so",
 				"role" : "libraries"
 			},
 			{
-				"backtrace" : 262,
+				"backtrace" : 261,
 				"fragment" : "/usr/lib64/libxcb-render.so",
 				"role" : "libraries"
 			},
 			{
-				"backtrace" : 262,
+				"backtrace" : 261,
 				"fragment" : "/usr/lib64/libxcb-shape.so",
 				"role" : "libraries"
 			},
 			{
-				"backtrace" : 262,
+				"backtrace" : 261,
 				"fragment" : "/usr/lib64/libxcb-xkb.so",
 				"role" : "libraries"
 			},
@@ -3083,7 +3070,7 @@
 				"role" : "libraries"
 			},
 			{
-				"backtrace" : 262,
+				"backtrace" : 261,
 				"fragment" : "/usr/lib64/libxcb-xinput.so",
 				"role" : "libraries"
 			},
@@ -3113,22 +3100,22 @@
 				"role" : "libraries"
 			},
 			{
-				"backtrace" : 274,
+				"backtrace" : 273,
 				"fragment" : "/public/devel/24-25/vcpkg/installed/x64-linux/debug/lib/libdouble-conversion.a",
 				"role" : "libraries"
 			},
 			{
-				"backtrace" : 283,
+				"backtrace" : 281,
 				"fragment" : "/public/devel/24-25/vcpkg/installed/x64-linux/debug/lib/libb2.a",
 				"role" : "libraries"
 			},
 			{
-				"backtrace" : 286,
+				"backtrace" : 284,
 				"fragment" : "/public/devel/24-25/vcpkg/installed/x64-linux/debug/lib/libicui18n.a",
 				"role" : "libraries"
 			},
 			{
-				"backtrace" : 286,
+				"backtrace" : 284,
 				"fragment" : "/public/devel/24-25/vcpkg/installed/x64-linux/debug/lib/libicuuc.a",
 				"role" : "libraries"
 			},
@@ -3138,12 +3125,12 @@
 				"role" : "libraries"
 			},
 			{
-				"backtrace" : 286,
+				"backtrace" : 284,
 				"fragment" : "/public/devel/24-25/vcpkg/installed/x64-linux/debug/lib/libicudata.a",
 				"role" : "libraries"
 			},
 			{
-				"backtrace" : 295,
+				"backtrace" : 293,
 				"fragment" : "/public/devel/24-25/vcpkg/installed/x64-linux/debug/lib/libpcre2-16.a",
 				"role" : "libraries"
 			},
@@ -3153,12 +3140,12 @@
 				"role" : "libraries"
 			},
 			{
-				"backtrace" : 300,
+				"backtrace" : 298,
 				"fragment" : "/usr/lib64/librt.so",
 				"role" : "libraries"
 			},
 			{
-				"backtrace" : 311,
+				"backtrace" : 309,
 				"fragment" : "-pthread",
 				"role" : "libraries"
 			}
@@ -3250,55 +3237,55 @@
 			"sourceGroupIndex" : 0
 		},
 		{
-			"backtrace" : 315,
+			"backtrace" : 313,
 			"compileGroupIndex" : 0,
 			"path" : "src/MainWindow.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
-			"backtrace" : 315,
+			"backtrace" : 313,
 			"compileGroupIndex" : 0,
 			"path" : "src/NGLScene.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
-			"backtrace" : 315,
+			"backtrace" : 313,
 			"compileGroupIndex" : 0,
 			"path" : "src/NGLSceneMouseControls.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
-			"backtrace" : 315,
+			"backtrace" : 313,
 			"path" : "include/MainWindow.h",
 			"sourceGroupIndex" : 1
 		},
 		{
-			"backtrace" : 315,
+			"backtrace" : 313,
 			"path" : "include/Flock.h",
 			"sourceGroupIndex" : 1
 		},
 		{
-			"backtrace" : 315,
+			"backtrace" : 313,
 			"path" : "include/NGLScene.h",
 			"sourceGroupIndex" : 1
 		},
 		{
-			"backtrace" : 315,
+			"backtrace" : 313,
 			"path" : "include/WindowParams.h",
 			"sourceGroupIndex" : 1
 		},
 		{
-			"backtrace" : 315,
+			"backtrace" : 313,
 			"path" : "ui/MainWindow.ui",
 			"sourceGroupIndex" : 2
 		},
 		{
-			"backtrace" : 315,
+			"backtrace" : 313,
 			"path" : "shaders/ParticleFragment.glsl",
 			"sourceGroupIndex" : 2
 		},
 		{
-			"backtrace" : 315,
+			"backtrace" : 313,
 			"path" : "shaders/ParticleVertex.glsl",
 			"sourceGroupIndex" : 2
 		},

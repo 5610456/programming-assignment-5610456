@@ -142,15 +142,35 @@
 //   m_spread = _value;
 // }
 
-Flock::Flock(size_t _num, size_t _maxAlive, int _numPerFrame, ngl::Vec3 _pos)
-  : m_maxBoids(_num), m_maxAlive(_maxAlive), m_numPerFrame(_numPerFrame), m_pos(_pos)
+Flock::Flock(const size_t _numBoids, const size_t _maxAlive, const int _numPerFrame, const ngl::Vec3 _pos) :
+  m_pos{_pos},
+  m_maxBoids{_numBoids},
+  m_maxAlive{_maxAlive},
+  m_numPerFrame{_numPerFrame}
 {
-    // Initialize boids at starting position
     for (size_t i = 0; i < m_maxBoids; ++i)
     {
         m_boids.emplace_back(boid(m_pos));
     }
+
+    m_boidPositions.resize(m_maxBoids);
+    m_boidColours.resize(m_maxBoids);
+    m_boidDirections.resize(m_maxBoids);
+    m_boidLife.resize(m_maxBoids);
+    m_boidSizes.resize(m_maxBoids);
+    m_state.resize(m_maxBoids, BoidState::Dead);
 }
+
+
+// Flock::Flock(size_t _num, size_t _maxAlive, int _numPerFrame, ngl::Vec3 _pos)
+//   : m_maxBoids(_num), m_maxAlive(_maxAlive), m_numPerFrame(_numPerFrame), m_pos(_pos)
+// {
+//     // Initialize boids at starting position
+//     for (size_t i = 0; i < m_maxBoids; ++i)
+//     {
+//         m_boids.emplace_back(boid(m_pos));
+//     }
+// }
 
 size_t Flock::size() const
 {
@@ -159,12 +179,14 @@ size_t Flock::size() const
 
 void Flock::update(float _dt)
 {
-    for (auto &b : m_boids)
+    for (size_t i = 0; i < m_maxAlive; ++i)
+    for (auto& b : m_boids)
     {
-        b.flock(m_boids);  // Apply flocking rules based on neighbors
-        b.update(_dt);     // Update position and velocity
+        b.flock(m_boids);
+        b.update(_dt);
     }
 }
+
 
 void Flock::render() const
 {
@@ -205,6 +227,46 @@ void Flock::move(float _dx, float _dy, float _dz)
 void Flock::setSpread(float spread)
 {
     m_spread = spread; // or however you want to store it
+}
+
+void Flock::addBoid(const ngl::Vec3& pos)
+{
+    // Create a new Boid at position pos and add it to the flock
+    boid newBoid(pos);
+    m_boids.push_back(newBoid);
+}
+
+void Flock::resetBoid(size_t _i)
+{
+    // TODO: reset the boid at index _i to initial state
+    // Example:
+    m_boids[_i].setPosition(ngl::Vec3(0,0,0));
+    m_boids[_i].setVelocity(ngl::Vec3(0,0,0));
+}
+
+void Flock::birthBoids()
+{
+    // TODO: add logic to "birth" or create new boids
+    Example:
+        {
+            ngl::Mat3 someRadius;
+            addBoid(randomVectorOnSphere() * someRadius);
+        }
+}
+
+ngl::Vec3 Flock::randomVectorOnSphere(float _radius)
+{
+    // Generate a random point on a sphere of radius _radius
+
+    // Simple example using spherical coordinates:
+    float theta = static_cast<float>(rand()) / RAND_MAX * 2.0f * M_PI;  // [0, 2pi]
+    float phi = acos(2.0f * (static_cast<float>(rand()) / RAND_MAX) - 1.0f);  // [0, pi]
+
+    float x = _radius * sin(phi) * cos(theta);
+    float y = _radius * sin(phi) * sin(theta);
+    float z = _radius * cos(phi);
+
+    return ngl::Vec3(x, y, z);
 }
 
 

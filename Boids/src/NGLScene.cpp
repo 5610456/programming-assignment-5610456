@@ -84,7 +84,8 @@ void NGLScene::paintGL()
 
   ngl::ShaderLib::use("ParticleShader");
   ngl::ShaderLib::setUniform("MVP",m_project*m_view*mouseRotation);
-  m_Flock->render();
+  if (m_Flock)
+    m_Flock->render();
   ngl::ShaderLib::use(ngl::nglColourShader);
   ngl::ShaderLib::setUniform("MVP",m_project*m_view*mouseRotation);
   ngl::ShaderLib::setUniform("Colour",1.0f,1.0f,1.0f,1.0f);
@@ -127,22 +128,25 @@ void NGLScene::keyPressEvent(QKeyEvent *_event)
 
 void NGLScene::process_keys()
 {
-  float dx=0.0f;
-  float dy=0.0f;
-  float dz=0.0f;
-  const float inc=0.2f;
+  float dx =0.0f;
+  float dy =0.0f;
+  float dz =0.0f;
+  const float inc= 0.2f;
   for(auto key : m_keysPressed)
   {
     switch(key)
     {
-      case Qt::Key_Left : dx -= inc; break;
-      case Qt::Key_Right : dx +=inc; break;
-      case Qt::Key_Up : dz += inc; break;
-      case Qt::Key_Down : dz -=inc; break;
-      defaut : break;
+    case Qt::Key_Left : dx -= inc; break;
+    case Qt::Key_Right : dx += inc; break;
+    case Qt::Key_Up : dz += inc; break;
+    case Qt::Key_Down : dz -= inc; break;
+    default : break;
     }
+
   }
-m_Flock->move(dx,dy,dz);
+  if (m_Flock)
+    m_Flock->move(dx, dy, dz);
+
 }
 
 void NGLScene::timerEvent(QTimerEvent *_event)
@@ -152,16 +156,21 @@ void NGLScene::timerEvent(QTimerEvent *_event)
   m_previousTime=now;
   if(m_animate)
   {
-    process_keys();
-    m_Flock->update(delta.count());
+    if (m_Flock)
+    {
+      process_keys();
+      m_Flock->update(delta.count());
+    }
+
   }
   update();
 }
 
 void NGLScene::setSpread(double _value)
 {
+  if (m_Flock)
     m_Flock->setSpread(static_cast<float>(_value));
-    update();
+      update();
 }
 
 

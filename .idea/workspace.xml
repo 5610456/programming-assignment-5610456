@@ -44,21 +44,24 @@
       <change beforePath="$PROJECT_DIR$/../Boids/include/NGLScene.h" beforeDir="false" afterPath="$PROJECT_DIR$/../Boids/include/NGLScene.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Boids/src/NGLScene.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../Boids/src/NGLScene.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ParticleQt/cmake-build-debug/CMakeFiles/clion-Debug-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../ParticleQt/cmake-build-debug/CMakeFiles/clion-Debug-log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Boids/cmake-build-debug/.cmake/api/v1/reply/cache-v2-d557d8a7c6b9006cd1e0.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Boids/cmake-build-debug/.cmake/api/v1/reply/cmakeFiles-v1-80aa9232c64f350f8f04.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Boids/cmake-build-debug/.cmake/api/v1/reply/index-2025-05-25T13-53-30-0762.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Boids/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Boids/cmake-build-debug/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Boids/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Boids/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Boids/cmake-build-debug/.cmake/api/v1/reply/cmakeFiles-v1-71952b1bb2529fe8ccd4.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Boids/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-c2295e9cbe60890c2dc7.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Boids/cmake-build-debug/.cmake/api/v1/reply/index-2025-05-26T12-47-34-0812.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Boids/cmake-build-debug/.cmake/api/v1/reply/target-Boids-Debug-dbd7f684850dcd36f8b5.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Boids/cmake-build-debug/.cmake/api/v1/reply/target-BoidsCopyShaders-Debug-e25db8f7ea7f86ad4c25.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Boids/cmake-build-debug/Boids_autogen/deps" beforeDir="false" afterPath="$PROJECT_DIR$/Boids/cmake-build-debug/Boids_autogen/deps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Boids/cmake-build-debug/CMakeFiles/Boids.dir/compiler_depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/Boids/cmake-build-debug/CMakeFiles/Boids.dir/compiler_depend.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Boids/cmake-build-debug/CMakeFiles/Boids_autogen.dir/AutogenInfo.json" beforeDir="false" afterPath="$PROJECT_DIR$/Boids/cmake-build-debug/CMakeFiles/Boids_autogen.dir/AutogenInfo.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Boids/cmake-build-debug/CMakeFiles/Boids_autogen.dir/AutogenUsed.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Boids/cmake-build-debug/CMakeFiles/Boids_autogen.dir/ParseCache.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Boids/cmake-build-debug/CMakeFiles/CMakeConfigureLog.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Boids/cmake-build-debug/CMakeFiles/CMakeConfigureLog.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Boids/cmake-build-debug/CMakeFiles/clean_additional.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Boids/cmake-build-debug/CMakeFiles/clion-Debug-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Boids/cmake-build-debug/CMakeFiles/clion-Debug-log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Boids/cmake-build-debug/CMakeFiles/clion-environment.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Boids/cmake-build-debug/CMakeFiles/clion-environment.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Boids/cmake-build-debug/CMakeFiles/rules.ninja" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Boids/cmake-build-debug/CMakeFiles/Boids_autogen.dir/compiler_depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/Boids/cmake-build-debug/CMakeFiles/Boids_autogen.dir/compiler_depend.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Boids/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/Boids/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Boids/include/Flock.h" beforeDir="false" afterPath="$PROJECT_DIR$/Boids/include/Flock.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Boids/include/MainWindow.h" beforeDir="false" afterPath="$PROJECT_DIR$/Boids/include/MainWindow.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Boids/include/boid.h" beforeDir="false" afterPath="$PROJECT_DIR$/Boids/include/boid.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Boids/src/Flock.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Boids/src/Flock.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Boids/src/MainWindow.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Boids/src/MainWindow.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Boids/src/NGLScene.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Boids/src/NGLScene.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,6 +75,20 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 3
@@ -83,6 +100,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "CMake Application.Boids.executor": "Run",
     "CMake Application.ParticleQt.executor": "Run",
     "RunOnceActivity.RadMigrateCodeStyle": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -131,7 +149,7 @@
       <updated>1748101793449</updated>
       <workItem from="1748101794528" duration="1068000" />
       <workItem from="1748180621604" duration="524000" />
-      <workItem from="1748263224917" duration="1675000" />
+      <workItem from="1748263224917" duration="13182000" />
     </task>
     <servers />
   </component>
@@ -142,5 +160,26 @@
     <isAutomaticCheckingOnLaunch value="false" />
     <isAutomaticFoundErrors value="true" />
     <isAutomaticReloadCMake value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/Boids/include/NGLScene.h</url>
+          <line>2</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/Boids/src/NGLScene.cpp</url>
+          <line>11</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="CMakeRunConfiguration">
+        <watch expression="this" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>

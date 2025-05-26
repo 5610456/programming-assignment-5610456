@@ -45,14 +45,14 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "Boids::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-Boids-Debug-dbd7f684850dcd36f8b5.json",
+					"jsonFile" : "target-Boids-Debug-800fcd7838478217836e.json",
 					"name" : "Boids",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "BoidsCopyShaders::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-BoidsCopyShaders-Debug-e25db8f7ea7f86ad4c25.json",
+					"jsonFile" : "target-BoidsCopyShaders-Debug-5fc5d75a9abce02f9e4c.json",
 					"name" : "BoidsCopyShaders",
 					"projectIndex" : 0
 				},

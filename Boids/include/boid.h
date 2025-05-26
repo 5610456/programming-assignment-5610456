@@ -38,6 +38,8 @@ public:
     void applyForce(const ngl::Vec3 &force);
     void flock(const std::vector<boid> &neighbors);
     void update(float dt);
+    void setPosition(ngl::Vec3 vec3);
+    void setVelocity(ngl::Vec3 vec3);
 
     // Optional, add if you implement
     // void borders(float width, float height, float depth);
