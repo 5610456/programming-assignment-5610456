@@ -7,3 +7,10 @@ Ref:
 Using John Macey ParticleQt as a reference, replacing 'Particle' with 'Boid' and 'Emitter' with 'Flock'
 
 Taking inspo off: Coding Adventure: Boids (https://youtu.be/bqtqltqcQhw?si=F-BrRPD3BPAI0X3d)
+
+About Boids:
+
+  They follow three rules:
+    1) Cohesion
+    2) Separation
+    3) Alignment
