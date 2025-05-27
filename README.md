@@ -19,10 +19,10 @@
 
 # Design and Structure
   - Within my program the classes are as follows:
-    >Boid
-    >Flock
-    >NGLScene
-    >MainWindow
+    - Boid
+    - Flock
+    - NGLScene
+    - MainWindow
 
 # Ref:
 - Using John Macey ParticleQt as a reference, replacing 'Particle' with 'Boid' and 'Emitter' with 'Flock'
