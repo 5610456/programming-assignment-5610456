@@ -55,7 +55,7 @@
 - I also thought about including hoops in the scene for the Boids to fly through.
 - Adding user interaction was another possible enhancement. The mouse pointer, for instance, could either attract Boids and cause them to follow it, or it could serve as an obstacle that the Boids would have to avoid in real time.
 
-# Ref:
+# References:
 - Using John Macey ParticleQt as a reference, replacing 'Particle' with 'Boid' and 'Emitter' with 'Flock' (https://github.com/NCCA/labcode-jmacey-2/tree/main/ParticleQt) [Last Accessed 27 May 2025]
 
 - Taking inspo off: Coding Adventure: Boids (https://youtu.be/bqtqltqcQhw?si=F-BrRPD3BPAI0X3d) [Last Accessed 27 May 2025]
