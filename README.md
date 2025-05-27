@@ -50,7 +50,10 @@
 - As a further test, I moved the RGBA colour assignment into the NGLScene.cpp file to bypass potential shader issues entirely, but the Boids still failed to appear.
 
 # Project Evaluation
-- 
+- I would have liked to add some additional features besides to the initial goal of making the Boids render correctly.
+- One idea was to incorporate obstacles that the Boids would have to avoid, like skyscrapers or blocks.
+- I also thought about including hoops in the scene for the Boids to fly through.
+- Adding user interaction was another possible enhancement. The mouse pointer, for instance, could either attract Boids and cause them to follow it, or it could serve as an obstacle that the Boids would have to avoid in real time.
 
 # Ref:
 - Using John Macey ParticleQt as a reference, replacing 'Particle' with 'Boid' and 'Emitter' with 'Flock' (https://github.com/NCCA/labcode-jmacey-2/tree/main/ParticleQt) [Last Accessed 27 May 2025]
