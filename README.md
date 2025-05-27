@@ -1,9 +1,11 @@
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/hhQzWvz6)
 
 
-Project: Craig Boids Flocking System in 3D
+# Project: Craig Boids Flocking System in 3D
+-
 
-Ref:
+# Ref:
+-
 Using John Macey ParticleQt as a reference, replacing 'Particle' with 'Boid' and 'Emitter' with 'Flock'
 
 Taking inspo off: Coding Adventure: Boids (https://youtu.be/bqtqltqcQhw?si=F-BrRPD3BPAI0X3d)
@@ -11,8 +13,8 @@ Taking inspo off: Coding Adventure: Boids (https://youtu.be/bqtqltqcQhw?si=F-BrR
 
 
 
-#Background Research
-
+# Background Research
+-
 About Boids:
 
 Defined by a computer scientist within the 1980s, Craig Reynolds who developed the algorithm.
@@ -23,6 +25,10 @@ Defined by a computer scientist within the 1980s, Craig Reynolds who developed t
     3) Alignment- Maintain the same direction as the rest of the boids.
 
 
-#Design Ideas
-
- 
+# Design and Structure
+-
+Within my program the classes are as follows:
+  >Boid
+  >Flock
+  >NGLScene
+  >MainWindow
