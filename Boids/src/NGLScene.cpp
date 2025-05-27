@@ -10,6 +10,15 @@
 #include <ngl/Util.h>
 #include <iostream>
 
+// Code structure and integration assisted by AI Coding Assistants
+// Prompt: "Help fix my code so that it renders Boids."
+// The AI helped with methods like initializeGL, paintGL and input handling.
+
+// Adapted from:
+// https://github.com/NCCA/labcode-jmacey-2/tree/main/ParticleQt
+
+
+
 NGLScene::NGLScene(QWidget *_parent) : QOpenGLWidget(_parent)
 {
 }

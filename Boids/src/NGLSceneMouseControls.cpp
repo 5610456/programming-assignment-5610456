@@ -1,6 +1,10 @@
 #include "NGLScene.h"
 #include <QMouseEvent>
 #include <QtGlobal>
+
+
+// Taken from:
+// https://github.com/NCCA/labcode-jmacey-2/tree/main/ParticleQt
 //----------------------------------------------------------------------------------------------------------------------
 void NGLScene::mouseMoveEvent(QMouseEvent *_event)
 {

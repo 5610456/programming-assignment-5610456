@@ -1,6 +1,10 @@
 #ifndef WINDOWPARAMS_H_
 #define WINDOWPARAMS_H_
 
+
+// Adapted from:
+// https://github.com/NCCA/labcode-jmacey-2/tree/main/ParticleQt
+
 struct WinParams
 {
   //----------------------------------------------------------------------------------------------------------------------

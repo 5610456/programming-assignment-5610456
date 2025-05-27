@@ -1,133 +1,128 @@
 #ifndef NGLSCENE_H_
 #define NGLSCENE_H_
+
 #include <ngl/Vec3.h>
 #include <ngl/Mat4.h>
 #include "WindowParams.h"
-// this must be included after NGL includes else we get a clash with gl libs
+
+// This must be included after NGL includes else we get a clash with OpenGL libs
 #include <QOpenGLWidget>
+
 #include "Flock.h"
 #include <memory>
 #include <chrono>
 #include <QSet>
 #include <ngl/Text.h>
+
 //----------------------------------------------------------------------------------------------------------------------
 /// @file NGLScene.h
-/// @brief this class inherits from the Qt OpenGLWindow and allows us to use NGL to draw OpenGL
+///   This class inherits from the Qt QOpenGLWidget and allows us to use NGL to draw OpenGL.
 /// @author Jonathan Macey
 /// @version 1.0
 /// @date 10/9/13
-/// Revision History :
-/// This is an initial version used for the new NGL6 / Qt 5 demos
+/// Revision History:
+///   Initial version for NGL6 / Qt5 demos.
 /// @class NGLScene
-/// @brief our main glwindow widget for NGL applications all drawing elements are
-/// put in this file
+///   Main GL window widget for NGL applications, all drawing elements reside here.
 //----------------------------------------------------------------------------------------------------------------------
-//
-// class NGLScene : public QOpenGLWidget
-// {
-//     Q_OBJECT
-//   public:
-//     //----------------------------------------------------------------------------------------------------------------------
-//     /// @brief ctor for our NGL drawing class
-//     /// @param [in] parent the parent window to the class
-//     //----------------------------------------------------------------------------------------------------------------------
-//       NGLScene(QWidget *_parent);
-//     //----------------------------------------------------------------------------------------------------------------------
-//     /// @brief dtor must close down ngl and release OpenGL resources
-//     //----------------------------------------------------------------------------------------------------------------------
-//     ~NGLScene() override;
-//     //----------------------------------------------------------------------------------------------------------------------
-//     /// @brief the initialize class is called once when the window is created and we have a valid GL context
-//     /// use this to setup any default GL stuff
-//     //----------------------------------------------------------------------------------------------------------------------
-//     void initializeGL() override;
-//     //----------------------------------------------------------------------------------------------------------------------
-//     /// @brief this is called everytime we want to draw the scene
-//     //----------------------------------------------------------------------------------------------------------------------
-//     void paintGL() override;
-//     //----------------------------------------------------------------------------------------------------------------------
-//     /// @brief this is called everytime we resize the window
-//     //----------------------------------------------------------------------------------------------------------------------
-//     void resizeGL(int _w, int _h) override;
-//     Flock *getFlock() { return m_Flock.get();}
-// public slots :
-//
-//     void setSpread(double _value);
-//
-// signals :
-//     void glInitialized();
 
-///NEW
+
+// Adapted from:
+// https://github.com/NCCA/labcode-jmacey-2/tree/main/ParticleQt
+
 class NGLScene : public QOpenGLWidget
 {
     Q_OBJECT
-  public:
-    NGLScene(QWidget *_parent);
+
+public:
+  
+    ///   Constructor for NGL drawing class.
+    ///  [in] _parent Parent QWidget, default nullptr.
+   
+    explicit NGLScene(QWidget *_parent = nullptr);
+
+   
+    ///   Destructor, cleans up NGL and OpenGL resources.
     ~NGLScene() override;
-
+    
+    ///   Called once when OpenGL context is ready, used to setup default GL stuff.
     void initializeGL() override;
+    
+    ///  Called every frame to render the scene.
     void paintGL() override;
+    
+    ///   Called when the window is resized.
+    ///  [in] _w New width.
+    ///  [in] _h New height.
     void resizeGL(int _w, int _h) override;
-
+    
+    ///   Accessor for the flock instance.
+    /// @return Pointer to the Flock object.
     Flock *getFlock() { return m_Flock.get(); }
 
-    public slots:
-        void setSpread(double s);
+public slots:
+    ///   Slot to set spread parameter of the flock.
+    ///  [in] s Spread value.
+    void setSpread(double s);
+    
+    ///   Slot to set the alignment weight parameter of the flock.
+    ///  [in] _value Alignment weight value.
     void setAlignmentWeight(double _value);
 
-    signals:
-        void glInitialized();
+signals:
+    ///   Signal emitted once OpenGL is initialized.
+    void glInitialized();
 
 private:
-    double m_spread;
-    //----------------------------------------------------------------------------------------------------------------------
-    /// @brief Qt Event called when a key is pressed
-    /// @param [in] _event the Qt event to query for size etc
-    //----------------------------------------------------------------------------------------------------------------------
+    double m_spread = 5.5;  ///< Spread value for flock dispersion.
+    
+    ///   Qt key press event handler.
+    ///   Key event.
     void keyPressEvent(QKeyEvent *_event) override;
-    //----------------------------------------------------------------------------------------------------------------------
-    /// @brief this method is called every time a mouse is moved
-    /// @param _event the Qt Event structure
-    //----------------------------------------------------------------------------------------------------------------------
-    void mouseMoveEvent (QMouseEvent * _event ) override;
-    //----------------------------------------------------------------------------------------------------------------------
-    /// @brief this method is called everytime the mouse button is pressed
-    /// inherited from QObject and overridden here.
-    /// @param _event the Qt Event structure
-    //----------------------------------------------------------------------------------------------------------------------
-    void mousePressEvent ( QMouseEvent *_event) override;
-    //----------------------------------------------------------------------------------------------------------------------
-    /// @brief this method is called everytime the mouse button is released
-    /// inherited from QObject and overridden here.
-    /// @param _event the Qt Event structure
-    //----------------------------------------------------------------------------------------------------------------------
-    void mouseReleaseEvent ( QMouseEvent *_event ) override;
+    
+    ///   Qt mouse move event handler.
+    ///   Mouse event.
+    void mouseMoveEvent(QMouseEvent *_event) override;
+    
+    ///   Qt mouse press event handler.
+    ///   Mouse event.
+    void mousePressEvent(QMouseEvent *_event) override;
+    
+    ///   Qt mouse release event handler.
+    ///   Mouse event.
+    void mouseReleaseEvent(QMouseEvent *_event) override;
 
-    //----------------------------------------------------------------------------------------------------------------------
-    /// @brief this method is called everytime the mouse wheel is moved
-    /// inherited from QObject and overridden here.
-    /// @param _event the Qt Event structure
-    //----------------------------------------------------------------------------------------------------------------------
-    void wheelEvent( QWheelEvent *_event) override;
+    
+    ///   Qt mouse wheel event handler.
+    ///   Wheel event.
+    void wheelEvent(QWheelEvent *_event) override;
 
+    
+    ///   Qt timer event handler.
+    ///   Timer event.
     void timerEvent(QTimerEvent *_event) override;
+    
+    ///   Qt key release event handler.
+    ///   Key event.
     void keyReleaseEvent(QKeyEvent *_event) override;
+    
+    ///   Process currently pressed keys for input handling.
     void process_keys();
-    /// @brief windows parameters for mouse control etc.
-    WinParams m_win;
-    /// position for our model
-    ngl::Vec3 m_modelPos;
-    std::unique_ptr<Flock> m_Flock;
-    bool m_animate = true;
-    ngl::Mat4 m_view;
-    ngl::Mat4 m_project;
-    std::chrono::steady_clock::time_point m_previousTime;
-    QSet<Qt::Key> m_keysPressed;
 
-    std::unique_ptr<ngl::Text> m_text;
+    WinParams m_win;                ///< Window parameters for mouse control etc.
+    ngl::Vec3 m_modelPos;           ///< Model position in world space.
+    std::unique_ptr<Flock> m_Flock; ///< Smart pointer managing flock object.
 
+    bool m_animate = true;          ///< Toggle animation on/off.
+
+    ngl::Mat4 m_view;               ///< View matrix.
+    ngl::Mat4 m_project;            ///< Projection matrix.
+
+    std::chrono::steady_clock::time_point m_previousTime; ///< For delta time calculation.
+
+    QSet<Qt::Key> m_keysPressed;    ///< Set of keys currently pressed.
+
+    std::unique_ptr<ngl::Text> m_text; ///< NGL text renderer for on-screen info.
 };
 
-
-
-#endif
+#endif // NGLSCENE_H_

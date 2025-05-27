@@ -104,14 +104,28 @@
       <change beforePath="$PROJECT_DIR$/../Boids/src/main.cpp" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../Boids/ui/MainWindow.ui" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../ParticleQt/cmake-build-debug/CMakeFiles/clion-Debug-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../ParticleQt/cmake-build-debug/CMakeFiles/clion-Debug-log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/editor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/editor.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Boids/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Boids/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Boids/cmake-build-debug/Boids_autogen/deps" beforeDir="false" afterPath="$PROJECT_DIR$/Boids/cmake-build-debug/Boids_autogen/deps" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Boids/cmake-build-debug/CMakeFiles/Boids.dir/compiler_depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/Boids/cmake-build-debug/CMakeFiles/Boids.dir/compiler_depend.internal" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Boids/cmake-build-debug/CMakeFiles/Boids.dir/compiler_depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/Boids/cmake-build-debug/CMakeFiles/Boids.dir/compiler_depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Boids/cmake-build-debug/CMakeFiles/Boids.dir/src/main.cpp.o.d" beforeDir="false" afterPath="$PROJECT_DIR$/Boids/cmake-build-debug/CMakeFiles/Boids.dir/src/main.cpp.o.d" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Boids/cmake-build-debug/CMakeFiles/Boids_autogen.dir/compiler_depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/Boids/cmake-build-debug/CMakeFiles/Boids_autogen.dir/compiler_depend.internal" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Boids/cmake-build-debug/CMakeFiles/Boids_autogen.dir/compiler_depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/Boids/cmake-build-debug/CMakeFiles/Boids_autogen.dir/compiler_depend.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Boids/cmake-build-debug/NGLDebug.log" beforeDir="false" afterPath="$PROJECT_DIR$/Boids/cmake-build-debug/NGLDebug.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Boids/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/Boids/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Boids/include/Flock.h" beforeDir="false" afterPath="$PROJECT_DIR$/Boids/include/Flock.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Boids/include/MainWindow.h" beforeDir="false" afterPath="$PROJECT_DIR$/Boids/include/MainWindow.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Boids/include/NGLScene.h" beforeDir="false" afterPath="$PROJECT_DIR$/Boids/include/NGLScene.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Boids/include/WindowParams.h" beforeDir="false" afterPath="$PROJECT_DIR$/Boids/include/WindowParams.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Boids/include/boid.h" beforeDir="false" afterPath="$PROJECT_DIR$/Boids/include/boid.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Boids/shaders/BoidFragment.glsl" beforeDir="false" afterPath="$PROJECT_DIR$/Boids/shaders/BoidFragment.glsl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Boids/src/Flock.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Boids/src/Flock.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Boids/src/MainWindow.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Boids/src/MainWindow.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Boids/src/NGLScene.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Boids/src/NGLScene.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Boids/src/NGLSceneMouseControls.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Boids/src/NGLSceneMouseControls.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Boids/src/boid.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Boids/src/boid.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Boids/src/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Boids/src/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Boids/ui/MainWindow.ui" beforeDir="false" afterPath="$PROJECT_DIR$/Boids/ui/MainWindow.ui" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -203,7 +217,7 @@
       <workItem from="1748317649438" duration="2178000" />
       <workItem from="1748319840210" duration="84000" />
       <workItem from="1748319946976" duration="51000" />
-      <workItem from="1748320022591" duration="10563000" />
+      <workItem from="1748320022591" duration="20549000" />
     </task>
     <servers />
   </component>
@@ -216,14 +230,6 @@
     <isAutomaticReloadCMake value="true" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/Boids/include/boid.h</url>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
     <watches-manager>
       <configuration name="CMakeRunConfiguration">
         <watch expression="this" />

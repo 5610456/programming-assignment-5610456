@@ -452,4 +452,5 @@ CMakeFiles/Boids.dir/src/main.cpp.o: \
  /public/devel/24-25/vcpkg/installed/x64-linux/include/Qt6/QtGui/qguiapplication.h \
  /public/devel/24-25/vcpkg/installed/x64-linux/include/Qt6/QtGui/qinputmethod.h \
  /public/devel/24-25/vcpkg/installed/x64-linux/include/Qt6/QtCore/qlocale.h \
- /public/devel/24-25/vcpkg/installed/x64-linux/include/Qt6/QtGui/qguiapplication_platform.h
+ /public/devel/24-25/vcpkg/installed/x64-linux/include/Qt6/QtGui/qguiapplication_platform.h \
+ /public/devel/24-25/vcpkg/installed/x64-linux/include/Qt6/QtGui/QSurfaceFormat

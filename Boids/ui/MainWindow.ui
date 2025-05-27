@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
+ <!-- Main window class for Boids application -->
  <class>MainWindow</class>
  <widget class="QMainWindow" name="MainWindow">
+  <!-- Set initial window size and position -->
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -10,80 +12,17 @@
     <height>646</height>
    </rect>
   </property>
+  <!-- Window title -->
   <property name="windowTitle">
    <string>Boids</string>
   </property>
+
+  <!-- Central widget acts as container for all controls -->
   <widget class="QWidget" name="centralwidget">
+   <!-- Main grid layout for the central widget -->
    <layout class="QGridLayout" name="m_mainWindowGridLayout">
-    <item row="0" column="1">
-     <widget class="QGroupBox" name="groupBox">
-      <property name="title">
-       <string>Boid Controls</string>
-      </property>
-      <layout class="QFormLayout" name="formLayout">
-       <item row="1" column="1">
-        <widget class="QDoubleSpinBox" name="m_spread">
-         <property name="singleStep">
-          <double>0.100000000000000</double>
-         </property>
-         <property name="value">
-          <double>5.500000000000000</double>
-         </property>
-        </widget>
-       </item>
-       <item row="1" column="0">
-        <widget class="QLabel" name="label">
-         <property name="text">
-          <string>Spread</string>
-         </property>
-        </widget>
-       </item>
-       <item row="3" column="1">
-        <spacer name="verticalSpacer">
-         <property name="orientation">
-          <enum>Qt::Vertical</enum>
-         </property>
-         <property name="sizeHint" stdset="0">
-          <size>
-           <width>20</width>
-           <height>40</height>
-          </size>
-         </property>
-        </spacer>
-       </item>
-       <item row="4" column="1">
-        <spacer name="verticalSpacer_2">
-         <property name="orientation">
-          <enum>Qt::Vertical</enum>
-         </property>
-         <property name="sizeHint" stdset="0">
-          <size>
-           <width>20</width>
-           <height>40</height>
-          </size>
-         </property>
-        </spacer>
-       </item>
-       <item row="2" column="1">
-        <widget class="QSpinBox" name="m_numPerFrame">
-         <property name="minimum">
-          <number>0</number>
-         </property>
-         <property name="maximum">
-          <number>1000</number>
-         </property>
-        </widget>
-       </item>
-       <item row="2" column="0">
-        <widget class="QLabel" name="label_2">
-         <property name="text">
-          <string>num per frame</string>
-         </property>
-        </widget>
-       </item>
-      </layout>
-     </widget>
-    </item>
+
+    <!-- Spacer in column 0 for padding on left -->
     <item row="0" column="0">
      <spacer name="horizontalSpacer">
       <property name="orientation">
@@ -97,8 +36,106 @@
       </property>
      </spacer>
     </item>
+
+    <!-- Group box containing Boid control widgets in column 1 -->
+    <item row="0" column="1">
+     <widget class="QGroupBox" name="groupBox">
+      <property name="title">
+       <string>Boid Controls</string>
+      </property>
+
+      <!-- Use form layout inside group box for label-control pairs -->
+      <layout class="QFormLayout" name="formLayout">
+
+       <!-- Row 1: Spread control -->
+       <item row="1" column="0">
+        <!-- Label for Spread control, use descriptive name -->
+        <widget class="QLabel" name="labelSpread">
+         <property name="text">
+          <string>Spread</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <!-- Double spin box for Spread value -->
+        <widget class="QDoubleSpinBox" name="m_spread">
+         <property name="singleStep">
+          <double>0.1</double>
+         </property>
+         <property name="value">
+          <double>5.5</double>
+         </property>
+         <!-- Add reasonable min/max if needed -->
+         <property name="minimum">
+          <double>0.0</double>
+         </property>
+         <property name="maximum">
+          <double>20.0</double>
+         </property>
+        </widget>
+       </item>
+
+       <!-- Row 2: Number of particles per frame -->
+       <item row="2" column="0">
+        <!-- Label for num per frame, improved naming -->
+        <widget class="QLabel" name="labelNumPerFrame">
+         <property name="text">
+          <string>Num per Frame</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <!-- Spin box for integer number per frame -->
+        <widget class="QSpinBox" name="m_numPerFrame">
+         <property name="minimum">
+          <number>0</number>
+         </property>
+         <property name="maximum">
+          <number>1000</number>
+         </property>
+         <property name="singleStep">
+          <number>1</number>
+         </property>
+        </widget>
+       </item>
+
+       <!-- Row 3: Vertical spacer for spacing below controls -->
+       <item row="3" column="1">
+        <spacer name="verticalSpacer">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+
+       <!-- Row 4: Additional vertical spacer -->
+       <item row="4" column="1">
+        <spacer name="verticalSpacer_2">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+
+      </layout>
+     </widget>
+    </item>
    </layout>
   </widget>
+
+  <!-- Standard menu bar -->
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
     <rect>
@@ -109,8 +146,11 @@
     </rect>
    </property>
   </widget>
+
+  <!-- Standard status bar -->
   <widget class="QStatusBar" name="statusbar"/>
  </widget>
+
  <resources/>
  <connections/>
 </ui>
