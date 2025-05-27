@@ -34,11 +34,11 @@
 - X
 
 # Ref:
-- Using John Macey ParticleQt as a reference, replacing 'Particle' with 'Boid' and 'Emitter' with 'Flock' (https://github.com/NCCA/labcode-jmacey-2/tree/main/ParticleQt)
+- Using John Macey ParticleQt as a reference, replacing 'Particle' with 'Boid' and 'Emitter' with 'Flock' (https://github.com/NCCA/labcode-jmacey-2/tree/main/ParticleQt) [Last Accessed 27 May 2025]
 
-- Taking inspo off: Coding Adventure: Boids (https://youtu.be/bqtqltqcQhw?si=F-BrRPD3BPAI0X3d)
+- Taking inspo off: Coding Adventure: Boids (https://youtu.be/bqtqltqcQhw?si=F-BrRPD3BPAI0X3d) [Last Accessed 27 May 2025]
 
-- Nature of Code Chapter 5: Autonomous Agents (https://natureofcode.com/autonomous-agents/)
+- Nature of Code Chapter 5: Autonomous Agents (https://natureofcode.com/autonomous-agents/) [Last Accessed 27 May 2025]
 
-- NGL Graphics Libary (http://nccastaff.bournemouth.ac.uk/jmacey/GraphicsLib/index.html)
+- NGL Graphics Libary (http://nccastaff.bournemouth.ac.uk/jmacey/GraphicsLib/index.html) [Last Accessed 27 May 2025]
 
