@@ -7,10 +7,22 @@ Ref:
 Using John Macey ParticleQt as a reference, replacing 'Particle' with 'Boid' and 'Emitter' with 'Flock'
 
 Taking inspo off: Coding Adventure: Boids (https://youtu.be/bqtqltqcQhw?si=F-BrRPD3BPAI0X3d)
+#Introduction
+
+
+
+#Background Research
 
 About Boids:
 
+Defined by a computer scientist within the 1980s, Craig Reynolds who developed the algorithm.
+
   They follow three rules:
-    1) Cohesion
-    2) Separation
-    3) Alignment
+    1) Cohesion- Moving towards a large population of other boids, keeping within the crowd.
+    2) Separation- Avoid colliding with other boids, keeping to a clear path.
+    3) Alignment- Maintain the same direction as the rest of the boids.
+
+
+#Design Ideas
+
+ 
