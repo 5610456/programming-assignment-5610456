@@ -32,6 +32,8 @@
 
 # Project Evaluation
 - X
+- 
+![Screenshot from 2025-05-27 09-16-01](https://github.com/user-attachments/assets/b344e2c8-b5ed-4972-91ec-4db19fa12315)
 
 # Ref:
 - Using John Macey ParticleQt as a reference, replacing 'Particle' with 'Boid' and 'Emitter' with 'Flock' (https://github.com/NCCA/labcode-jmacey-2/tree/main/ParticleQt) [Last Accessed 27 May 2025]
