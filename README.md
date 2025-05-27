@@ -30,10 +30,16 @@
     - NGLScene
     - MainWindow
 
-# Project Evaluation
+
+# Project Progression
 - X
+- ![Screenshot from 2025-05-24 16-45-27](https://github.com/user-attachments/assets/5e9e954f-ad1d-4047-b10c-9401d521bdbd)
 - 
 ![Screenshot from 2025-05-27 09-16-01](https://github.com/user-attachments/assets/b344e2c8-b5ed-4972-91ec-4db19fa12315)
+- 
+
+# Project Evaluation
+- 
 
 # Ref:
 - Using John Macey ParticleQt as a reference, replacing 'Particle' with 'Boid' and 'Emitter' with 'Flock' (https://github.com/NCCA/labcode-jmacey-2/tree/main/ParticleQt) [Last Accessed 27 May 2025]
