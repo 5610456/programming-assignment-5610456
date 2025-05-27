@@ -1,7 +1,8 @@
 #include <QMouseEvent>
 #include <QGuiApplication>
-
 #include "NGLScene.h"
+#include "Flock.h" // <- Include Flock class
+
 #include <ngl/NGLInit.h>
 #include <ngl/VAOPrimitives.h>
 #include <ngl/ShaderLib.h>
@@ -9,168 +10,186 @@
 #include <ngl/Util.h>
 #include <iostream>
 
-NGLScene::NGLScene(QWidget *_parent) :QOpenGLWidget(_parent)
+NGLScene::NGLScene(QWidget *_parent) : QOpenGLWidget(_parent)
 {
 }
 
 NGLScene::~NGLScene()
 {
-  std::cout<<"Shutting down NGL, removing VAO's and Shaders\n";
+  std::cout << "Shutting down NGL, removing VAO's and Shaders\n";
 }
 
-void NGLScene::resizeGL(int _w , int _h)
+void NGLScene::resizeGL(int _w, int _h)
 {
-  m_win.width  = static_cast<int>( _w * devicePixelRatio() );
-  m_win.height = static_cast<int>( _h * devicePixelRatio() );
-  m_project=ngl::perspective(45.0f, float(m_win.width)/float(m_win.height), 0.001f,200.0f);
+  m_win.width = static_cast<int>(_w * devicePixelRatio());
+  m_win.height = static_cast<int>(_h * devicePixelRatio());
+  m_project = ngl::perspective(45.0f, float(m_win.width) / float(m_win.height), 0.1f, 500.0f);
 }
-
 
 void NGLScene::initializeGL()
 {
-
-  ngl::ShaderLib::loadShader("ParticleShader", "shaders/ParticleVertex.glsl", "shaders/ParticleFragment.glsl");
-  ngl::ShaderLib::use("ParticleShader");
-
-  // we must call that first before any other GL commands to load and link the
-  // gl commands from the lib, if that is not done program will crash
   ngl::NGLInit::initialize();
-  glClearColor(0.7f, 0.7f, 0.7f, 1.0f);			   // Grey Background
-  // enable depth testing for drawing
+  glClearColor(0.2f, 0.3f, 0.4f, 1.0f); // Slightly darker blue-gray background
   glEnable(GL_DEPTH_TEST);
-  // enable multisampling for smoother drawing
   glEnable(GL_MULTISAMPLE);
-  ngl::VAOPrimitives::createSphere("sphere",1.0f,20);
-  ngl::VAOPrimitives::createLineGrid("floor",100,100,50);
-  m_Flock=std::make_unique<Flock>(10000,10000,800,ngl::Vec3(0,0,0));
-  ngl::ShaderLib::loadShader("ParticleShader","../shaders/ParticleVertex.glsl","../shaders/ParticleFragment.glsl");
-  ngl::ShaderLib::use("ParticleShader");
-  m_view = ngl::lookAt({0,40,80},{0,0,0},{0,1,0});
-  m_previousTime=std::chrono::steady_clock::now();
 
-  // m_text = std::make_unique<ngl::Text>("fonts/DejaVuSansMono.ttf",16);
-  // m_text->setScreenSize(width(),height());
-  // m_text->setColour(1,1,1);
-  startTimer(10);
+  // Create some basic geometry
+  // ngl::VAOPrimitives::createSphere("boid", 0.5f, 10);
+  // ngl::VAOPrimitives::instance()->createSphere("sphere", 0.1f, 20);
+  // ngl::VAOPrimitives::createLineGrid("floor", 100, 100, 50);
+  //ngl::VAOPrimitives *prim = ngl::VAOPrimitives::instance();
+  ngl::VAOPrimitives::createSphere("boid", 0.5f, 10);
+  ngl::VAOPrimitives::createSphere("sphere", 0.1f, 20);
+  ngl::VAOPrimitives::createLineGrid("floor", 100, 100, 50);
+//test
+  ngl::VAOPrimitives::createSphere("debugSphere", 10.0f, 20);
+
+
+
+
+
+
+
+  // Load and use custom shader for Boids
+  ngl::ShaderLib::loadShader("BoidShader",
+                             "../shaders/BoidVertex.glsl",
+                             "../shaders/BoidFragment.glsl");
+  ngl::ShaderLib::use("BoidShader");
+
+  // Set up camera/view
+  m_view = ngl::lookAt({0, 50, 100}, {0, 0, 0}, {0, 1, 0});
+
+  // Initialize Boid system
+  m_Flock = std::make_unique<Flock>(200, 200, 10, ngl::Vec3(0.0f, 0.0f, 0.0f));
+
+  m_previousTime = std::chrono::steady_clock::now();
+  startTimer(16); // ~60fps
+
   emit glInitialized();
-
-  //ADDED
-  std::ifstream vs("shaders/ParticleVertex.glsl");
-  std::ifstream fs("shaders/ParticleFragment.glsl");
-  if (!vs.good() || !fs.good())
-  {
-    std::cerr << "Error: Shader files not found! Check your working directory and paths.\n";
-  }
-  else
-  {
-    std::cout << "Shader files found successfully.\n";
-  }
-
 }
-
-
 
 void NGLScene::paintGL()
 {
-  // clear the screen and depth buffer
   glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
-  glViewport(0,0,m_win.width,m_win.height);
+  glViewport(0, 0, m_win.width, m_win.height);
+
   auto rotX = ngl::Mat4::rotateX(m_win.spinXFace);
   auto rotY = ngl::Mat4::rotateY(m_win.spinYFace);
-  auto mouseRotation = rotX * rotY;
-  mouseRotation.m_m[3][0]=m_modelPos.m_x;
-  mouseRotation.m_m[3][1]=m_modelPos.m_y;
-  mouseRotation.m_m[3][2]=m_modelPos.m_z;
+  auto transform = rotX * rotY;
+  transform.m_m[3][0] = m_modelPos.m_x;
+  transform.m_m[3][1] = m_modelPos.m_y;
+  transform.m_m[3][2] = m_modelPos.m_z;
 
-  ngl::ShaderLib::use("ParticleShader");
-  ngl::ShaderLib::setUniform("MVP",m_project*m_view*mouseRotation);
-  if (m_Flock)
-    m_Flock->render();
+  // ngl::ShaderLib::use("BoidShader");
+  // ngl::Mat4 modelMatrix = transform; // or ngl::Mat4::identity();
+  // ngl::ShaderLib::setUniform("Model", modelMatrix);
+  // ngl::ShaderLib::setUniform("MVP", m_project * m_view * transform);
+  //
+
+  // Render boids
+  ngl::ShaderLib::use("BoidShader");
+  ngl::ShaderLib::setUniform("MVP", m_project * m_view * transform);
+  // ngl::Mat4 m_proj;
+  // m_Flock->render(m_view, m_proj);
+  m_Flock->render(m_view, m_project);
+
+
+  // Render ground
   ngl::ShaderLib::use(ngl::nglColourShader);
-  ngl::ShaderLib::setUniform("MVP",m_project*m_view*mouseRotation);
-  ngl::ShaderLib::setUniform("Colour",1.0f,1.0f,1.0f,1.0f);
+  ngl::ShaderLib::setUniform("MVP", m_project * m_view * transform);
+  ngl::ShaderLib::setUniform("Colour", 0.5f, 0.8f, 0.8f, 1.0f);
   ngl::VAOPrimitives::draw("floor");
+  ngl::VAOPrimitives::draw("sphere");
+  ngl::VAOPrimitives::draw("boid");
 
-  ngl::ShaderLib::use(ngl::nglTextShader);
- // m_text->renderText(10,700,"Particle System");
+  //cube
+  // Draw debug cube
+  ngl::ShaderLib::use(ngl::nglColourShader);
+  ngl::Mat4 cubeTransform = ngl::Mat4::translate(0.0f, 1.0f, 0.0f); // 1 unit above ground
+  ngl::ShaderLib::setUniform("MVP", m_project * m_view * cubeTransform);
+  ngl::ShaderLib::setUniform("Colour", 1.0f, 0.0f, 0.0f, 1.0f); // Bright red
+  ngl::VAOPrimitives::draw("debugSphere");
+
 
 
 }
 
-//----------------------------------------------------------------------------------------------------------------------
-
 void NGLScene::keyReleaseEvent(QKeyEvent *_event)
 {
-  m_keysPressed -=(Qt::Key)_event->key();
+  m_keysPressed -= static_cast<Qt::Key>(_event->key());
 }
 
 void NGLScene::keyPressEvent(QKeyEvent *_event)
 {
-  m_keysPressed +=(Qt::Key)_event->key();
-  // this method is called every time the main window recives a key event.
-  // we then switch on the key value and set the camera in the GLWindow
+  m_keysPressed += static_cast<Qt::Key>(_event->key());
+
   switch (_event->key())
   {
-  // escape key to quite
-  case Qt::Key_Escape : QGuiApplication::exit(EXIT_SUCCESS); break;
-  case Qt::Key_Space :
-      m_win.spinXFace=0;
-      m_win.spinYFace=0;
-      m_modelPos.set(ngl::Vec3::zero());
-  break;
-    case Qt::Key_A : m_animate^=true; break;
-  default : break;
-  }
-  // finally update the GLWindow and re-draw
+    case Qt::Key_Escape:
+      QGuiApplication::exit(EXIT_SUCCESS);
+      break;
 
-    update();
+    case Qt::Key_Space:
+      m_win.spinXFace = 0;
+      m_win.spinYFace = 0;
+      m_modelPos.set(0, 0, 0);
+      break;
+
+    case Qt::Key_A:
+      m_animate ^= true;
+      break;
+
+    default:
+      break;
+  }
+
+  update();
 }
 
 void NGLScene::process_keys()
 {
-  float dx =0.0f;
-  float dy =0.0f;
-  float dz =0.0f;
-  const float inc= 0.2f;
-  for(auto key : m_keysPressed)
+  float dx = 0.0f, dy = 0.0f, dz = 0.0f;
+  const float inc = 0.5f;
+
+  for (auto key : m_keysPressed)
   {
-    switch(key)
+    switch (key)
     {
-    case Qt::Key_Left : dx -= inc; break;
-    case Qt::Key_Right : dx += inc; break;
-    case Qt::Key_Up : dz += inc; break;
-    case Qt::Key_Down : dz -= inc; break;
-    default : break;
+      case Qt::Key_Left: dx -= inc; break;
+      case Qt::Key_Right: dx += inc; break;
+      case Qt::Key_Up: dz += inc; break;
+      case Qt::Key_Down: dz -= inc; break;
+      default: break;
     }
-
   }
-  if (m_Flock)
-    m_Flock->move(dx, dy, dz);
 
+  m_Flock->moveFlock(dx, dy, dz);
 }
 
 void NGLScene::timerEvent(QTimerEvent *_event)
 {
   auto now = std::chrono::steady_clock::now();
-  auto delta = std::chrono::duration<float,std::chrono::seconds::period>(now-m_previousTime);
-  m_previousTime=now;
-  if(m_animate)
-  {
-    if (m_Flock)
-    {
-      process_keys();
-      m_Flock->update(delta.count());
-    }
+  float deltaTime = std::chrono::duration<float>(now - m_previousTime).count();
+  m_previousTime = now;
 
+  if (m_animate)
+  {
+    process_keys();
+    m_Flock->update(deltaTime);
   }
+
   update();
 }
 
-void NGLScene::setSpread(double _value)
+void NGLScene::setAlignmentWeight(double _value)
 {
-  if (m_Flock)
-    m_Flock->setSpread(static_cast<float>(_value));
-      update();
+  m_Flock->setAlignmentWeight(static_cast<float>(_value));
+  update();
 }
 
+void NGLScene::setSpread(double s)
+{
+  // your code here, e.g.
+  m_spread = s;
+}
 

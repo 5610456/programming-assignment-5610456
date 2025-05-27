@@ -22,43 +22,64 @@
 /// @brief our main glwindow widget for NGL applications all drawing elements are
 /// put in this file
 //----------------------------------------------------------------------------------------------------------------------
+//
+// class NGLScene : public QOpenGLWidget
+// {
+//     Q_OBJECT
+//   public:
+//     //----------------------------------------------------------------------------------------------------------------------
+//     /// @brief ctor for our NGL drawing class
+//     /// @param [in] parent the parent window to the class
+//     //----------------------------------------------------------------------------------------------------------------------
+//       NGLScene(QWidget *_parent);
+//     //----------------------------------------------------------------------------------------------------------------------
+//     /// @brief dtor must close down ngl and release OpenGL resources
+//     //----------------------------------------------------------------------------------------------------------------------
+//     ~NGLScene() override;
+//     //----------------------------------------------------------------------------------------------------------------------
+//     /// @brief the initialize class is called once when the window is created and we have a valid GL context
+//     /// use this to setup any default GL stuff
+//     //----------------------------------------------------------------------------------------------------------------------
+//     void initializeGL() override;
+//     //----------------------------------------------------------------------------------------------------------------------
+//     /// @brief this is called everytime we want to draw the scene
+//     //----------------------------------------------------------------------------------------------------------------------
+//     void paintGL() override;
+//     //----------------------------------------------------------------------------------------------------------------------
+//     /// @brief this is called everytime we resize the window
+//     //----------------------------------------------------------------------------------------------------------------------
+//     void resizeGL(int _w, int _h) override;
+//     Flock *getFlock() { return m_Flock.get();}
+// public slots :
+//
+//     void setSpread(double _value);
+//
+// signals :
+//     void glInitialized();
 
+///NEW
 class NGLScene : public QOpenGLWidget
 {
     Q_OBJECT
   public:
-    //----------------------------------------------------------------------------------------------------------------------
-    /// @brief ctor for our NGL drawing class
-    /// @param [in] parent the parent window to the class
-    //----------------------------------------------------------------------------------------------------------------------
-      NGLScene(QWidget *_parent);
-    //----------------------------------------------------------------------------------------------------------------------
-    /// @brief dtor must close down ngl and release OpenGL resources
-    //----------------------------------------------------------------------------------------------------------------------
+    NGLScene(QWidget *_parent);
     ~NGLScene() override;
-    //----------------------------------------------------------------------------------------------------------------------
-    /// @brief the initialize class is called once when the window is created and we have a valid GL context
-    /// use this to setup any default GL stuff
-    //----------------------------------------------------------------------------------------------------------------------
+
     void initializeGL() override;
-    //----------------------------------------------------------------------------------------------------------------------
-    /// @brief this is called everytime we want to draw the scene
-    //----------------------------------------------------------------------------------------------------------------------
     void paintGL() override;
-    //----------------------------------------------------------------------------------------------------------------------
-    /// @brief this is called everytime we resize the window
-    //----------------------------------------------------------------------------------------------------------------------
     void resizeGL(int _w, int _h) override;
-    Flock *getFlock() { return m_Flock.get();}
-public slots :
 
-    void setSpread(double _value);
+    Flock *getFlock() { return m_Flock.get(); }
 
-signals :
-    void glInitialized();
+    public slots:
+        void setSpread(double s);
+    void setAlignmentWeight(double _value);
+
+    signals:
+        void glInitialized();
 
 private:
-
+    double m_spread;
     //----------------------------------------------------------------------------------------------------------------------
     /// @brief Qt Event called when a key is pressed
     /// @param [in] _event the Qt event to query for size etc

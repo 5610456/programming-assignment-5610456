@@ -5,8 +5,6 @@ set(TargetName Boids)
 set(CMAKE_AUTOUIC ON)
 set(CMAKE_AUTOMOC ON)
 set(CMAKE_AUTORCC ON)
-set(CMAKE_BUILD_TYPE Debug)
-
 
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
@@ -19,7 +17,8 @@ add_executable(${TargetName}
         src/main.cpp
         include/boid.h
         src/boid.cpp
-        src/Flock.cpp)
+        src/Flock.cpp
+)
 target_sources(${TargetName} PRIVATE
     src/main.cpp
     src/MainWindow.cpp
@@ -31,8 +30,8 @@ target_sources(${TargetName} PRIVATE
     include/NGLScene.h
     include/WindowParams.h
     ui/MainWindow.ui
-    shaders/ParticleFragment.glsl
-    shaders/ParticleVertex.glsl
+        shaders/BoidFragment.glsl
+        shaders/BoidVertex.glsl
 )
 target_include_directories(${TargetName} PRIVATE include)
 target_link_libraries(${TargetName} PRIVATE Qt${QT_VERSION_MAJOR}::Widgets Qt${QT_VERSION_MAJOR}::OpenGLWidgets)

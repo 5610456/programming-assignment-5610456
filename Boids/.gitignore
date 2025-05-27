@@ -72,3 +72,9 @@ CMakeLists.txt.user*
 *.dll
 *.exe
 
+# Ignore CMake build directories
+cmake-build-debug/
+cmake-build-release/
+
+# Ignore common build artifacts (executables, object files, libraries)
+*.lib

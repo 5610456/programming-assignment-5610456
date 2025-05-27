@@ -1,24 +1,20 @@
 #include "boid.h"
-#include <cmath>
-#include <cstdlib> // for rand()
-#include <ctime>   // for seeding rand()
-#include <ngl/Mat4.h>
-#include <ngl/ShaderLib.h>
 #include <ngl/VAOPrimitives.h>
-#include <ngl/Random.h>
+#include <ngl/ShaderLib.h>
+#include <ngl/Transformation.h>
+
 
 constexpr float MAX_SPEED = 2.0f;
 constexpr float MAX_FORCE = 0.05f;
 constexpr float NEIGHBOR_RADIUS = 50.0f;
 constexpr float DESIRED_SEPARATION = 20.0f;
 
-boid::boid(const ngl::Vec3 &_pos)
-    : position(_pos)
+boid::boid(ngl::Vec3 pos)
+    : position(pos)
 {
   velocity = ngl::Vec3::zero();
   acceleration = ngl::Vec3::zero();
 }
-
 
 void boid::applyForce(const ngl::Vec3 &force)
 {
@@ -44,7 +40,7 @@ void boid::flock(const std::vector<boid> &boids)
   ngl::Vec3 ali = alignment(boids);
   ngl::Vec3 coh = cohesion(boids);
 
-  // Weight the forces
+
   sep *= 1.5f;
   ali *= 1.0f;
   coh *= 1.0f;
@@ -54,7 +50,7 @@ void boid::flock(const std::vector<boid> &boids)
   applyForce(coh);
 }
 
-ngl::Vec3 boid::separation(const std::vector<boid> &boids)
+ngl::Vec3 boid::separation(const std::vector<boid> &boids) const
 {
   ngl::Vec3 steer(0, 0, 0);
   int count = 0;
@@ -92,7 +88,7 @@ ngl::Vec3 boid::separation(const std::vector<boid> &boids)
   return steer;
 }
 
-ngl::Vec3 boid::alignment(const std::vector<boid> &boids)
+ngl::Vec3 boid::alignment(const std::vector<boid> &boids) const
 {
   ngl::Vec3 sum(0, 0, 0);
   int count = 0;
@@ -124,7 +120,7 @@ ngl::Vec3 boid::alignment(const std::vector<boid> &boids)
   return ngl::Vec3(0, 0, 0);
 }
 
-ngl::Vec3 boid::cohesion(const std::vector<boid> &boids)
+ngl::Vec3 boid::cohesion(const std::vector<boid> &boids) const
 {
   ngl::Vec3 sum(0, 0, 0);
   int count = 0;
@@ -145,10 +141,10 @@ ngl::Vec3 boid::cohesion(const std::vector<boid> &boids)
     return seek(sum);
   }
 
-  return ngl::Vec3(0, 0, 0);
+  return {0, 0, 0};
 }
 
-ngl::Vec3 boid::seek(const ngl::Vec3 &target)
+ngl::Vec3 boid::seek(const ngl::Vec3 &target) const
 {
   ngl::Vec3 desired = target - position;
   desired.normalize();
@@ -161,3 +157,23 @@ ngl::Vec3 boid::seek(const ngl::Vec3 &target)
   }
   return steer;
 }
+
+// Draw this boid at its current position
+void boid::draw(const ngl::Mat4 &_view, const ngl::Mat4 &_proj) const
+{
+  ngl::ShaderLib::use("BoidShader");
+
+  // Create transformation for position
+  ngl::Transformation tx;
+  tx.setPosition(position);
+
+  ngl::Mat4 model = tx.getMatrix();
+  ngl::Mat4 MVP = _proj * _view * model;
+
+  ngl::ShaderLib::setUniform("Model", model);
+  ngl::ShaderLib::setUniform("MVP", MVP);
+
+  ngl::VAOPrimitives::draw("boid");
+
+}
+
