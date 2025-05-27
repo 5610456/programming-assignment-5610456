@@ -42,7 +42,10 @@
 - The NGLScene class sets up, animates, and renders the entire Boids system using OpenGL and the NGL library. In initializeGL(), OpenGL primitives
 
 ![Screenshot from 2025-05-27 09-16-01](https://github.com/user-attachments/assets/b344e2c8-b5ed-4972-91ec-4db19fa12315)
--(Screenshot displaying final image I got to)
+- (Screenshot displaying final image I got to)
+- As shown in the image above, my Boids unfortunately did not render as expected.
+- In an attempt to fix this, I tried removing and repurpourposing the original particle files into the boids via merging the logic --however this gave no visual fix.
+- Next I began removing the original code within the shader files (BoidFragment.glsl and BoidVertex.glsl) and replacing it with a simple colour RGBA for yellow, which once again visualised nothing. I suspected that the shader files could be an issue so then I implemented the RGBA colour codes into the NGLScene.cpp file which once again rendered no boids.
 
 # Project Evaluation
 - 
