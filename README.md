@@ -6,6 +6,12 @@
 # Project Aims
 - This project aims to simulate flocking behaviours as seen in real life (such as birds, crowds or schools of fish) by using simple 3D shapes to mimic these behaviours.
 
+# File Excution
+- Download all files
+- Run within C Lion
+- Buid
+- Run using 'play' button
+
 # Background Research
 - About Boids:
 
@@ -23,6 +29,9 @@
     - Flock
     - NGLScene
     - MainWindow
+
+# Project Evaluation
+- X
 
 # Ref:
 - Using John Macey ParticleQt as a reference, replacing 'Particle' with 'Boid' and 'Emitter' with 'Flock' (https://github.com/NCCA/labcode-jmacey-2/tree/main/ParticleQt)
