@@ -32,11 +32,17 @@
 
 
 # Project Progression
-- X
 - ![Screenshot from 2025-05-24 16-45-27](https://github.com/user-attachments/assets/5e9e954f-ad1d-4047-b10c-9401d521bdbd)
-- 
+- (Screenshot displaying inital screen)
+- All of the information and functions required to describe a single Boid using NGL's ngl::Vec3 for location, velocity, and acceleration are stored in the boid class in boid.h. The class has methods for drawing the Boid in three dimensions, simulating flocking behaviours, applying forces, and updating the Boid's movement.
+- I created the constructor in boid.cpp to establish the Boid's initial position and to reset its acceleration and velocity to zero. By adding acceleration to velocity, restricting speed, updating location, and finally deleting acceleration to prevent buildup, the update function advances the Boid with each frame.
+- To keep the flock together, the Boid moves toward the average position of its neighbors using the seek function. Each behavior—cohesion, separation, and alignment—is weighted and added to the acceleration with applyForce. The draw function renders the Boid using NGL’s built-in "boid" shape, applying the proper transformation and shaders.
+
 ![Screenshot from 2025-05-27 09-16-01](https://github.com/user-attachments/assets/b344e2c8-b5ed-4972-91ec-4db19fa12315)
-- 
+-(Screenshot displaying final image I got to)
+- After finishing the Boid class, I created the Flock class to manage a group of Boids. It begins with an initial set of Boids and records their size, colour, life, position, and orientation. Each Boid’s movement and flocking behaviour is handled by the update method. The flock generates new Boids if there aren't enough active ones. It also applies gravity, gradually increases Boid size, reduces their lifespan, and marks them as dead when their life ends or they fall too low.
+- To keep the flock growing, the birthParticles function resets dead Boids to bring them back. I also wrote utility functions to reset Boid attributes and assign random movement directions. The render method draws each Boid individually using its own draw function.
+- The class also allows moving the whole flock, adjusting alignment behaviour, changing how spread out the Boids are, and adding new Boids at any time. This setup makes it simple to control a large number of Boids and results in realistic 3D flocking behaviour.
 
 # Project Evaluation
 - 
