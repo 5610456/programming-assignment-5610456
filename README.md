@@ -25,9 +25,11 @@
     - MainWindow
 
 # Ref:
-- Using John Macey ParticleQt as a reference, replacing 'Particle' with 'Boid' and 'Emitter' with 'Flock'
+- Using John Macey ParticleQt as a reference, replacing 'Particle' with 'Boid' and 'Emitter' with 'Flock' (https://github.com/NCCA/labcode-jmacey-2/tree/main/ParticleQt)
 
 - Taking inspo off: Coding Adventure: Boids (https://youtu.be/bqtqltqcQhw?si=F-BrRPD3BPAI0X3d)
 
+- Nature of Code Chapter 5: Autonomous Agents (https://natureofcode.com/autonomous-agents/)
 
+- NGL Graphics Libary (http://nccastaff.bournemouth.ac.uk/jmacey/GraphicsLib/index.html)
 
