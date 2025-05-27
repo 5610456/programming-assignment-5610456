@@ -1,16 +1,44 @@
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/hhQzWvz6)
 
 
-Project: Craig Boids Flocking System in 3D
+# Project: Craig Boids Flocking System in 3D
 
-Ref:
-Using John Macey ParticleQt as a reference, replacing 'Particle' with 'Boid' and 'Emitter' with 'Flock'
+# Project Aims
+- This project aims to simulate flocking behaviours as seen in real life (such as birds, crowds or schools of fish) by using simple 3D shapes to mimic these behaviours.
 
-Taking inspo off: Coding Adventure: Boids (https://youtu.be/bqtqltqcQhw?si=F-BrRPD3BPAI0X3d)
+# File Excution
+- Download all files
+- Run within C Lion
+- Buid
+- Run using 'play' button
 
-About Boids:
+# Background Research
+- About Boids:
 
-  They follow three rules:
-    1) Cohesion
-    2) Separation
-    3) Alignment
+  Defined by a computer scientist within the 1980s, Craig Reynolds who developed the algorithm.
+
+    They follow three rules:
+     - 1) Cohesion- Moving towards a large population of other boids, keeping within the crowd.
+     - 2) Separation- Avoid colliding with other boids, keeping to a clear path.
+     - 3) Alignment- Maintain the same direction as the rest of the boids.
+
+
+# Design and Structure
+  - Within my program the classes are as follows:
+    - Boid
+    - Flock
+    - NGLScene
+    - MainWindow
+
+# Project Evaluation
+- X
+
+# Ref:
+- Using John Macey ParticleQt as a reference, replacing 'Particle' with 'Boid' and 'Emitter' with 'Flock' (https://github.com/NCCA/labcode-jmacey-2/tree/main/ParticleQt) [Last Accessed 27 May 2025]
+
+- Taking inspo off: Coding Adventure: Boids (https://youtu.be/bqtqltqcQhw?si=F-BrRPD3BPAI0X3d) [Last Accessed 27 May 2025]
+
+- Nature of Code Chapter 5: Autonomous Agents (https://natureofcode.com/autonomous-agents/) [Last Accessed 27 May 2025]
+
+- NGL Graphics Libary (http://nccastaff.bournemouth.ac.uk/jmacey/GraphicsLib/index.html) [Last Accessed 27 May 2025]
+
