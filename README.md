@@ -15,12 +15,14 @@
 # Background Research
 - About Boids:
 
-  Defined by a computer scientist within the 1980s, Craig Reynolds who developed the algorithm.
+  Defined by a computer scientist within the 1980s, Craig Reynolds, who developed the algorith to mimic the natural movement of flocks. These 'boids' as he puts it follows 3 rules that imitate complex crowd behavior. 
 
-    They follow three rules:
+    The rules are as follows:
      - 1) Cohesion- Moving towards a large population of other boids, keeping within the crowd.
      - 2) Separation- Avoid colliding with other boids, keeping to a clear path.
      - 3) Alignment- Maintain the same direction as the rest of the boids.
+      
+      These create believable group movement without requiring a leader.
 
 
 # Design and Structure
@@ -55,7 +57,9 @@
 
 - Taking inspo off: Coding Adventure: Boids (https://youtu.be/bqtqltqcQhw?si=F-BrRPD3BPAI0X3d) [Last Accessed 27 May 2025]
 
-- Nature of Code Chapter 5: Autonomous Agents (https://natureofcode.com/autonomous-agents/) [Last Accessed 27 May 2025]
+- Nature of Code Chapter 5: Autonomous Agents (https://natureofcode.com/autonomous-agents/) [Last Accessed 26 May 2025]
 
-- NGL Graphics Libary (http://nccastaff.bournemouth.ac.uk/jmacey/GraphicsLib/index.html) [Last Accessed 27 May 2025]
+- NGL Graphics Libary (http://nccastaff.bournemouth.ac.uk/jmacey/GraphicsLib/index.html) [Last Accessed 26 May 2025]
+
+-Flocks, Herds, and Schools: A Distributed Behavioral Model  (https://www.cs.toronto.edu/~dt/siggraph97-course/cwr87/) [Last Accessed 27 May 2025]
 
