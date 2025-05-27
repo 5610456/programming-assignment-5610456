@@ -48,6 +48,12 @@
 - To troubleshoot the issue, I first attempted to merge and repurpose the original particle system logic into the Boid implementation. Despite integrating the logic from the particle files, there was no visual improvement.
 - Suspecting the shaders might be the problem, I simplified both BoidFragment.glsl and BoidVertex.glsl by replacing their contents with a basic solid yellow RGBA colour. However, this still did not render the Boids on screen.
 - As a further test, I moved the RGBA colour assignment into the NGLScene.cpp file to bypass potential shader issues entirely, but the Boids still failed to appear.
+- 
+- Debugging Summarised:
+- Replaced shaders with solid color: still failed
+- Attempted direct color in C++: no result
+- Checked draw calls and confirmed draw() was called
+
 
 # Project Evaluation
 - I would have liked to add some additional features besides to the initial goal of making the Boids render correctly.
